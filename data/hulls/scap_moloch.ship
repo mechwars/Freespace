@@ -102,7 +102,7 @@
     -0.5
   ],
   "shieldRadius": 210.434082,
-  "spriteName": "graphics/ships/scap_moloch.png",
+  "spriteName": "graphics/Freespace/ships/scap_moloch.png",
   "style": "HIGH_TECH",
   "viewOffset": 0,
   "weaponSlots": [

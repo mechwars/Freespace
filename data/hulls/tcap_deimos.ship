@@ -74,7 +74,7 @@
     -0
   ],
   "shieldRadius": 177.837708,
-  "spriteName": "graphics/ships/tcap_deimos.png",
+  "spriteName": "graphics/Freespace/ships/tcap_deimos.png",
   "style": "HIGH_TECH",
   "viewOffset": 0,
   "weaponSlots": [
