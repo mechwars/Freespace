@@ -11,73 +11,9 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0029": "tem_galatine",
-                "WS0030": "tem_galatine",
-                "WS0031": "tem_galatine",
-                "WS0032": "tem_longinus"
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0035": "tem_clarent_tube",
-                "WS0036": "tem_clarent_tube"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0039": "tem_rhon",
-                "WS0040": "tem_rhon",
-                "WS0041": "tem_rhon",
-                "WS0042": "tem_rhon",
-                "WS0043": "tem_rhon"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0033": "tem_pax",
-                "WS0034": "tem_pax",
-                "WS0037": "tem_pax",
-                "WS0038": "tem_pax"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0001": "tem_carnwennan",
-                "WS0002": "tem_carnwennan",
-                "WS0003": "tem_carnwennan",
-                "WS0004": "tem_carnwennan",
-                "WS0005": "tem_carnwennan",
-                "WS0006": "tem_carnwennan",
-                "WS0007": "tem_carnwennan",
-                "WS0008": "tem_carnwennan",
-                "WS0009": "tem_carnwennan",
-                "WS0010": "tem_carnwennan",
-                "WS0011": "tem_carnwennan",
-                "WS0012": "tem_carnwennan",
-                "WS0013": "tem_carnwennan",
-                "WS0014": "tem_carnwennan",
-                "WS0015": "tem_carnwennan",
-                "WS0016": "tem_carnwennan",
-                "WS0017": "tem_carnwennan",
-                "WS0018": "tem_carnwennan",
-                "WS0019": "tem_carnwennan",
-                "WS0020": "tem_carnwennan",
-                "WS0021": "tem_carnwennan",
-                "WS0022": "tem_carnwennan",
-                "WS0023": "tem_carnwennan",
-                "WS0024": "tem_carnwennan",
-                "WS0025": "tem_carnwennan",
-                "WS0026": "tem_carnwennan",
-                "WS0027": "tem_carnwennan",
-                "WS0028": "tem_carnwennan"
+                "WS0003": "tachyonlance",
+                "WS0007": "tachyonlance",
+				"WS0009": "tachyonlance"
             }
         }
     ]
