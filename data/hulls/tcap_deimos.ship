@@ -194,7 +194,7 @@
         62,
         31
       ],
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "size": "SMALL",
       "type": "ENERGY"
     },
@@ -206,7 +206,7 @@
         62,
         -30
       ],
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "size": "SMALL",
       "type": "ENERGY"
     },
@@ -218,7 +218,7 @@
         1.5,
         -30.5
       ],
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "size": "SMALL",
       "type": "ENERGY"
     },
@@ -230,7 +230,7 @@
         1.5,
         31.5
       ],
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "size": "SMALL",
       "type": "ENERGY"
     },
@@ -242,7 +242,7 @@
         -75,
         53
       ],
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "size": "SMALL",
       "type": "ENERGY"
     },
@@ -254,7 +254,7 @@
         -76,
         -50.5
       ],
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "size": "SMALL",
       "type": "ENERGY"
     },
@@ -290,7 +290,7 @@
         -167,
         -36.5
       ],
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "size": "SMALL",
       "type": "ENERGY"
     },
@@ -302,7 +302,7 @@
         -167,
         36.5
       ],
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "size": "SMALL",
       "type": "ENERGY"
     }
