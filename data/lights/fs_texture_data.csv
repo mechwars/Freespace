@@ -1,0 +1,13 @@
+id,type,frame,magnitude,map,path
+tcap_deimos,ship,,,material,graphics/Freespace/material/ships/tcap_deimos_material.png
+tcap_deimos,ship,,1,normal,graphics/Freespace/normal/ships/tcap_deimos_normal.png
+tcap_deimos,ship,,,surface,graphics/Freespace/surface/ships/tcap_deimos_surface.png
+scap_moloch,ship,,,material,graphics/Freespace/material/ships/scap_moloch_material.png
+scap_moloch,ship,,1,normal,graphics/Freespace/normal/ships/scap_moloch_normal.png
+scap_moloch,ship,,,surface,graphics/Freespace/surface/ships/scap_moloch_surface.png
+tfight_herc2,ship,,,material,graphics/Freespace/material/ships/tfight_herc2_material.png
+tfight_herc2,ship,,1,normal,graphics/Freespace/normal/ships/tfight_herc2_normal.png
+tfight_herc2,ship,,,surface,graphics/Freespace/surface/ships/tfight_herc2_surface.png
+vcap_sobek,ship,,,material,graphics/Freespace/material/ships/vcap_sobek_material.png
+vcap_sobek,ship,,1,normal,graphics/Freespace/normal/ships/vcap_sobek_normal.png
+vcap_sobek,ship,,,surface,graphics/Freespace/surface/ships/vcap_sobek_surface.png
