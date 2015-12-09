@@ -38,12 +38,12 @@
     -14.5
   ],
   "builtInWeapons": {
-    "WS0003": "tachyonlance",
-    "WS0004": "tachyonlance",
+    "WS0003": "fs_terran_lightbeam",
+    "WS0004": "fs_terran_lightbeam",
     "WS0005": "phasebeam",
     "WS0006": "phasebeam",
-    "WS0009": "tachyonlance",
-    "WS0010": "tachyonlance",
+    "WS0009": "fs_terran_lightbeam",
+    "WS0010": "fs_terran_lightbeam",
     "WS0017": "phasebeam",
     "WS0018": "phasebeam"
   },

@@ -11,9 +11,10 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "tachyonlance",
-                "WS0007": "tachyonlance",
-				"WS0009": "tachyonlance"
+                "WS0003": "fs_terran_lightbeam",
+                "WS0004": "fs_terran_lightbeam",
+				"WS0009": "fs_terran_lightbeam"
+				"WS0010": "fs_terran_lightbeam"
             }
         },
 		{
