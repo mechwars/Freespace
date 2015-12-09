@@ -5,6 +5,6 @@
 	"version":"0.1",
 	"description":"Requires LazyLib and ShaderLib. Contains the Freespace mod.",
 	"gameVersion":"0.7.1a",
-	"jars":[""],
+	"jars":["jars/Freespace.jar"],
 	"modPlugin":"data.scripts.FreespaceModPlugin"
 }
