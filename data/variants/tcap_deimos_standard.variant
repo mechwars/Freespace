@@ -13,7 +13,7 @@
             "weapons": {
                 "WS0003": "fs_terran_lightbeam",
                 "WS0004": "fs_terran_lightbeam",
-				"WS0009": "fs_terran_lightbeam"
+				"WS0009": "fs_terran_lightbeam",
 				"WS0010": "fs_terran_lightbeam"
             }
         },

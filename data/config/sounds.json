@@ -1,0 +1,15 @@
+{
+    # Beam Cannon Sounds
+    "bt_up_3":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_energy/bt_up_3.ogg","pitch":1.00,"volume":1.0},
+    ],
+    "bt_terslash":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_energy/bt_terslash.ogg","pitch":1.00,"volume":1.0},
+    ],
+	"bt_dwn_2":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_energy/bt_dwn_2.ogg","pitch":1.00,"volume":1.0},
+    ],
+}
