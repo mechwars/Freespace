@@ -16,7 +16,7 @@
 	"hardpointAngleOffsets":[0],
 	"fringeColor":[255,0,0,255],
 	"coreColor":[255,255,255,255],
-	"glowColor":[2500,0,0,255],
+	"glowColor":[255,0,0,255],
 	"darkCore":false,
 	"width":60.0,
 	"textureType":["graphics/fx/beam_laser_core.png","graphics/fx/beamfringe.png"],
