@@ -1,2 +1,3 @@
 name,id,tier,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,hints,number
-Terran Light Beam Cannon,fs_terran_lightbeam,2,10000,2000,2200,,,0,5,10,,,,ENERGY,,200,3,1.5,,,,,,,50000,,,,,"SYSTEM, SHOW_IN_CODEX",7668
+Terran Light Beam Cannon,fs_terran_lightbeam,2,10000,2500,1925,,100,300,5,10,,,,ENERGY,,200,3,10,1,2,,,,,50000,,,,,"SYSTEM, SHOW_IN_CODEX",7668
+Shivan Beam Cannon,fs_shivan_beam,2,10000,2500,1100,,150,400,5,10,,,,ENERGY,,200,3,25,1,4,,,,,50000,,,,,"SYSTEM, SHOW_IN_CODEX",

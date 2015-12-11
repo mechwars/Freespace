@@ -11,9 +11,9 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "tachyonlance",
-                "WS0007": "tachyonlance",
-				"WS0009": "tachyonlance"
+                "WS0003": "fs_shivan_beam",
+                "WS0007": "fs_shivan_beam",
+				"WS0009": "fs_shivan_beam"
             }
         }
     ]

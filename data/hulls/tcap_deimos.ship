@@ -56,7 +56,7 @@
     {
       "angle": 180,
       "contrailSize": 24,
-      "length": 7,
+      "length": 10,
       "location": [
         -176.5,
         -0
@@ -188,7 +188,7 @@
     },
     {
       "angle": 90,
-      "arc": 164.810715,
+      "arc": 145,
       "id": "WS0015",
       "locations": [
         62,
@@ -200,7 +200,7 @@
     },
     {
       "angle": -90,
-      "arc": 164.810715,
+      "arc": 145,
       "id": "WS0016",
       "locations": [
         62,
@@ -212,7 +212,7 @@
     },
     {
       "angle": -90,
-      "arc": 164.810715,
+      "arc": 145,
       "id": "WS0013",
       "locations": [
         1.5,
@@ -224,7 +224,7 @@
     },
     {
       "angle": 90,
-      "arc": 164.810715,
+      "arc": 145,
       "id": "WS0014",
       "locations": [
         1.5,
@@ -236,7 +236,7 @@
     },
     {
       "angle": 90,
-      "arc": 149.489761,
+      "arc": 145,
       "id": "WS0011",
       "locations": [
         -75,
@@ -248,7 +248,7 @@
     },
     {
       "angle": -90,
-      "arc": 149.489761,
+      "arc": 145,
       "id": "WS0012",
       "locations": [
         -76,
@@ -259,8 +259,8 @@
       "type": "ENERGY"
     },
     {
-      "angle": 98.130104,
-      "arc": 169.611145,
+      "angle": 100,
+      "arc": 145,
       "id": "WS0009",
       "locations": [
         -139,
@@ -271,8 +271,8 @@
       "type": "BUILT_IN"
     },
     {
-      "angle": -98.130104,
-      "arc": 169.611145,
+      "angle": -100,
+      "arc": 145,
       "id": "WS0010",
       "locations": [
         -139,
@@ -283,7 +283,7 @@
       "type": "BUILT_IN"
     },
     {
-      "angle": -136.97493,
+      "angle": -135,
       "arc": 145,
       "id": "WS0007",
       "locations": [
@@ -295,7 +295,7 @@
       "type": "ENERGY"
     },
     {
-      "angle": 136.97493,
+      "angle": 135,
       "arc": 145,
       "id": "WS0008",
       "locations": [

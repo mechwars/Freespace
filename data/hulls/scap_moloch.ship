@@ -38,9 +38,9 @@
     9.5
   ],
   "builtInWeapons": {
-    "WS0003": "tachyonlance",
-    "WS0007": "tachyonlance",
-    "WS0009": "tachyonlance"
+    "WS0003": "fs_shivan_beam",
+    "WS0007": "fs_shivan_beam",
+    "WS0009": "fs_shivan_beam"
   },
   "center": [
     49.5,
@@ -156,7 +156,7 @@
     },
     {
       "angle": 90,
-      "arc": 133.602814,
+      "arc": 130,
       "id": "WS0005",
       "locations": [
         5,
@@ -168,7 +168,7 @@
     },
     {
       "angle": -90,
-      "arc": 133.602814,
+      "arc": 130,
       "id": "WS0006",
       "locations": [
         5,

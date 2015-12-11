@@ -2,14 +2,26 @@
     # Beam Cannon Sounds
     "bt_up_3":
     [
-        {"file":"sounds/Freespace/sfx_wpn_energy/bt_up_3.ogg","pitch":1.00,"volume":1.0},
+        {"file":"sounds/Freespace/sfx_wpn_energy/BT_up_3.ogg","pitch":1.00,"volume":1.0},
     ],
     "bt_terslash":
     [
-        {"file":"sounds/Freespace/sfx_wpn_energy/bt_terslash.ogg","pitch":1.00,"volume":1.0},
+        {"file":"sounds/Freespace/sfx_wpn_energy/BT_terslash.ogg","pitch":1.00,"volume":1.0},
     ],
 	"bt_dwn_2":
     [
-        {"file":"sounds/Freespace/sfx_wpn_energy/bt_dwn_2.ogg","pitch":1.00,"volume":1.0},
+        {"file":"sounds/Freespace/sfx_wpn_energy/BT_dwn_2.ogg","pitch":1.00,"volume":1.0},
+    ],
+	"bs_up_1.5":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_energy/BS_up_1.5.ogg","pitch":1.00,"volume":1.0},
+    ],
+    "bs_sred":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_energy/BS_SRed.ogg","pitch":1.00,"volume":1.0},
+    ],
+	"bs_dwn_1":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_energy/BS_dwn_1.ogg","pitch":1.00,"volume":1.0},
     ],
 }
