@@ -136,4 +136,16 @@
     [
         {"file":"sounds/Freespace/sfx_wpn_energy/VSlash_Loop.ogg","pitch":1.00,"volume":1.0},
     ],
+	"l_subach":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_energy/L_Subach.ogg","pitch":1.00,"volume":1.0},
+    ],
+	"l_prom_s":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_energy/L_Prom_S.ogg","pitch":1.00,"volume":1.0},
+    ],
+	"m_swarm":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_missiles/m_swarm.ogg","pitch":1.00,"volume":1.0},
+    ],
 }
