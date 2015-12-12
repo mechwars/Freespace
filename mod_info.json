@@ -3,7 +3,11 @@
 	"name":"Freespace",
 	"author":"Stalker",	
 	"version":"0.1",
+<<<<<<< 56c85bc6a198f4d499d4e3832f0126a318706d6c
 	"description":"Requires LazyLib and ShaderLib. Contains the Freespace mod",
+=======
+	"description":"Requires LazyLib and ShaderLib. Contains the Freespace mod.",
+>>>>>>> Updating master
 	"gameVersion":"0.7.1a",
 	"jars":["jars/Freespace.jar"],
 	"modPlugin":"data.scripts.FreespaceModPlugin"
