@@ -45,7 +45,7 @@ public class fs_shivan_aaabeam_effect implements BeamEffectPlugin {
                     offset = new Vector2f(5f, 0f);
                     VectorUtils.rotate(offset, beam.getWeapon().getCurrAngle(), offset);
                     Vector2f.add(offset, origin2, origin2);
-                    Global.getSoundPlayer().playSound("bt_dwn_6", 1.0f, 1.0f, origin2, new Vector2f());
+                    Global.getSoundPlayer().playSound("bs_dwn_3", 1.0f, 1.0f, origin2, new Vector2f());
                 }
             }
         } else {
@@ -54,13 +54,13 @@ public class fs_shivan_aaabeam_effect implements BeamEffectPlugin {
                 firing = true;
                 if (Global.getCombatEngine().getTotalElapsedTime(false) - sinceLast > 0.3f) {
                     // Play the beam firing sound
-                    Global.getSoundPlayer().playSound("bt_antiftr", 1f, 1.5f, origin, new Vector2f());
+                    Global.getSoundPlayer().playSound("bs_antiftr", 1f, 1.5f, origin, new Vector2f());
                 }
 
                 sinceLast = Global.getCombatEngine().getTotalElapsedTime(false);
                 // Make the beam source glow during firing
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 50f, 5f, 0.2f, COLOR1);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 25f, 5f, 0.5f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 30f, 5f, 0.2f, COLOR1);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 20f, 5f, 0.5f, COLOR2);
                 Global.getCombatEngine().addHitParticle(origin, ZERO, 10f, 5f, 0.5f, COLOR3);
             }
         }
@@ -68,7 +68,7 @@ public class fs_shivan_aaabeam_effect implements BeamEffectPlugin {
 
         interval.advance(amount);
         // Make the beam source area do fun glowy things as long as the beam is firing. Grab these from the main colors.
-        Global.getCombatEngine().addHitParticle(origin, new Vector2f(), (float) Math.random() * 75f + 75f, 0.2f, 0.2f, new Color(
+        Global.getCombatEngine().addHitParticle(origin, new Vector2f(), (float) Math.random() * 15f + 15f, 0.2f, 0.2f, new Color(
                 MathUtils.getRandomNumberInRange(0, 10), MathUtils.getRandomNumberInRange(0, 50),
                 MathUtils.getRandomNumberInRange(245, 255), 255));
 

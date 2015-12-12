@@ -59,8 +59,8 @@ public class fs_terran_aaabeam_effect implements BeamEffectPlugin {
 
                 sinceLast = Global.getCombatEngine().getTotalElapsedTime(false);
                 // Make the beam source glow during firing
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 50f, 5f, 0.2f, COLOR1);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 25f, 5f, 0.5f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 30f, 5f, 0.2f, COLOR1);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 20f, 5f, 0.5f, COLOR2);
                 Global.getCombatEngine().addHitParticle(origin, ZERO, 10f, 5f, 0.5f, COLOR3);
             }
         }
@@ -68,7 +68,7 @@ public class fs_terran_aaabeam_effect implements BeamEffectPlugin {
 
         interval.advance(amount);
         // Make the beam source area do fun glowy things as long as the beam is firing. Grab these from the main colors.
-        Global.getCombatEngine().addHitParticle(origin, new Vector2f(), (float) Math.random() * 75f + 75f, 0.2f, 0.2f, new Color(
+        Global.getCombatEngine().addHitParticle(origin, new Vector2f(), (float) Math.random() * 15f + 15f, 0.2f, 0.2f, new Color(
                 MathUtils.getRandomNumberInRange(0, 10), MathUtils.getRandomNumberInRange(0, 50),
                 MathUtils.getRandomNumberInRange(245, 255), 255));
 

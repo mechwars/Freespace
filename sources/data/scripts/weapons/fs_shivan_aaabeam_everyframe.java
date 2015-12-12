@@ -40,7 +40,7 @@ public class fs_shivan_aaabeam_everyframe implements EveryFrameWeaponEffectPlugi
             } else if (weapon.getChargeLevel() < 1f && weapon.getCooldownRemaining() <= 0f) {
                 // The weapon is charging, so display the charge glow
                 // Set the RGB color + alpha value of the beam charging glow
-                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 115f + 115f * weapon.getChargeLevel(), weapon.getChargeLevel() *
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 15f + 15f * weapon.getChargeLevel(), weapon.getChargeLevel() *
                                 0.3f, 0.2f,
                         new Color(MathUtils.getRandomNumberInRange(0, 10), MathUtils.getRandomNumberInRange(0, 50),
                                 MathUtils.getRandomNumberInRange(245, 255), 255));
@@ -52,7 +52,7 @@ public class fs_shivan_aaabeam_everyframe implements EveryFrameWeaponEffectPlugi
             if (weapon.getChargeLevel() > 0f && weapon.getCooldownRemaining() <= 0f) {
                 charging = true;
                 // Change this for each beam
-                Global.getSoundPlayer().playSound("bt_up_1.5", 1f, 1f, origin, weapon.getShip().getVelocity());
+                Global.getSoundPlayer().playSound("bs_up_1", 1f, 1f, origin, weapon.getShip().getVelocity());
             }
         }
         // End Beam Weapon Charging Code

@@ -41,7 +41,7 @@ public class fs_shivan_beam_everyframe implements EveryFrameWeaponEffectPlugin {
             } else if (weapon.getChargeLevel() < 1f && weapon.getCooldownRemaining() <= 0f) {
                 // The weapon is charging, so display the charge glow
                 // Set the RGB color + alpha value of the beam charging glow
-                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 115f + 115f * weapon.getChargeLevel(), weapon.getChargeLevel() *
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 75f + 75f * weapon.getChargeLevel(), weapon.getChargeLevel() *
                                 0.3f, 0.2f,
                         new Color(MathUtils.getRandomNumberInRange(220, 255), MathUtils.getRandomNumberInRange(0, 10),
                                 MathUtils.getRandomNumberInRange(0, 10), 255));
