@@ -59,16 +59,16 @@ public class fs_shivan_aaabeam_effect implements BeamEffectPlugin {
 
                 sinceLast = Global.getCombatEngine().getTotalElapsedTime(false);
                 // Make the beam source glow during firing
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 30f, 5f, 0.2f, COLOR1);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 20f, 5f, 0.5f, COLOR2);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 10f, 5f, 0.5f, COLOR3);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 40f, 5f, 0.2f, COLOR1);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 30f, 5f, 0.5f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 20f, 5f, 0.5f, COLOR3);
             }
         }
         level = beam.getBrightness();
 
         interval.advance(amount);
         // Make the beam source area do fun glowy things as long as the beam is firing. Grab these from the main colors.
-        Global.getCombatEngine().addHitParticle(origin, new Vector2f(), (float) Math.random() * 15f + 15f, 0.2f, 0.2f, new Color(
+        Global.getCombatEngine().addHitParticle(origin, new Vector2f(), (float) Math.random() * 20f + 20f, 0.2f, 0.2f, new Color(
                 MathUtils.getRandomNumberInRange(0, 10), MathUtils.getRandomNumberInRange(0, 50),
                 MathUtils.getRandomNumberInRange(245, 255), 255));
 
