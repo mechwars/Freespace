@@ -1,0 +1,6 @@
+name,id,designation,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,hints,number
+Hercules Mk. II,tfight_herc2,Heavy Fighter,,1,750,125,750,,150,0,100,75,75,75,150,40,OMNI,,360,0.3,0.5,,,1,1,,,,,10,,3,4,,,1,1,,
+Hygeia,tnon_support,Support Craft,,5,500,125,500,,100,0,70,75,75,75,150,40,OMNI,,360,0.3,0.5,,,5,10,,,,,9,,6,8,,,5,5,CARRIER,
+Deimos,tcap_deimos,Corvette,,15,20000,8000,10000,,500,135,30,15,10,10,10,2000,NONE,,,,,,,200,400,200,100,3,,8,40000,4,12,,,25,25,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Moloch,scap_moloch,Corvette,,15,20000,8000,10000,,500,135,30,15,10,10,10,2000,NONE,,,,,,,50,100,200,100,3,,8,40000,4,12,,,25,25,,
