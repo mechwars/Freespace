@@ -40,12 +40,12 @@
   "builtInWeapons": {
     "WS0003": "fs_terran_lightbeam",
     "WS0004": "fs_terran_lightbeam",
-    "WS0005": "phasebeam",
-    "WS0006": "phasebeam",
+    "WS0005": "fs_terran_aaabeam",
+    "WS0006": "fs_terran_aaabeam",
     "WS0009": "fs_terran_lightbeam",
     "WS0010": "fs_terran_lightbeam",
-    "WS0017": "phasebeam",
-    "WS0018": "phasebeam"
+    "WS0017": "fs_terran_aaabeam",
+    "WS0018": "fs_terran_aaabeam"
   },
   "center": [
     53.5,
