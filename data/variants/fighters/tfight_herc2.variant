@@ -2,7 +2,7 @@
 	"quality":0.5,
 	"displayName":"Heavy Fighter",
 	"hullId":"tfight_herc2",
-	"variantId":"herc2_fighter",
+	"variantId":"tfight_herc2",
 	"fluxVents":0,
 	"fluxCapacitors":0,
 	"mods":[], # array of strings
@@ -12,16 +12,16 @@
 	"weaponGroups":[
 		{"mode":"LINKED",
 		 "weapons":{
-		 			"WS 001":"irpulse",
-		 			"WS 002":"irpulse",
-					"WS 003":"pulselaser",
-					"WS 004":"pulselaser",
+		 			"WS0001":"irpulse",
+		 			"WS0002":"irpulse",
+					"WS0003":"pulselaser",
+					"WS0004":"pulselaser",
 		 		   },
 		},
 		{"mode":"LINKED",
 		 "weapons":{
-		 			"WS 005":"swarmer_fighter",
-					"WS 006":"swarmer_fighter",
+		 			"WS0005":"swarmer_fighter",
+					"WS0006":"swarmer_fighter",
 		 		   },
 		},
 	],

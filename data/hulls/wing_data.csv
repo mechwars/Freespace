@@ -1,5 +1,5 @@
 id,variant,fleet pts,quality,hyperdrive,formation,num,role,refit,base value,,,,,,,,,,,,,number
-tfight_herc_wing,tfight_herc,4,0.5,,V,3,FIGHTER,10,13000,,,,,,,,,,,,,1
+tfight_herc2_wing,tfight_herc2,6,0.75,,V,3,ASSAULT,10,16000,,,,,,,,,,,,,1
 ,,,,,,,,,,,,,,,,,,,,,,2
 ,,,,,,,,,,,,,,,,,,,,,,3
 ,,,,,,,,,,,,,,,,,,,,,,4

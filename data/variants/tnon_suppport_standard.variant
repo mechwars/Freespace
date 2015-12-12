@@ -6,12 +6,5 @@
     "hullMods": [],
     "quality": 0.5,
     "variantId": "tnon_support_standard",
-    "weaponGroups": [
-        {
-
-        },
-		{
-
-        }
-    ]
+    "weaponGroups": []
 }
