@@ -19,7 +19,7 @@
 	"glowColor":[0,180,0,255],
 	"darkCore":false,
 	"width":30.0,
-	"textureType":["graphics/fx/beam_laser_core.png","graphics/fx/beamfringe.png"],
+	"textureType":["graphics/Freespace/fx/TerSlash.png","graphics/fx/beamfringe.png"],
 	"textureScrollSpeed":200.0,
 	"pixelsPerTexel":5.0,
 	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
