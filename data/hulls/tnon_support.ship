@@ -1,0 +1,92 @@
+{
+  "bounds": [
+    -25,
+    2,
+    -37,
+    12,
+    -24.5,
+    19.5,
+    23,
+    18.5,
+    23,
+    6,
+    29.5,
+    6,
+    35.5,
+    -0.5,
+    35.5,
+    0.5,
+    29.5,
+    -6,
+    23,
+    -6,
+    23,
+    -18.5,
+    -24.5,
+    -19.5,
+    -37,
+    -12,
+    -25,
+    -2
+  ],
+  "center": [
+    21.5,
+    35
+  ],
+  "collisionRadius": 40.512344,
+  "engineSlots": [
+    {
+      "angle": -180,
+      "contrailSize": 2,
+      "length": 9,
+      "location": [
+        -6.5,
+        5
+      ],
+      "style": "HIGH_TECH",
+      "width": 2
+    },
+    {
+      "angle": 180,
+      "contrailSize": 2,
+      "length": 9,
+      "location": [
+        -6.5,
+        -5
+      ],
+      "style": "HIGH_TECH",
+      "width": 2
+    }
+  ],
+  "height": 70,
+  "hullId": "tnon_support",
+  "hullName": "Hygeia",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 38.668461,
+  "spriteName": "graphics/Freespace/ships/tnon_support.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -7,
+        -0,
+        -28,
+        -10.5,
+        -28,
+        11.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 43
+}

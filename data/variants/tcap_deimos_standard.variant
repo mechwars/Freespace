@@ -1,0 +1,31 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 20,
+    "fluxVents": 100,
+    "hullId": "tcap_deimos",
+    "hullMods": [],
+    "quality": 1,
+    "variantId": "tcap_deimos_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "fs_terran_lightbeam",
+                "WS0004": "fs_terran_lightbeam",
+				"WS0009": "fs_terran_lightbeam",
+				"WS0010": "fs_terran_lightbeam"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "phasebeam",
+                "WS0006": "phasebeam",
+				"WS0017": "phasebeam",
+				"WS0018": "phasebeam"
+            }
+        }
+    ]
+}

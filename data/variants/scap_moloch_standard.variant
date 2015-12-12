@@ -1,0 +1,20 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 20,
+    "fluxVents": 100,
+    "hullId": "scap_moloch",
+    "hullMods": [],
+    "quality": 1,
+    "variantId": "scap_moloch_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "fs_shivan_beam",
+                "WS0007": "fs_shivan_beam",
+				"WS0009": "fs_shivan_beam"
+            }
+        }
+    ]
+}

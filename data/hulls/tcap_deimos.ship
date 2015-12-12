@@ -1,0 +1,311 @@
+{
+  "bounds": [
+    -178.5,
+    14.5,
+    -162,
+    44.5,
+    -78.5,
+    54,
+    -46,
+    47.5,
+    -8,
+    32,
+    52,
+    30,
+    128,
+    30.5,
+    170,
+    26.5,
+    180,
+    0,
+    180,
+    -0,
+    170,
+    -26.5,
+    128,
+    -30.5,
+    52,
+    -30,
+    -8,
+    -32,
+    -46,
+    -47.5,
+    -78.5,
+    -54,
+    -162,
+    -44.5,
+    -178.5,
+    -14.5
+  ],
+  "builtInWeapons": {
+    "WS0003": "fs_terran_lightbeam",
+    "WS0004": "fs_terran_lightbeam",
+    "WS0005": "fs_terran_aaabeam",
+    "WS0006": "fs_terran_aaabeam",
+    "WS0009": "fs_terran_lightbeam",
+    "WS0010": "fs_terran_lightbeam",
+    "WS0017": "fs_terran_aaabeam",
+    "WS0018": "fs_terran_aaabeam"
+  },
+  "center": [
+    53.5,
+    179
+  ],
+  "collisionRadius": 180.610764,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 24,
+      "length": 10,
+      "location": [
+        -176.5,
+        -0
+      ],
+      "style": "HIGH_TECH",
+      "width": 24
+    }
+  ],
+  "height": 359,
+  "hullId": "tcap_deimos",
+  "hullName": "Deimos Corvette",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    -0.5,
+    -0
+  ],
+  "shieldRadius": 177.837708,
+  "spriteName": "graphics/Freespace/ships/tcap_deimos.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0001",
+      "locations": [
+        140,
+        1.5
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0002",
+      "locations": [
+        65.5,
+        0.5
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 145,
+      "id": "WS0003",
+      "locations": [
+        170.5,
+        -17
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 145,
+      "id": "WS0004",
+      "locations": [
+        170.5,
+        17
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -180,
+      "arc": 145,
+      "id": "WS0005",
+      "locations": [
+        -177,
+        -18
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 180,
+      "arc": 145,
+      "id": "WS0006",
+      "locations": [
+        -177,
+        18
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0017",
+      "locations": [
+        120,
+        -30
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0018",
+      "locations": [
+        120,
+        30.5
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0019",
+      "locations": [
+        -108,
+        0.5
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 145,
+      "id": "WS0015",
+      "locations": [
+        62,
+        31
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 145,
+      "id": "WS0016",
+      "locations": [
+        62,
+        -30
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 145,
+      "id": "WS0013",
+      "locations": [
+        1.5,
+        -30.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 145,
+      "id": "WS0014",
+      "locations": [
+        1.5,
+        31.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 145,
+      "id": "WS0011",
+      "locations": [
+        -75,
+        53
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 145,
+      "id": "WS0012",
+      "locations": [
+        -76,
+        -50.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 100,
+      "arc": 145,
+      "id": "WS0009",
+      "locations": [
+        -139,
+        47.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -100,
+      "arc": 145,
+      "id": "WS0010",
+      "locations": [
+        -139,
+        -47
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -135,
+      "arc": 145,
+      "id": "WS0007",
+      "locations": [
+        -167,
+        -36.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 135,
+      "arc": 145,
+      "id": "WS0008",
+      "locations": [
+        -167,
+        36.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 106
+}
