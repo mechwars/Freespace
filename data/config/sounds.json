@@ -148,4 +148,12 @@
     [
         {"file":"sounds/Freespace/sfx_wpn_missiles/m_swarm.ogg","pitch":1.00,"volume":1.0},
     ],
+	"flaklaunch":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_guns/FlakLaunch.ogg","pitch":1.00,"volume":1.0},
+    ],
+	"flakboom":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_guns/boom_4.ogg","pitch":1.00,"volume":1.0},
+    ],
 }

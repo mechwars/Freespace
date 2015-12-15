@@ -29,7 +29,7 @@
 									 "particleDuration":1,
 									 "particleCount":100,
 									 "particleColor":[255,155,155,255],
-									 "sound":"explosion_flak"},
+									 "sound":"flakboom"},
 					}
 					
 }
