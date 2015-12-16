@@ -1,0 +1,27 @@
+{
+	"id":"fs_heavypulsecannon2",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"displayArcRadius":400,
+	"turretSprite":"graphics/Freespace/weapons/vasudanhugeturret_turret_base.png",
+	"turretGunSprite":"graphics/Freespace/weapons/vasudanhugeturret_turret_recoil.png",
+	"hardpointSprite":"graphics/Freespace/weapons/vasudanhugeturret_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/Freespace/weapons/vasudanhugeturret_hardpoint_recoil.png",	
+	"visualRecoil":8.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[17, -8, 17, 8],
+	"turretAngleOffsets":[0, -4],
+	"hardpointOffsets":[17, -8, 17, 8],
+	"hardpointAngleOffsets":[0, -4],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":40.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":15.0,
+					   "particleSizeMin":20.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.12,
+					   "particleCount":12,
+					   "particleColor":[100,100,255,255]},
+	"projectileSpecId":"fs_heavypulsecannon",  # projectile that will be fired
+	"fireSoundTwo":"vasudanhugeturret",	
+}

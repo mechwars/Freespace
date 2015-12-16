@@ -39,7 +39,7 @@
         -3,
         5
       ],
-      "style": "HIGH_TECH",
+      "style": "FS_TERRAN",
       "width": 3
     },
     {
@@ -50,7 +50,7 @@
         -3,
         -5
       ],
-      "style": "HIGH_TECH",
+      "style": "FS_TERRAN",
       "width": 3
     },
     {
@@ -61,7 +61,7 @@
         -18.5,
         -5
       ],
-      "style": "HIGH_TECH",
+      "style": "FS_TERRAN",
       "width": 3
     },
     {
@@ -72,7 +72,7 @@
         -18.5,
         5
       ],
-      "style": "HIGH_TECH",
+      "style": "FS_TERRAN",
       "width": 3
     }
   ],
@@ -86,7 +86,7 @@
   ],
   "shieldRadius": 20.554804,
   "spriteName": "graphics/Freespace/ships/tfight_herc2.png",
-  "style": "HIGH_TECH",
+  "style": "FS_TERRAN",
   "viewOffset": 0,
   "weaponSlots": [
     {

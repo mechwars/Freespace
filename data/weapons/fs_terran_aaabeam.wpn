@@ -2,7 +2,7 @@
 	"specClass":"beam",
 	"id":"fs_terran_aaabeam",
 	"type":"ENERGY",
-	"size":"LARGE",
+	"size":"SMALL",
 	"beamFireOnlyOnFullCharge":true,
 	"beamEffect":"data.scripts.weapons.fs_terran_aaabeam_effect",
     "everyFrameEffect":"data.scripts.weapons.fs_terran_aaabeam_everyframe",

@@ -1,5 +1,5 @@
 {
-	"id":"fs_subach",  # this id must match what's in the spreadsheet
+	"id":"fs_shivan_heavylaser",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"ENERGY",
 	"size":"SMALL",
@@ -7,7 +7,7 @@
 	"turretGlowSprite":"graphics/weapons/light_pulse_laser_turret_glow.png",
 	"hardpointSprite":"graphics/weapons/light_pulse_laser_hardpoint_base.png",
 	"hardpointGlowSprite":"graphics/weapons/light_pulse_laser_hardpoint_glow.png",
-	"glowColor":[100,100,255,255],
+	"glowColor":[255,0,0,255],
 	"turretOffsets":[10, 0],
 	"turretAngleOffsets":[0],
 	"hardpointOffsets":[15, 0],
@@ -21,9 +21,9 @@
 					   "particleSizeRange":12.0,
 					   "particleDuration":0.12,
 					   "particleCount":12,
-					   "particleColor":[100,100,255,255]},	
+					   "particleColor":[255,0,0,255]},	
 	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
 	"requiresFullCharge":false,  # for pulse weapons - whether the weapon will fire at a lower strength partial charge
-	"projectileSpecId":"fs_subach",  # projectile that will be fired
-	"fireSoundTwo":"l_subach",
+	"projectileSpecId":"fs_shivan_heavylaser",  # projectile that will be fired
+	"fireSoundTwo":"shivanheavylaser",
 }

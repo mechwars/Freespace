@@ -1,5 +1,5 @@
 {
-	"id":"fs_subach",  # this id must match what's in the spreadsheet
+	"id":"fs_mekhu",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"ENERGY",
 	"size":"SMALL",
