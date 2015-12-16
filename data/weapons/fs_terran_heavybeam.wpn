@@ -18,7 +18,7 @@
 	"coreColor":[255,255,255,255],
 	"glowColor":[0,180,0,255],
 	"darkCore":false,
-	"width":40.0,
+	"width":35.0,
 	"textureType":["graphics/Freespace/fx/BGreen.png","graphics/Freespace/fx/BGreen.png"],
 	"textureScrollSpeed":100.0,
 	"pixelsPerTexel":5.0,

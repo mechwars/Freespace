@@ -18,9 +18,9 @@
 	"coreColor":[255,255,255,255],
 	"glowColor":[255,0,0,255],
 	"darkCore":false,
-	"width":30.0,
+	"width":25.0,
 	"textureType":["graphics/Freespace/fx/ShivanBeam.png","graphics/Freespace/fx/ShivanBeam.png"],
-	"textureScrollSpeed":100.0,
+	"textureScrollSpeed":50.0,
 	"pixelsPerTexel":5.0,
 	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
 }

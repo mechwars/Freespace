@@ -18,7 +18,7 @@
 	"fringeColor":[255,255,132,255],
 	"glowColor":[239,174,74,255],
 	"darkCore":false,
-	"width":30.0,
+	"width":25.0,
 	"textureType":["graphics/Freespace/fx/VasudanBeam.png","graphics/Freespace/fx/VasudanBeam.png"],
 	"textureScrollSpeed":100.0,
 	"pixelsPerTexel":5.0,

@@ -21,7 +21,7 @@
 		"contrailCampaignColor":[150,120,100,25],
         "type":"GLOW"
     },
-	"FS_SHIVANS":{
+	"FS_SHIVAN":{
 		"engineColor":[255,125,25,255],
 		"engineCampaignColor":[200,90,70,255],
 		"contrailParticleSizeMult":2,
