@@ -59,8 +59,8 @@ public class fs_vasudan_mediumbeam_everyframe implements EveryFrameWeaponEffectP
             } else if (weapon.getChargeLevel() < 1f && weapon.getCooldownRemaining() <= 0f) {
                 // The weapon is charging, so display the charge glow
                 // Set the RGB color + alpha value of the beam charging glow
-                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 75f + 75f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.2f, COLOR1);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 65f + 65f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.3f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 50f + 50f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.2f, COLOR1);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 37f + 37f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.3f, COLOR2);
                 Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 25f + 25f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.6f, COLOR3);
             } else {
                 firing = true;

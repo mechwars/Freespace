@@ -59,8 +59,8 @@ public class fs_vasudan_mediumbeam_effect implements BeamEffectPlugin {
 
                 sinceLast = Global.getCombatEngine().getTotalElapsedTime(false);
                 // Make the beam source glow during firing
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 150f, 5f, 0.2f, COLOR1);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 125f, 5f, 0.3f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 100f, 5f, 0.2f, COLOR1);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 75f, 5f, 0.3f, COLOR2);
                 Global.getCombatEngine().addHitParticle(origin, ZERO, 50f, 10f, 0.6f, COLOR3);
             }
         }
@@ -70,12 +70,12 @@ public class fs_vasudan_mediumbeam_effect implements BeamEffectPlugin {
         // Make the beam source area do fun glowy things as long as the beam is firing. Grab these from the main colors.
         // Scale the glow down when the beam is done firing.
         if (beam.getBrightness() < level) {
-            Global.getCombatEngine().addHitParticle(origin, ZERO, 150f, 5f * level, 0.2f, COLOR1);
-            Global.getCombatEngine().addHitParticle(origin, ZERO, 125f, 5f * level, 0.3f, COLOR2);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, 100f, 5f * level, 0.2f, COLOR1);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, 75f, 5f * level, 0.3f, COLOR2);
             Global.getCombatEngine().addHitParticle(origin, ZERO, 50f, 10f * level, 0.6f, COLOR3);
         } else {
-            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 75f + 75f, 5f, 0.2f, COLOR1);
-            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 65f + 65f, 5f, 0.3f, COLOR2);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 50f + 50f, 5f, 0.2f, COLOR1);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 37f + 37f, 5f, 0.3f, COLOR2);
             Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 25f + 25f, 10f, 0.6f, COLOR3);
         }
 

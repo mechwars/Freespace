@@ -9,9 +9,9 @@
 	"hardpointSprite":"graphics/Freespace/weapons/terranhugeturret_hardpoint_base.png",
 	"hardpointGunSprite":"graphics/Freespace/weapons/terranhugeturret_hardpoint_recoil.png",	
 	"visualRecoil":8.0,  # the gun sprites are only used if this is non-0
-	"turretOffsets":[30, -5, 30, 5],
+	"turretOffsets":[27, -4, 27, 4],
 	"turretAngleOffsets":[0, 0],
-	"hardpointOffsets":[30, -5, 30, 5],
+	"hardpointOffsets":[27, -4, 27, 4],
 	"hardpointAngleOffsets":[0, 0],
 	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
 	"animationType":"GLOW_AND_FLASH",
