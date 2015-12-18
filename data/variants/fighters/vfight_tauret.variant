@@ -1,8 +1,8 @@
 {
 	"quality":0.5,
 	"displayName":"Heavy Fighter",
-	"hullId":"tfight_herc2",
-	"variantId":"tfight_herc2",
+	"hullId":"vfight_tauret",
+	"variantId":"vfight_tauret",
 	"fluxVents":0,
 	"fluxCapacitors":0,
 	"mods":[], # array of strings

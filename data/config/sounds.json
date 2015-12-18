@@ -23,15 +23,15 @@
 		"FS_TERRAN_FIGHTER":{"sounds":[6], "pitch":1, "volume":0.4},
 		"FS_TERRAN_BOMBER":{"sounds":[7], "pitch":1, "volume":0.5},
 		"FS_TERRAN_CRUISER":{"sounds":[8], "pitch":1, "volume":0.7},
-		"FS_TERRAN_CAPITAL"{"sounds":[0,5], "pitch":1, "volume":1}, # last index is for SuperCaps
+		"FS_TERRAN_CAPITAL":{"sounds":[0,5], "pitch":1, "volume":1}, # last index is for SuperCaps
 		"FS_VASUDAN_FIGHTER":{"sounds":[9], "pitch":1, "volume":0.4},
 		"FS_VASUDAN_BOMBER":{"sounds":[10], "pitch":1, "volume":0.5},
 		"FS_VASUDAN_CRUISER":{"sounds":[11], "pitch":1, "volume":0.7},
-		"FS_VASUDAN_CAPITAL"{"sounds":[1,3], "pitch":1, "volume":1}, # last index is for SuperCaps
+		"FS_VASUDAN_CAPITAL":{"sounds":[1,3], "pitch":1, "volume":1}, # last index is for SuperCaps
 		"FS_SHIVAN_FIGHTER":{"sounds":[12], "pitch":1, "volume":0.4},
 		"FS_SHIVAN_BOMBER":{"sounds":[13], "pitch":1, "volume":0.5},
 		"FS_SHIVAN_CRUISER":{"sounds":[14], "pitch":1, "volume":0.7},
-		"FS_SHIVAN_CAPITAL"{"sounds":[2,15,16,4], "pitch":1, "volume":1}, # last index is for SuperCaps
+		"FS_SHIVAN_CAPITAL":{"sounds":[2,15,16,4], "pitch":1, "volume":1}, # last index is for SuperCaps
 	},
 	
 	# Beam Cannon Sounds
