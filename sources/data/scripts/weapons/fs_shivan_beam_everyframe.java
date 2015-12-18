@@ -13,6 +13,11 @@ import java.awt.*;
 
 public class fs_shivan_beam_everyframe implements EveryFrameWeaponEffectPlugin {
 
+    // These are the beam source colors while the beam is firing. Get these from weapons.tbl
+    private static final Color COLOR1 = new Color(255, 0, 0);
+    private static final Color COLOR2 = new Color(200, 0, 0);
+    private static final Color COLOR3 = new Color(255, 255, 255);
+
     // Variables for beam charging and animation
     private static final Vector2f ZERO = new Vector2f();
     private boolean charging = false;
@@ -41,10 +46,9 @@ public class fs_shivan_beam_everyframe implements EveryFrameWeaponEffectPlugin {
             } else if (weapon.getChargeLevel() < 1f && weapon.getCooldownRemaining() <= 0f) {
                 // The weapon is charging, so display the charge glow
                 // Set the RGB color + alpha value of the beam charging glow
-                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 75f + 75f * weapon.getChargeLevel(), weapon.getChargeLevel() *
-                                0.3f, 0.2f,
-                        new Color(MathUtils.getRandomNumberInRange(220, 255), MathUtils.getRandomNumberInRange(0, 10),
-                                MathUtils.getRandomNumberInRange(0, 10), 255));
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 50f + 50f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.2f, COLOR1);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 37f + 37f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.3f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 25f + 25f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.6f, COLOR3);
             } else {
                 firing = true;
             }

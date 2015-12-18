@@ -1,0 +1,266 @@
+{
+	"id":"pirates",
+	"color":[255,0,0,255],
+	
+	"baseUIColor":[200,0,0,255],
+	"darkUIColor":[85,0,0,175],
+	"gridUIColor":[255,0,0,75],
+	
+	"entityNamePrefix":"pirate",
+	"displayName":"pirates",
+	"displayNameWithArticle":"the pirates",
+	"displayNameIsOrAre":"are",
+	"logo":"graphics/factions/pirates.png",
+	"crest":"graphics/factions/crest_pirates.png",
+	"shipNamePrefix":"", 
+	"shipNameSources":{
+		"PIRATES":1,
+		"AZTEC":1,
+		"BEASTS":1,
+		"NORSE":1,
+		"CELTIC":1,
+		"SPACE":1,
+	},
+	"names":{
+		"fringe":1,
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+	},
+	"illegalCommodities":[
+	],
+	"music":{
+		"theme":"music_pirates_market_neutral",
+		"market_neutral":"music_pirates_market_neutral",
+		"market_hostile":"music_pirates_market_hostile",
+		"market_friendly":"music_pirates_market_friendly",
+		"encounter_neutral":"music_pirates_encounter_neutral",
+		"encounter_hostile":"music_pirates_encounter_hostile",
+		"encounter_friendly":"music_pirates_encounter_friendly",
+	},
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_mercenary01.png",
+			"graphics/portraits/portrait_mercenary03.png",
+			"graphics/portraits/portrait_mercenary04.png",
+			"graphics/portraits/portrait12.png",
+			"graphics/portraits/portrait15.png",
+			"graphics/portraits/portrait17.png",
+			"graphics/portraits/portrait18.png",
+			"graphics/portraits/portrait20.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_mercenary02.png",
+			"graphics/portraits/portrait_mercenary05.png",
+			"graphics/portraits/portrait14.png",
+			"graphics/portraits/portrait16.png",
+			"graphics/portraits/portrait21.png",
+			"graphics/portraits/portrait22.png",
+			"graphics/portraits/portrait24.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Captain"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Captain"},
+			"fleetCommander":{"name":"Warlord"},
+			"baseCommander":{"name":"Captain"},
+		},
+	},
+	"custom":{
+		"engageWhenEvenStrength":true,
+		"exemptFromFoodShortages":true,
+		"willTradeWhenHostile":true,
+		"noPatrols":true,
+		"ignoreTradeWithEnemiesForReputation":true,
+		"postsNoBounties":true,
+		"offerMissionsWhenHostile":true,
+		"allowsTransponderOffTrade":true,
+	},
+	"shipRoles":{
+		"interceptor":{
+			"talon_wing":10,
+			"thunder_wing":10,
+			"fallback":{"fighter":1},
+		},
+		"fighter":{
+			"broadsword_wing":10,
+			"gladius_wing":10,
+			"fallback":{"interceptor":1},
+		},
+		"bomber":{
+			"piranha_wing":10,
+			"dagger_wing":10,
+		},	
+		"fastAttack":{
+			"fallback":{"combatSmall":1},
+		},
+		"escortSmall":{
+			"fallback":{"combatSmall":1},
+		},
+		"escortMedium":{
+			"fallback":{"combatMedium":1},
+		},
+		"combatSmall":{
+			"lasher_d_CS":10,
+			"cerberus_d_pirates_Standard":10,
+			"hound_d_pirates_Standard":10,
+			"wolf_d_pirates_Attack":10,
+			"kite_Raider":5,
+			"fallback":{"escortSmall":1},
+		},
+		"combatMedium":{
+			"enforcer_d_pirates_Strike":10,
+			"hammerhead_d_CS":10,
+			"sunder_d_Assault":10,
+			"buffalo2_FS":10,
+			"fallback":{"combatSmall":2},
+		},
+		"combatLarge":{
+			"falcon_d_CS":20,
+			"eagle_d_Assault":10,
+			"dominator_d_Assault":10,
+			"fallback":{"combatMedium":2},
+		},
+		"combatCapital":{
+			"fallback":{"combatLarge":2},
+		},
+		
+		# hybrid ships with good combat and cargo capacity
+		"combatFreighterSmall":{
+			"cerberus_d_pirates_Standard":10,
+			"hound_d_pirates_Standard":10,
+			"fallback":{"freighterSmall":1},
+		},
+		"combatFreighterMedium":{
+			"mule_d_pirates_Standard":10,
+			"fallback":{"combatFreighterSmall":2},
+		},
+		"combatFreighterLarge":{
+			"fallback":{"combatFreighterMedium":2},
+		},
+		"civilianRandom":{
+			"hermes_d_Standard":10,
+			"mercury_d_Standard":10,
+			"mercury_Standard":8,
+			"mercury_FS":3,
+			"hermes_Standard":8,
+			"hermes_FS":4,
+			"fallback":{"freighterSmall":1},
+		},
+	
+	
+		# carriers
+		"carrierSmall":{
+			"condor_FS":5,
+			"condor_Support":5,
+			"fallback":{"carrierMedium":0.5},
+		},
+		"carrierMedium":{
+			"fallback":{"carrierSmall":2},
+		},
+		"carrierLarge":{
+			"fallback":{"carrierMedium":2},
+		},
+	
+		# freighters and such
+		"freighterSmall":{
+			"hermes_d_Standard":10,
+			"hermes_Standard":8,
+			"hermes_FS":4,
+			"fallback":{"freighterMedium":0.5},
+		},
+		"freighterMedium":{
+			"tarsus_d_Standard":5,
+			"buffalo_d_Standard":10,
+			"tarsus_Standard":5,
+			"buffalo_pirates_Standard":10,
+			"fallback":{"freighterSmall":2},
+		},
+		"freighterLarge":{
+			"fallback":{"freighterMedium":2},
+		},
+		
+		"tankerSmall":{
+			"dram_Light":10,
+			"fallback":{"tankerMedium":0.5},
+		},
+		"tankerMedium":{
+			"phaeton_Standard":10,
+			"fallback":{"tankerSmall":2},
+		},
+		"tankerLarge":{
+			"fallback":{"tankerMedium":2},
+		},
+		
+		"personnelSmall":{
+			"mercury_d_Standard":10,
+			"mercury_Standard":10,
+			"mudskipper_Standard":5,
+			"fallback":{"personnelMedium":0.5},
+		},
+		"personnelMedium":{
+			"fallback":{"personnelSmall":2},
+		},
+		"personnelLarge":{
+			"fallback":{"personnelMedium":2},
+		},
+	},
+	"fleetTypeNames":{
+		"trade":"Convoy",
+		"tradeLiner":"Convoy",
+		"mercScout":"Scout",
+		"mercBountyHunter":"Raiders",
+		"mercPrivateer":"Raiders",
+		"mercPatrol":"Attack Fleet",
+		"mercArmada":"Armada",
+	},
+	"traits":{
+		"admiral":{
+			
+		},
+		"captain":{
+			"timid":1,
+			"cautious":5,
+			"steady":10,
+			"aggressive":20,
+		},
+	},
+	"doctrine":{
+		# ship distribution
+		"interceptors":4,
+		"fighters":6,
+		"bombers":8,
+		"small":10,
+		"fast":6,
+		"medium":8,
+		"large":4,
+		"capital":1,
+		
+		# as fraction of combat ships of same size
+		## less bothered with escorts.
+		"escortSmallFraction":0.8,
+		"escortMediumFraction":0.8,
+		
+		# everyone must fight!
+		"combatFreighterProbability":0.75,
+		
+		"minPointsForCombatCapital":24,
+		"minPointsForLargeCarrier":30,
+		
+		"smallCarrierProbability":0.30,
+		"mediumCarrierProbability":0.30,
+		"largeCarrierProbability":0.30,
+		
+		# officers
+		## tend to be poor, but plentiful + but high variance because very independent.
+		"officersPerPoint":0.35,
+		"officerLevelPerPoint":0.15,
+		"officerLevelBase":3,
+		"officerLevelVariance":0.5,
+	},
+}
+

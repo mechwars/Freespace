@@ -1,0 +1,653 @@
+id,type,text1,text2,text3,notes
+lightmg,WEAPON,"A traditional low-cost, readily available rapid fire weapon which has been used effectively versus missiles and fighters at short range for hundreds of years, it is nearly powerless versus properly armored targets.
+
+Due to ease of manufacture, hundreds of models exist in the Sector. Any weapon that fires inert projectiles with calibers under 12.7x50mm at over 1200 rounds per minute can be called a light machine gun, but beyond that the mechanisms that drive the actions of these weapons vary considerably. 
+
+Popular with small civilian craft due to low ammunition cost. Projectiles jacketed with metals that have a high melting point allow greater muzzle velocity and deliver a surprisingly large amount of kinetic energy at close-range.",Point Defense,,
+lightdualmg,WEAPON,"An upgraded, twin barrel version of the light machine gun. Not effective against armored targets, but has excelled versus missiles and fighters at short range for hundreds of years.
+
+This is a dual mount of the same rapid fire, inert, low-caliber projectile weapon known to every pilot in the Sector. Typical ammunition loads include a tracer round at every fourth full metal jacket 12.7x50mm SD round. An excellent point defense mount, which excels in both a missile interdiction and anti-fighter role. 
+
+The large amount of kinetic energy delivered to shield systems of enemy craft at close-range typically causes emitter overload, a tactical option often overlooked by inexperienced captains.",Point Defense,,
+lightmortar,WEAPON,"An antiquated weapon that fires anti-armor rounds at a low rate of fire, muzzle velocity, and range. Its low flux buildup is a lone saving grace.
+
+The weapon blueprints for Light Mortars actually did not intend them for spacecraft at all, but an ingenious modification to the breech loading mechanism permits installation and use outside an atmospheric environment. In combat, there is little the Light Mortar can do versus moving or shielded targets due to its terrible rotation and rate of fire. Nonetheless, it is often used for training novice gunnery officers in the finer points of space ballistic tactics and nomenclature.
+
+Commonly fitted on private yachts and solo interplanetary vehicles because it is so light and cheap.",Assault,,
+vulcan,WEAPON,"A rapid fire weapon that is especially devastating to missiles and fighters at point-blank range. Accuracy degrades sharply during prolonged bursts. 
+
+An advanced timing mechanism is at the heart of this multi-barrel weapon platform, typically manufactured by licensed Hegemony Autofactories only. Rounds typically use depleted uranium tips and are non explosive. Typical caliber is 20mm. Multiple barrels enable an extremely high rate of fire, which comes at a cost in flux.",Point Defense,,
+lightac,WEAPON,"A small caliber autocannon with a good range for a light weapon. Designed to weaken enemy shields, especially effective on weaker generators.
+
+Usually manufactured with 25mm bores perfect for medium- to long-range. The weapon fires high velocity kinetic rounds designed to punch through enemy shields with ease. Features an autoloader and is liquid cooled. 
+
+Excellent fire support weapon for smaller craft.  Poor turn rate makes it a bad choice vs fighters and missiles.",Close Support,,
+lightdualac,WEAPON,"A double barreled version of the Light AC. An excellent weapon for close-range support, and quite effective at bringing shields down.
+
+Usually manufactured with 25mm bores perfect for medium to long-range. An ingenious ejection system prevents ejection ports from being jammed with twice the spent shell casings. Like the single barrel version, the weapon fires high velocity rounds designed to punch through enemy shields. Autoloader and a liquid cooling systems are identical to the single barrel version. ",Close Support,,
+lightag,WEAPON,"A small caliber cannon designed for close-range fights, excellent versus armor and with a superb fire rate.
+
+Small caliber cannon designed to fire high-explosive 25x163mm rounds. Design of the coolant systems and autoloader emphasizes safety and prevention of cook-off potentially caused by  high flux levels. Favored by destroyer captains that have something to prove.",Assault,,
+fragbomb,WEAPON,"Releases a cluster of free-floating bomblets that retain the momentum of the launching craft. The bomblets are equipped with a proximity fuse.
+
+A Frag Bomb projector fires Mark VI fragmentation bomblets from three tubes. Unguided and without a propulsion system, the bomblets instead rely on a friend-or-foe targeting system. Their vast numbers allow them to cover a wide swath of space, effectively creating a Point Defence barrier in that location, albeit for a limited time. When the proximity fuse is triggered by an enemy craft, the bomblet will detonate, achieving similar effects to those of flak weapons.",Point Defense,,
+clusterbomb,WEAPON,"Releases a cluster of free-floating, high-explosive bomblets. More effective versus unshielded and slow-moving targets.
+
+A Cluster Bomb projector is equipped with three tubes designed to fire dozens of Mark II Explosively Formed Penetrator bomblets. The bomblets are unguided and have no propulsion system, relying on the initial momentum of the strike craft. They are equipped with a friend-or-foe targeting scanner, and will only detonate when impacting an appropriate target. The shaped charge explosive is very effective versus unshielded targets. The sheer number of bomblets that can be deployed by this weapon system is staggering, and as such it makes the Cluster Bomb a useful area denial weapon.",Strike,,
+bomb,WEAPON,"A tried and tested weapon system, the bomb bay holds multiple warheads that rely on the velocity of the launching craft to reach their target.
+
+Each bomb bay is equipped with several non guided high-explosive Composition X bombs that can be released one at a time. The bombs have no propulsion system and are dependent on the velocity of the launching craft to carry them to target (i.e., dive bombing).  Atmospheric shielding also gives the bombs a high Time To Live in an hostile Point-Defense environment.",Strike,,
+lightneedler,WEAPON,"Fires bursts of small flechettes at a high rate. The volume of fire can quickly overwhelm shield projectors, but is ineffective against armor.
+
+A Light Needler is a 15mm flechette gun, designed to fire caseless ammunition. Features an impressive feed system which can deliver hundreds of ""needles"" per second. There is no need for an ejector system, and the resulting space availability is instead used to provide additional cooling units, vastly improving the rate of fire. 
+
+Naval doctrine states that the weapon is to be used on enemy shields at long-range, but in a pinch, gunnery officers will train their Needlers on enemy fighter wings and long-range missiles threats.",Close Support,,
+railgun,WEAPON,"A high-tech improvement of the AC, the railgun fires accurate, medium range slugs. Like the AC, it excels at overwhelming enemy shield generators.
+
+A small version of the Gauss Cannon, the railgun relies on a strong magnetic field to fire shells at high velocities. The accuracy and range are excellent, and the turret is able to rotate quickly while not firing. Typical railguns are rated at around one giga-ampere. 
+
+The railgun is preferred to the autocannon by gunnery officers that have ample flux capacity.",Close Support,,
+shredder,WEAPON,"Shreds enemy missiles and fighters with an overwhelming hail of medium velocity fragmentation rounds. Flux-efficient, but less effective vs armor and shields.",Assault,,
+flak,WEAPON,"A defensive weapon system that fires shrapnel-filled shells equipped with a proximity fuse for maximum effect against fighters and missiles.
+
+The rising prominence of small, cheap fighter craft, especially in the strike role has led to a wider deployment of this weapons system. A 40 mm barrel fires rounds fitted with a proximity fuse. The resulting explosion sends a hail of flechettes in a wide area, with a kill radius of 45 meters. Newer models feature a fire control system hardwired into a Mark VI Predictor.",Point Defense,,
+heavymg,WEAPON,"A larger cousin of the ubiquitous rapid-fire machine gun line of weapons, the Heavy MG is effective against both small and medium-sized targets.
+
+A workhorse of patrol craft across the sector, this weapons system features a reliable, centuries-old blowback firing mechanism. Safety features include a positive cook-off safety for open bolt clearing and double ram prevention. The weapon is typically mounted on a relatively heavy base to help absorb recoil during prolonged bursts of fire.  Calibers vary, but are usually in the 17-20mm range. 
+
+The heavier projectiles do not shatter upon impact like lighter ammunition and present a credible threat to frigate-class vessels. Extremely accurate, though slower-firing than a vulcan cannon.  Excels in a point-defense role.",Point Defense,,
+arbalest,WEAPON,"An antiquated weapon design with high per-shot damage for its size. The kinetic shells are especially effective versus enemy shields.
+
+Heavier patrol craft at the time of the Collapse were mostly fitted with the Arbalest Mk I weapons platform. This is probably the reason the Arbalest is claimed to be the most scavenged ship weapon system in the Sector post-Collapse. The primitive cooling system and a lack of an autoejector hamper rate of fire and reliability. 
+
+The only redeeming feature is the ubiquity of the 42mm arbalest round, which is effective at bringing down enemy shields. The effectiveness of the shells is poorly understood, and is suspected to lie in the electromagnetic properties of the shell jackets.",Close Support,,
+dualflak,WEAPON,"An upgraded, viciously effective dual mount of the Flak Cannon. Nicknamed ""The Widowmaker"" for its ability to tear apart incoming fighters.
+
+Just like the standard flak cannon, this weapon devastates smaller fighter and missile targets, firing two 40mm proximity fuse fitted rounds. Shaped dispersal ensures dual detonation and a higher kill radius of up to 60 meters. Fighter craft are rarely launched against ships that are fitted with this weapon system, out of fear of what it can do. Excellent rate of fire and turret turn rate.",Point Defense,,
+chaingun,WEAPON,"The GA-X Industries Mk. II chaingun excels at close-range fighting, where accuracy takes a second place to overall damage and rate of fire.
+
+A melee captain's favorite, the Assault Chaingun delivers 25mm high-explosive shaped charge rounds on target at nearly 400 shells per minute. Features electrically driven feed and ejector systems and an advanced nano cooling unit built right into the barrel. 
+
+The only drawback is a heavier turret profile which, coupled with the lack of the accompanying governor blueprint, is typically mounted on incompatible rotators giving rise to unexpectedly low turret rotation speeds.",Assault,,
+heavymauler,WEAPON,"An advanced weapon system designed to punch through armor plating at long-range. Has a low rate of fire and high per-shot damage.
+
+A brutal weapon, the heavy mauler is designed to engage targets at medium to long-range. At its core, the weapon is a 140mm autocannon with a nano-cooling system and an external ejection port. However, unlike normal autocannons, maulers are distinguished by barrel modifications which give their shells special properties. In the case of the Heavy Mauler, the modification is an antimatter charger.
+
+When leaving the firing chamber, each shell ogive is charged with a field of anti-protons which hovers 10-20 nanometers in front of the shell, stabilized by a baryon coating. On impact with a target, this anti-proton ""sheath"" loses structural integrity and the resulting reaction does further damage. Given the fact that 140mm shells already deliver an impressive amount of destructive force to the target, the combined reaction makes the Heavy Mauler particularly effective versus armored targets.",Close Support,,
+heavyac,WEAPON,"A triple-barreled cannon that fires a burst of standardized shells at medium range. Due to the inert shell, it is most effective versus enemy shields.
+
+Medium caliber, triple-barreled autocannon, typically deployed with 30mm ammunition. Electrically primed firing fuses ensure precise fire counts. A great fire support weapon, it is typically fitted on destroyer and cruiser class ships. A battery of heavy autocannons with a proper firing solution may pose a serious threat to capital ships. 
+
+Heavier weight and necessity to accommodate the complex autoloader and cooling systems result in a very poor turn rate.",Close Support,,
+hveldriver,WEAPON,"A specialized weapon designed to overload and disable enemy systems from afar. The high-velocity duranium slug is also effective against shields.
+
+The hypervelocity driver uses a 2-stage process to accelerate a 55mm duranium slug with a magnetized iron-cobalt core to a very high velocity.  A chemical charge accelerates the slug first, and then the magnetic coils take over, accelerating the slug further and stabilizing its trajectory.  The slug is highly charged by the time it reaches the target, generating a significant amount of electromagnetic interference on the ship it impacts.",Close Support,,
+heavyneedler,WEAPON,"A dual-mount of the Light Needler with a heavier base, this advanced weapon system is capable of overwhelming shield projectors very quickly.
+
+The Heavy Needler is an advanced weapon that fires 15mm flechette rounds. An improvement upon the Light Needler, it features better feed and cooling systems, which enable even greater fire rates. Projectiles are identical to the light version, 15mm caseless ammunition tungsten-jacketed flechettes.",Close Support,,
+gauss,WEAPON,"A long-range weapon designed to overload the target's shields. The heavy kinetic slug it fires is also effective against all but the heaviest armor.
+
+Uses magnetic coils to accelerate a 300mm caseless depleted infernium slug to relativistic speeds. Usually rated at the hundreds of giga-amperes range, rarely exceeding one tera-ampere. Unlike most ballistic weapons, has a very high flux load when fired. Turrets mounted with this system have an extremely poor turn rate. 
+
+Very effective weapon whose usefulness is limited by the low reactor power of ships that typically have large ballistic slots. ",Close Support,,
+hephag,WEAPON,"A medium range gun designed to punch through heavy armor. The raw damage output also enables it to overwhelm weaker shield emitters.
+
+A truly devastating weapon platform, named for the archaic god of volcanoes. A typical turret mount features two 120mm L/89 barrels that take turns firing armor destroying rounds at 240 rounds a minute. An electro-magnetic ejector, powered feed system and nanocoolants allow the weapon to fire for extended time periods. The shaped charge shells have low muzzle velocity and great armor penetrating power. ",Assault,,
+mark9,WEAPON,"An imposing medium range autocannon, most effective versus shields. Also obliterates unarmored hulls with a large volume of heavy caliber projectiles.
+
+It is known that early epoch spaceships lacked contemporary armor protection. A weapon with a name like the Mark IX Autocannon was probably a refinement of the earliest schools of weapons engineering in the Domain. Two 120mm barrels, combined with a unique double-loader system form the simple core of the weapon.
+
+The first Mark IX blueprint was recovered from the techmines on Exar Secundus, and the weapon was hastily declared obsolete. The blueprint was auctioned off to a small mercenary organization known as the Free Star Combine and forgotten. 
+
+Cycles later, the Free Star Combine finally built a prototype and begun weapon trials. The weapon was deemed too huge, difficult to mount in all but the largest craft, mediocre at best versus armored targets, and its range was anything but extraordinary. Nonetheless, the Mark IX stubbornly refused to be explained away by the theorists, as its raw damage output is impressive. These naysayers were quieted even further when secondary trials showed how utterly devastating the Mark IX is to shield generators.
+
+The results of these trials did not remain secret for long, and the availability of the now common blueprints meant that the Mark IX was quickly manufactured to meet the demand in the Sector.
+
+",Close Support,,
+mjolnir,WEAPON,"A medium range cannon that delivers superior damage over time and also has a significant EMP payload.
+
+A very advanced design, the Mjolnir is technically a magneto-gravitic shell projector, not a standard cannon. The micro capacitors within each shell are able to deliver enough energy to create a localized singularity with a Schwarzschild radius of 1.8 millimeters. The built-in gravitic lens devastates all nearby matter, and creates the dreaded electromagnetic pulse (EMP) effect, disabling the target's weapons and systems. ",Assault,,
+multineedler,WEAPON,"Fires multitudes of needles in a tight arc, creating a withering hail of projectiles that rip apart anything in their path. 
+
+The Storm Needler is a flechette weapon, which fires caseless 15mm ammunition. Having reached the practical limits of medium sized cooling systems, the designers of caseless weapons blazed a path into the large weapon category with the Storm Needler's advanced nano coolant recyclers, per-barrel magnetized rifling and automated operation. An AI core-controlled autoloader unpacks and loads just the right amounts of ammunition from the magazines, allowing for almost nonstop operation.
+
+The good range and speed of projectiles put a great strain on enemy shields, and can also be used effectively versus point defense threats.",Assault,,
+hellbore,WEAPON,"Huge cannon, which fires slow moving plasma-charged projectiles. Rounds are highly effective versus armor, and obliterate what is left underneath.
+
+A feared weapon platform, rarely deployed due to the complexity involved in manufacturing a built-up barrel that can safely fire 510mm high-explosive shaped charge rounds. When such a shell impacts a target, the Neumann effect causes the warhead to propel a jet of molten metal into the target's armor, vaporizing a small area, causing hull breaches, depressurization and extensive internal damage from the spall.",Assault,,
+reaper,WEAPON,"A single, devastatingly powerful unguided torpedo with a powerful on-board engine.
+
+The quintessential strike weapon, a single Reaper torpedo is a 550mm, self-propelled, armored, unguided delivery system for an enriched AM-catalyzed nuclear warhead. The science behind the surprisingly compact detonator is poorly understood though widely speculated to be based on physics classified as secret by Domain authority. What is known is that three or four of these are enough to destroy the largest capital ship.",Strike,,
+atropos,WEAPON,"A rack of advanced guided torpedoes. The payload is smaller than usual to make room for the guidance package.
+
+The Atropos torpedo is a 480mm guided torpedo with an extended range. Each rack mount has two torpedoes, which can be fired separately, allowing strike captains maximum flexibility. The AM-catalyzed nuclear warhead typically used in torpedo warheads is missing here as baryonic interference from the detonator would foul the guidance systems. It is replaced by a smaller, yet still potent chemical charge.",Strike,,
+atropos_single,WEAPON,"A single advanced, guided torpedo. The payload is smaller than usual to make room for the guidance package.
+
+The Atropos torpedo is a 480mm guided torpedo with an extended range. The AM-catalyzed nuclear warhead typically used in torpedo warheads is missing here as baryonic interference from the detonator would foul the guidance systems. It is replaced by a smaller, yet still potent chemical charge.
+
+This mount features only a single torpedo.",Strike,,
+swarmer,WEAPON,"A short range guided missile launcher. The missiles are designed to intercept and destroy enemy fighters, and do little damage to heavier ships.
+
+Launches bursts of two 127mm missiles at a time. A simple infrared system provides excellent tracking, while chemical microthrusters provide maneuverability. Tried and true targeting algorithms make the missiles lead the target - they rarely miss and are very hard to avoid.",Anti-Fighter,,
+annihilator,WEAPON,"Fires a spread of unguided rockets that cover a wide area. Typically used as a support weapon.
+
+Medium to long-range rockets launched from a small pod that fires five missiles per salvo in a narrow spread to improve the odds of hitting. The typical caliber is 100mm. Rockets are unguided, with the extra space being taken up by a larger warhead and improved propulsion systems, as well as thicker armor. 
+
+Performs well against larger targets due to the higher chance of striking with multiple rockets. A rocket attack is often used as a screen before a torpedo strike to reduce the effectiveness of Point Defense systems. Takes several seconds to reload after a salvo.",Assault,,
+annihilatorpod,WEAPON,"Fires a swarm of unguided rockets that cover a wide area. External pod mounting allows more ammunition to be stored.
+
+Features the same medium to long-range rockets found on smaller launchers. Rockets are unguided, with the extra space being taken up by a larger warhead and improved propulsion systems, as well as thicker armor. 
+
+Performs well against larger targets due to the higher chance of striking with multiple rockets. A rocket attack is often used as a screen before a torpedo strike to reduce the effectiveness of Point Defense systems. ",Assault,,
+heatseeker,WEAPON,"Homes in on the target's engines and disables them with a powerful EMP burst. A combat-rated autoloader system ensures usefulness in protracted engagements.
+
+The Salamander missile is a specialized weapon with two design considerations. The first is an extremely advanced tracking/targeting mechanism which enables it to home in on enemy engines, whilst avoiding all other potential impact points and Point Defense threats. 
+
+The second is a special warhead design which, instead of attempting to destroy the target with kinetic or explosive force, generates targeted electromagnetic fields with magnitudes exceeding 3 gigatesla. When such a field is created in the proximity of unshielded engines and hull components, it will quickly knock out all their electronics, rendering them useless until repaired.",Close Support,,
+salamanderpod,WEAPON,"Homes in on the target's engines and disables them with a powerful EMP burst. A combat-rated autoloader system ensures usefulness in protracted engagements.
+
+An externally mounted pod replaces the more common missile racks and allows two missiles to be fired almost simultaneously. An autoloader extracts, arms and primes the next salvo of two missiles after a short wait.
+
+The Salamander missile is a specialized weapon with two design considerations. The first is an extremely advanced tracking/targeting mechanism which enables it to home in on enemy engines, whilst avoiding all other potential impact points and Point Defense threats. 
+
+The second is a special warhead design which, instead of attempting to destroy the target with kinetic or explosive force, generates targeted electromagnetic fields with magnitudes exceeding 3 gigatesla. When such a field is created in the proximity of unshielded engines and hull components, it will quickly knock out all their electronics, rendering them useless until repaired.",Close Support,,
+harpoon,WEAPON,"Medium range, high payload guided missile rack. Devastating against ships with downed shields.
+
+Three-racked medium range missiles. Calibers vary, but are usually around 120mm. An excellent propulsion system delivers a large warhead to the target at sublight speeds. Sacrificing maneuverability for speed and warhead size, the medium range missile is one of the highest yield non strike weapons employed in the sector. One hit is almost fatal to frigate-sized ships.
+
+This weapon system features a firing rack that houses multiple missiles.",Close Support,,
+harpoonpod,WEAPON,"Medium range, high payload guided missile pod. Devastating against ships with downed shields.
+
+An externally mounted pod replaces the more common missile racks and allows two missiles to be fired almost simultaneously. An autoloader extracts, arms and primes the next salvo of two missiles after a short wait.
+
+These medium range missiles are identical to the ones fired from single or triple racks, and are a great way to finish off a ship with downed shields. Calibers vary, but are usually around 120mm. An excellent propulsion system delivers a large warhead to the target at sublight speeds. Sacrificing maneuverability for speed and warhead size, the medium range missile is one of the highest yield non strike weapons employed in the sector. One hit is almost fatal to frigate-sized ships.
+",Close Support,,
+harpoon_single,WEAPON,"Medium range, high payload guided missile. Devastating against ships with downed shields.
+
+Calibers vary, but are usually around 120mm. An excellent propulsion system delivers a large warhead to the target at sublight speeds. Sacrificing maneuverability for speed and warhead size, the medium range missile is one of the highest yield non strike weapons employed in the sector. One hit is almost fatal to frigate-sized ships.
+
+This mount can only carry a single missile.",Close Support,,
+sabot,WEAPON,"The Sabot-class missile is highly effective against shields, with a second-stage high-velocity kinetic penetrator straining both the target's shield systems and the reflexes of the shield operators.
+
+Sabot-class class missiles are short-range, two-stage KE weapons. A guided missile first stage projects a secondary assembly to within striking distance of a shielded target. The on-board targeting computer then ignites the propellant for a KE penetrator. This 'sabot', as it is commonly called, is typically a narrow, laterally stabilized projectile manufactured from an ultra dense material such as depleted uranium.
+
+Excellent at bringing down enemy shields and causing an overload. Standard ship armor is spaced and thus the sabot is deals more manageable damage if shields are lowered in time to receive the impact on armor.
+
+This weapon system features a firing rack that houses multiple missiles.",Close Support,,
+sabotpod,WEAPON,"The Sabot-class missile is highly effective against shields, with a second-stage high-velocity kinetic penetrator straining both the target's shield systems and the relfexes of the shield operators.
+
+The pod replaces the more common missile racks and allows two missiles to be fired almost simultaneously. An autoloader extracts, arms and primes the next salvo of two missiles after a short delay.
+
+Sabot-class class missiles are short-range, two-stage KE weapons. A guided missile first stage projects a secondary assembly to within striking distance of a shielded target. The on-board targeting computer then ignites the propellant for a KE penetrator. This 'sabot', as it is commonly called, is typically a narrow, laterally stabilized projectile manufactured from an ultra dense material such as depleted uranium.
+
+Excellent at bringing down enemy shields and causing an overload. Standard ship armor is spaced and thus the sabot is deals more manageable damage if shields are lowered in time to receive the impact on armor.
+
+This weapon system features a firing rack that houses multiple missiles.",Close Support,,
+sabot_single,WEAPON,"The Sabot-class missile is highly effective against shields, with a second-stage high-velocity kinetic penetrator straining both the target's shield systems and the relfexes of the shield operators.
+
+Sabot-class class missiles are short-range, two-stage KE weapons. A guided missile first stage projects a secondary assembly to within striking distance of a shielded target. The on-board targeting computer then ignites the propellant for a KE penetrator. This 'sabot', as it is commonly called, is typically a narrow, laterally stabilized projectile manufactured from an ultra dense material such as depleted uranium.
+
+Excellent at bringing down enemy shields and causing an overload. Standard ship armor is spaced and thus the sabot is deals more manageable damage if shields are lowered in time to receive the impact on armor.
+
+This mount only carries a single missile.",Close Support,,
+pilum,WEAPON,"A guided missile suited for long-range support by non-combat ships. A combat-rated autoloader system ensures continued usefulness in protracted engagements.
+
+A technologically mature weapon system, the Pilum-class missile is the obvious choice for long-range strikes by cautious captains. The guidance system on this weapon make it dangerous versus only the heavier of enemy craft. Unfortunately, those craft also tend to have the best point defense system, which somewhat limits the Pilum's otherwise considerable punch.",Fire Support,,
+phasecl,WEAPON,"Deploys low-velocity proximity charges with an impressive blast radius. Especially devastating against fighters, but also effective vs armored targets.",Assault,,
+typhoon,WEAPON,This simple but powerful weapon system consists of a launch tube and a magazine usually carrying five standard Reaper-class torpedoes.,Strike,,
+cyclone,WEAPON,"Dual launcher system capable of launching a torpedo barrage. Devastating to slow ships that can't move out of the way in time.
+
+A very large weapon system, the Cyclone-class launcher is listed as having two 550mm torpedo tubes with an internal magazine that carries twenty Reaper torpedoes. The fire control system is linked, and fires two Reaper-class torpedoes in tandem. An automatic loader prepares the next salvo from the magazine in seconds. ",Strike,,
+hurricane,WEAPON,"Launches a missile that splits into multiple warheads on closing with the target. Especially devastating to enemies with their shields down.
+
+Hurricane Turrets are a late-Expansion Epoch weapon designed to launch a self-propelled, multiple missile delivery projector pod. A targeting computer programs the pod with a hit solution as it is released. The swarm of small missiles released is dangerous to all ship types. missiles feature a shaped charge warhead making them more effective versus enemy armor. These characteristics make the Hurricane a kill-weapon, usually only fired by gunnery officers with orders to destroy their crippled targets utterly.",Fire Support,,
+mininglaser,WEAPON,"Cheap utility laser that is hardwired for missile and fighter defense. This configuration gives it longer range than most point defense weapons.
+
+A Mk I mining laser features a fluoride gas gain medium refitted for combat. The micro-asteroid targeting package has been repurposed to track and target incoming missiles. Mostly useless for anything larger or armored targets. Has a built-in 670nm tracker beam.",Point Defense,,
+pdlaser,WEAPON,"Small laser designed for missile and fighter defense, with great tracking capability, decent damage and very short range.
+
+Simplicity, reliability and low flux costs characterize this ubiquitous point-defense weapon. The laser is built around a carbon dioxide gain medium combined with a short range marker beam. A simple one stage lens assembly with no moving parts permits the weapon to operate for extended periods without maintenance procedures. Low damage has prompted the creation of the ""Pray [it's a] Dud"" Laser backronym.",Point Defense,,
+taclaser,WEAPON,"Standard combat laser, useful at medium to long-ranges. A very flexible weapon, especially effective against unshielded targets.
+
+The workhorse of beam weapons in the sector, the tactical laser is often used because of its low maintenance cost, versatility and ease of construction. Features a standard carbon dioxide gain medium, a 670nm marker beam and three lens assemblies. A good support weapon for small craft, especially in prolonged engagements.",Close Support,,
+ioncannon,WEAPON,"A medium range energy cannon that delivers an electro-magnetic pulse (EMP) and can quickly disable enemy systems/engines.
+
+The Ion Cannon's nonstandard gain medium projects highly-ionized baryonic matter in a coherent bolt. When the ion bolt impacts the target it creates a localized magnetic field which plays havoc with all manner of electronics, including sensors, fuel igniters, targeting modules, computers, etc. The weapon also fuses certain circuits, and can mildly strain shield generators, thus it does negligible amount of permanent damage. Rarely the only weapon type fitted on ships.",Special,,
+irpulse,WEAPON,"A flux-efficient infrared pulse laser which fires bolts of energy at medium range. An excellent weapon for prolonged bursts of fire.
+
+This weapon is identical to most combat lasers with a carbon dioxide gain medium fired at eleven microns. A q-switched power supply permits ablation of the target which makes the weapon much more effective than a conventional beam, at the cost of much higher power consumption.  Most often used on fighters or frigates, where the low range of the weapon can be offset by the maneuverability of the fitted craft.",Assault,,
+lrpdlaser,WEAPON,"Medium range energy weapon, effective at neutralizing missile and fighter threats. Can be fired for extended periods, but the damage is subpar.
+
+An additional lens assembly eliminates self-diffusing particles from a standard carbon dioxide beam fired at a wavelength of eleven microns. The extended range permits the otherwise low wattage to have a greater impact on the targets. Particularly useful in destroying missiles headed for a shielded target - a standard point defense laser generally doesn't have the range to extend far enough past the defensive shields of the ship it is supposed to protect.",Point Defense,,
+pdburst,WEAPON,"Features a built-in capacitor that lets the weapon fire several bursts in quick succession if allowed to fully recharge. Excellent vs missiles and fighters.
+
+The burst point defence laser is a further refinement of standard PD beam weapons. The q-switched gain medium is pulse pumped, ensuring that the power delivered to the titanium-doped sapphire gain medium peaks at a predefined interval. The result is a weapon that fires once every couple of seconds and is extremely effective for its small size. Power consumption is small enough that even some fighter craft power cores can handle the firing load.",Point Defense,,
+amblaster,WEAPON,"A slow-firing, extremely high damage energy gun meant to pose a threat to the largest ships in the Sector. Can only be used at close-range.
+
+The antimatter blaster is one of the most complicated weapons in existence. Antimatter is stored in shells that have their own powered magnetic field projector built into the casing. In order to generate a field strong enough to contain and eject the 10 micrograms of antimatter (typically positrons) the built-in capacitor must spend a considerable time charging. Once a magnetic field of at least 25 kilonewtons is generated, the shell is breached and the antimatter is ejected toward the target, its main propellant being the Lorentz force around the muzzle of the blaster. 
+
+Extremely effective versus all targets.",Strike,,
+phasebeam,WEAPON,"A short-range, short-duration beam that causes heavy damage with a significant EMP component. Capable against armor, as far as beam weapons go.
+
+This weapon is, at base, simply a laser beam with a tripled sapphire gain medium to ensure the highest possible weaponized wavelengths. The photons are fired through a hyperdimensional filter which outputs an energy beam that exists partially in p-space. The physics of the filter are not properly understood, and in laboratory settings the p-space components of a beam exceeding 6.66 giga-watts will sometimes flicker - as if blocked. Weapon mounts never use such high energy levels to ensure reliability.",Assault,,
+gravitonbeam,WEAPON,"An atypical beam weapon which is highly effective versus shields. Excellent range, but the damage per second ratio vs armor is sub-par.
+
+The core of this weapon is a brane rift generator which follows a 500nm tracer beam. The beam prepares local space-time for the rift in addition to providing targeting feedback to manual operators. 
+
+Once the rift is open, higher-brane gravitons enter local space time en masse and persist up to 100 centiseconds. Damage to the target is caused by the resulting intense gravimetric shear. These higher-brane gravitons easily overwhelm standard energy fields.",Close Support,,
+pulselaser,WEAPON,"Fires repeating bolts of energy, favoring the medium-range combatant that has the flux reserves and wants to put constant pressure on the enemy.
+
+Designed to fire pulses rather than a constant beam, with a total power output exceeding constant-operation designs. As with continuous lasers, a carbon dioxide gain medium is fed energy and produces photons at eleven microns wavelengths. 
+
+Greater energy delivered in shorter time means the target is ablated, a process that causes the vaporization of small surfaces sections. The resulting shock waves do additional structural damage. ",Assault,,
+miningblaster,WEAPON,"A miner's best friend, this weapon can deliver pulverizing bolts of energy at extreme costs in flux to targets at medium range.",Assault,,
+heavyblaster,WEAPON,"Fires bolts of energy at enemy targets. With high damage and flux costs, the heavy blaster is one of the most damaging weapons for its size.
+
+A reliable energy weapon, the Heavy Blaster uses improved high-energy gas ammunition which, when activated by a strong electric current, is converted into plasma. A guiding electron is fired along the axis of traversal beforehand, ensuring that the uncontained plasma bolt will travel in the intended direction, thanks to physics that are no longer well understood.",Assault,,
+heavyburst,WEAPON,"A heavier version of the PD Burst Laser, this weapon features a longer range and a greater number of built-in capacitors for higher up-front damage.
+
+An often underestimated weapon, the heavy burst laser is actually one of the best performing beam weapons available in the Sector. A cursory examination of the gain medium and lens housing is often enough to assure even the most skeptical inspector that the technology housed within is some of the best the Domain had to offer. 
+
+The physics that create the burst effect are not understood by the highest echelons of the Hegemony Science Council or even the Tri-Tachyon Science Corps. It is theorized that a q-switched multi-phased beam could be shot through a quantum filter which would ensure entanglement and create a burst effect. This may be an explanation for the tripled lens housing, originally thought to be a failsafe system. But these are just theories. 
+
+In combat, the Heavy Burst Laser is favored by those that want be assured that their point defense perimeter is state-of-the-art.",Point Defense,,
+plasma,WEAPON,"Usually found mounted on large capital ships. Produces a ruinous amount of damage that cannot be withstood by ships' defenses for long.
+
+A Plasma Cannon is a large, arcane weapon which is difficult to manufacture and maintain. Those captains who can afford to do so are rewarded with one of the most devastating weapons platforms employed in the Sector.
+
+Plasma Cannons are related to Graviton and Phase Beams, in that they use the properties of brane physics to deliver their payloads. A plasma cannon shell is a microfusion bomb which uses gravitic and baryonic lens to focus its energy inward. The resulting explosion creates plasma which is contained by a temporary mini-universe anomaly, while magnetic drivers mounted on the forward pylons accelerate it toward the target. The containment field lasts only a couple of seconds, which is usually enough for the anomaly to reach a target. If the convex hull of the field is not breached by ordinary matter/energy delivering least 9 kN, the higher brane will absorb the destructive plasma, and it will vanish from our dimension forever. ",Assault,,
+hil,WEAPON,"An extremely long-range, high damage energy beam cannon, often mounted on support cruisers with great effect.
+
+The High Intensity Laser is a powerhouse weapon that has an energy rating well beyond the giga-watt range. To produce such power for an extended period of time, the design relies on a built-in fusion power core. This core still requires an external actuator, a role filled by a ship's reactor when firing commences. 
+
+Three meticulously calibrated lens assemblies guide photons within the ignition unit, requiring seconds to build up the energy necessary to maintain a coherent beam. The gain medium is a two-staged gas-solid which is q-switched and provides a potent particle stream that can obliterate unsuspecting targets in seconds.
+
+The extreme range at which targets can be tracked and destroyed makes the HIL excel in safely providing close support to friendly ships that are engaged in a melee. It is a favored weapon of captains that can manage the flux cost associated with operating it.",Close Support,,
+autopulse,WEAPON,"Numerous built-in capacitors are at the core of this extremely efficient, yet potent energy weapon.
+",Assault,,
+guardian,WEAPON,"A collection of smaller lasers mounted together on a rotating pod, with a built-in capacitor allowing extremely high burst damage vs fighters and missiles.
+
+The Guardian is a military grade PD system that is usually only deployed on capital ships due to its high production and flux costs. Can detect and destroy incoming strike weapons and enemy fighters that have penetrated the capital ship's defensive escort screen. 
+
+A combination of an autonomous AI core for targeting and five separate carbon dioxide lasers make this weapon exceptionally effective in point defense. A dedicated rotator power supply makes target tracking almost instantaneous. The prohibitive energy requirement usually means that the weapon is only activated for seconds at a time, but that is usually enough to deal with any PD threat.",Point Defense,,
+tpc,WEAPON,"A bulky energy weapon from the early epoch, the TPC is built directly into the Onslaught's hull and provides overwhelming frontal firepower.
+
+Designed before modular energy weapons were universally trusted by Domain naval architects, this weapon was coded into the Onslaught's blueprint because no other hull of the time was large enough or had reactors capable of generating the requisite power.
+
+Even though it's outperformed by some of the later epoch modular designs, the Thermal Pulse Cannon remains an integral part of the Onslaught's arsenal.",Assault,,
+tachyonlance,WEAPON,"A burst operated beam that delivers a devastating amount of damage with a cascading EMP component.
+
+A weapon so rare and powerful that it has achieved mythical status in the Sector, the Tachyon Lance uses core technology based on the principles of an experimental FTL communication system prototype, but with a twist. Instead of using the hyperdimensional properties of the tachyon particle for communication, n-brane manipulation and anti-plasma generators create a charged tachyon stream that travels in hyperspace. Minimum energy requirements are set at 35 terawatts. This amount of power can only be generated for a few seconds by the largest power capacitors, which are housed within the weapon system. 
+
+Unlike the beams fired from normal beam weapons, the tachyon stream is not lensed or altered in any way - in fact once the initial tachyon marker is actuated the reaction takes on a life of its own, rapidly consuming the power stored in the capacitors and unleashing destruction. When normal space is exposed to such high levels of anti-plasma, a combined electro-magnetic, gravitic and thermal cavitation effect shreds anything that stands in its way, while also severely damaging nearby electronics equipment.",Fire Support,,
+onslaught,SHIP,"A venerable design, the Onslaught-class battleships were first created to serve the Domain of Man eons ago, before the development of advanced strike weapons, fighter craft, modern energy weapons, and shield systems. 
+
+When first launched from orbital dock, they must have surely dwarfed any other ship in existence and intimidated entire systems. Some even say that they were built to combat non-humans in a long forgotten war, in which the Domain was triumphant. Much later, Domain engineers made modifications to the blueprints to include a shield system, upgrade the FTL drives and reduce the necessary crew complement. Even with other battleship blueprints available to the Sector, the Onslaught remains the easiest to manufacture due to the brutal simplicity of its systems. 
+
+A ship designed without shields in mind, built to be able to withstand a heavy barrage of enemy fire and strike back while protecting its crew is much loved by its officers and men. And strike back it can. The Onslaught's unmatched ballistic potential can devastate entire fleets in minutes, its only drawback a logistical dependency on ammunition. 
+
+Building an Onslaught-class hull and preparing it for combat is thought to be economically impossible for all but the Hegemony. The Onslaught-class proudly serves as the backbone of the Hegemony Defense Fleet.",,,
+astral,SHIP,"A technologically advanced capital ship designed primarily as a carrier, the Astral-class is able to project vast amounts of firepower through its numerous fighter craft squadrons.
+
+The Astral-class ships are thought to have been the epitome of carrier design in the Domain during the years prior to the Collapse. Nearly all systems that can be automated are, with each handled by sophisticated (but not too sophisticated) AI cores installed throughout the ship. Defensive weapon systems are typically, but not always, point defense turrets and long-range missiles. 
+
+The true power of an Astral lies in its fighter craft, which give the carrier unprecedented flexibility in the battle space. Nearly any enemy ship type that appears on the captain's scopes can quickly be dispatched, given just a launch order of a wing of nimble interceptors, strike bombers or fighters. Automated facilities ensure that a squadron coming back from a mission can quickly be repaired and rearmed behind the safety of the powerful X-35 shield emitter. The Astral-class is very vulnerable should the X-35 come down. This is why when not protected by its fighter wings it never travels alone, but instead is at the head of space-borne carrier fleets. These task forces are a rarity, as the power they hold is usually required to subjugate entire planets or blockade enormous areas of space.
+
+The Astral is perhaps the most technologically advanced capital ship that can be seen in the Sector today. Few serve with the Hegemony due to the high technological requirements that it imposes on orbital docks. Senior Naval Corporate Officers of the Tri-Tachyon Corporation or extremely wealthy private admirals sometimes make an Astral their flagship.",,,
+atlas,SHIP,"The Atlas-class ships are large space-borne cargo platforms with FTL drive and a few defensive systems. Hundreds of containers can be latched on to the hull and carried with ease by this behemoth. 
+
+Typically used to efficiently resupply entire outposts, the Atlas is ill suited to the small and fast trade runs that are the mainstay of commerce in the sector. Their slow speed and large size always tempt uninvited guests, ranging from curious gawkers come to see the hulking colossus, to scavenging pirates aiming to disable a container's magneto-gravitic fastener, to Cult madmen bent on destroying it all. Nonetheless, the Hegemony makes wide use of them, especially to offload biomass from farming worlds on a seasonal basis. For the purpose, the Hegemony assembles large Atlas convoys; these are protected by military cruisers that ensure that the lifeline of Hegemony citizens is kept safe.
+
+The captaincy of an Atlas is a rare punishment for the able, an uneven mixture of soul-numbing boredom and abject terror, being the results of normal trade runs and pirate attacks, respectively.",,,
+conquest,SHIP,"The Conquest-class battlecruiser is the embodiment of concentrated firepower. Developed in the period just preceding the popularization of fighter craft, the class emphasizes firepower and speed over armor protection.
+
+Space Naval tacticians of the day were confident that new weapons systems would always outperform armor and shields and thus were the key to winning an engagement. So why not build a ship for speed and power? Give it the armor protection of a cruiser, but arm it with the best weapons available to any ship, and have it remain faster than any of those lumbering behemoths of the line. The Conquest is a good example of these concepts put into a hull. Many other advanced technologies were incorporated into the design, including weapon mounts designed for a circling engagement. This maneuver requires greater navigational skill while serving to provide more tactical options to the commanding officers. 
+
+Fortune favors the bold, the ancients said. This class of ships does indeed favor the bold captain, willing to risk everything for the thrill of victory.",,,
+paragon,SHIP,"The pinnacle of the Domain's battleship designs, though perhaps less the result of military necessity and more of the ambitions of certain senior strategic staff of the Domain Navy with considerable backing from the Tri-Tachyon corporation, among other major contractors.
+
+No ship can outlast or outgun the Paragon-class, a true Leviathan of a bygone epoch.",,,
+odyssey,SHIP,"The asymmetric, spheroid design belies the power of this battlecruiser. The base hull presents a tactical setup that favors energy weapons and mobility. Carrier capabilities further augment its tactical options. ",,,
+dominator,SHIP,"Ponderous and menacing, the Dominator-class is one of the most widespread system defense cruisers in Hegemony space. 
+
+While not the most technologically advanced hull, it relies on a plethora of ballistic hardpoints to accomplish its mission, which is more often than not defending orbital installations and vital points of intra-system trade routes. A poor shield emitter which is difficult to manage and thus, rarely engaged, gives way to an almost impregnable interlocking armor belt system making the Dominator safe from most weapons. Even strike craft cannot overcome the hail of projectiles that can be launched to intercept their payloads. This hull proves that tried and true military engineering is difficult to overcome by new ideas and technologies, especially when in the hands of tough, determined crews and experienced officers.
+
+Dependable, durable, and a constant presence in home space around civilized worlds and outposts, the Dominator is perhaps most hated and feared by pirates and law-breaking corporate agents. ",,,
+aurora,SHIP,"The Aurora-class cruiser is a technological marvel, rarely seen. Among the fastest and most maneuverable cruisers in the Sector, it is also one of the safest due to its wide shield coverage. 
+
+One can only wonder what the Domain Navy could accomplish with a fleet of these sleek, asymmetric, and eminently effective vessels. The shields are backed up by hyper-advanced flux dissipation system, installed throughout the hull, which gives the Aurora a very deep flux pool. This makes maintaining crew morale an easy task for captains. 
+
+In engagements, the Aurora's large energy turrets annihilate targets at extreme ranges with impunity, while missile launcher hardpoints deal with what is left. Most blueprints required to manufacture an Aurora-class ships are closely guarded corporate secrets, but a few have also seen service in the Hegemony Defense Force and rarely, in the hands of enterprising mercenary captains.
+
+Few ships can outperform the Aurora ton for ton. Its only weakness is its prohibitive cost.",,,
+apogee,SHIP,"The Apogee-class vessels are an effective mix of advanced scientific and military technologies, perfect for long-range exploration of hostile space. 
+
+The class features an asymmetric design with a large forward section, usually outfitted with long-range tech scanners. Apogee captains are used to operating alone and tend to be an independent, self-reliant lot. 
+
+The ship can hold its own in one-on-one engagements by smart use of its powerful shield emitter and strong engines. However, its armor rating makes it seem somewhat fragile on paper, and thus it is rarely part of big fleet actions.
+
+The high construction costs typically mean that only affluent tech mining consortiums can afford an Apogee-class vessel that is fully outfitted for an aggressive exploratory role.",,,
+venture,SHIP,"Tough, dependable and not overly expensive, Venture-class cruisers are usually constructed by private corporations for escort duty or by small non-aligned worlds for system defense.
+
+The Venture-class ships are perhaps the most widely used civilian cruisers in the Sector. The blueprints for the Venture are widely available and can often be secured without too much trouble. 
+
+When used by small corporations, the ship is usually the pride of the fleet and is used to underpin vital operations. Due to its ubiquity, the vessel also serves with quite a few pirate outfits, where it sometimes fills the role of command ship.","Tough and dependable, the Venture is usually fitted with a good missile complement but lacks the sustained damage output needed to do well in prolonged engagements. A flight deck allows it to contribute to the battle while staying outside the main fight - a particularly good thing because the civilian-grade power generators make the shields easy to overwhelm.",,
+eagle,SHIP,"Eagle-class cruisers are often found at the core of military fleets headed for battle. It is not hard to see why: A strong overall profile, with a robust engine, the Eagle's deadly weapons package is a threat to all enemies.
+
+The Eagle can deliver a strong tactical punch to enemy formations. Its numerous turret and hardpoint emplacements make it very dangerous to smaller foes. Decent armor and a strong shield emitter let it hold space while outnumbered, or even when faced with the rare larger ship. 
+
+These strengths are somewhat countered by strike craft - an Eagle captain must always watch their scopes for an approaching strike squadron, since their ship will be easily crippled by multiple hits from modern strike weapons. 
+
+The Eagle is further made popular by the Persean League as it is the League Navy's de-facto standard cruiser and most of their junior officers serve a tour of duty aboard Eagle cruisers.
+
+The embodiment of the sleek and powerful space cruiser from the time of the Domain, the Eagle-class ships are a beautiful reminder of the technological and aesthetic achievements of humanity's past. ","Agile for a cruiser, the Eagle is difficult to flank and has impressive and focused frontal firepower.",,
+falcon,SHIP,"Often called the Eagle cruiser's little brother, the Falcon-class cruiser sacrifices armor for speed, neatly filling the light cruiser role in military fleets throughout the Sector. 
+
+The ""light"" designation does not indicate a significant reduction in firepower, however, making the Falcon a valuable tactical asset to any fleet. The ship is easily able to fill a wide variety of roles, from close support to assault, given the proper configuration. 
+
+The Falcon's top notch engines give it the ability to quickly disengage from battle should its defenses be pressed to a critical point.
+
+Swift and elegant, Falcon-class cruisers are often found as lead elements in larger fleet formations, or deployed to reinforce anti-pirate convoys.","This light cruiser features mobility that puts smaller ships to shame, but its firepower is somewhat lacking. However, the Falcon can still face down smaller ships due to its cruiser-grade power generators and armor plating.",,
+medusa,SHIP,"A fearsome ship whose top tier engines provide great speed and maneuverability for a destroyer. Multiple energy weapon slots allow for a plethora of tactical possibilities. Its best-in-class performance is matched by a demanding logistical profile that has led some fleet commanders to eschew its use in favor of other ships that can be deployed more frequently and cheaply.
+
+The Medusa is one of the most respected destroyers in the sector due to its association with Black Ops and elite pirates. The few that have been aboard a Medusa can attest to its extreme level of technological sophistication. Medusa-class blueprints are few in number and are some of the rarest and most closely guarded data in the Sector.
+
+Deemed too expensive to mass produce by most corporations and governments, it is rarely employed by the lawful authorities as a Black Ops cruiser. On the rarest occasion, a Medusa-class hull may fall into the hands of pirates. The usual results are a drastic reduction in system small to medium shipping, which puts a strain on most planetary and outpost economies.
+
+Sector naval tacticians have few answers for the threat that the Medusa presents.",,,
+mule,SHIP,"The Mule-class is a tough nut to crack, which makes its designation as a combat freighter apt. Pirates will often bypass even a lone Mule and go off in search of easier prey.
+
+Often its captains casually ferry cargo to and fro between the star systems of the Sector alone and comfortable in the knowledge that they could afford the best protection a freighter captain can hope to get, short of an escort, of course.",,,
+buffalo2,SHIP,"A derived class, based on the Buffalo freighter. The modifications include the addition of military grade power generators, heavier armor, and maneuvering thrusters as well as the removal of the Mk. I shield emitter and the majority of the cargo holds.
+
+The Sector is violent and unpredictable, and conflicts often flare up over the smallest resource or perceived slight. In such situations military-grade ships are sometimes not available quickly enough. Thus, resourceful engineers turn to hull modifications in order to be able to meet the demand for war materiel.
+
+The base hull of this destroyer is a standard Buffalo-class freighter, however due to the scope of the hull conversion, the Buffalo Mk. II is considered a separate class. The result is a fighting ship which can hold its own and fight back hard, especially if properly screened from strikes and heavier hulls. The unorthodox weapons configuration often leads to unique fleet formations, and hull modifications often mean that no two Buffalo Mk. IIs are quite the same.
+
+The tactics employed by a Buffalo Mk. II captain will vary as much as his hull configuration, but rarely involve standing toe-to-toe with anything heavier than a frigate due to the lack of a shield generator and energy weapon emplacements. The combat plans usually involve a one hit wonder stratagem that never works on the same enemy twice, which is perfectly fine with the crew of the Buffalo Mk. II.",,,
+valkyrie,SHIP,"The Valkyrie-class ship a standard destroyer-sized troop transport with enough room to carry two companies of marines. Tactically it is weak for its size, only able to defend itself at short ranges from missiles and fighters.
+
+As an atmosphere-capable combat dropship with ground support weapon mounts designed to operate during re-entry, the Valkyrie is now often used to deploy heavy infantry support for tech raids on decivilized worlds. 
+
+The ability to deliver large amounts of troops directly to ground targets while providing fire support prompted Hegemony bureaucrats to designate the hull as ""restricted"" for sale to third parties. Naturally, news of the restriction made it to the general public cycles before it came into effect, launching ill-fated speculation in the future prices of this class. Thus, overproduction and the hull's limited options made the speculator's activities bets largely moot, the only net result is that now, due to oversupply, it is just as easy to obtain a Valkyrie ship as before news of the Hegemony ban ever became public.",,,
+tarsus,SHIP,"Tarsus-class ships are well known as perhaps the most well put together and durable freighters in the Sector. 
+
+The secret to their reliability is that they were intended by Domain designers to be hazard duty ships, presumably built to be able to supply front line fleets in titanic conflicts which engulfed the stars of the Domain of Man.
+
+Unmatched among non-combat ships in their bulkhead structural density and armor rating, Tarsus-class ships are entrusted with important hauls and usually travel in convoys, which is a further buttress to the safety they afford to their crew and cargo.
+
+Minimal weapon mounts permit the ship to mount a nominal PD weapons package. Rarely, Tarsus-class ships are outfitted with combat oriented hull or armor boosting modifications, which make them more difficult to maintain. Rarer still are the Condor-class conversion, which completely disassemble the Tarsus right cargo pylon to create a completely new class of ship and present a tactical surprise to the unwary.",,,
+gemini,SHIP,"A common freighter, found in convoys or alone, used to haul all manner of goods across the Sector. Has a small flight deck.
+
+The design of the Gemini-class freighter is highly modular, enabling the ship to serve in a variety of roles in and out of combat. The entire cargo container is designed around a quick release mechanism which enables the main hull of the ship to quickly call to port, detach its full cargo section, and swap it for another Gemini-type container in the span of minutes. In addition, multiple medium weapon mounts make the Gemini a viable long-range fire support platform. The flight deck is tiny, and was original envisioned for mining drone repair or hazardous mining operations. Modern use in the Sector extends flight deck facilities to all fighter types.
+
+While impressive in a blueprint, the lack of empty, compatible Gemini-type containers in the Sector makes the actual usefulness of the quick-release mechanism negligible. The modularity, a great boon in times past is also more prone to wear and tear, and is thus more expensive to maintain - most working examples of the mechanisms have been welded solid. Nonetheless, a decent overall profile, the flight deck, a flexible power core and good shields make the Gemini a good choice for cargo hauling, if the cost can be weathered.",,,
+buffalo,SHIP,"The go-to choice for medium cargo hauling in the Sector, the Buffalo-class freighter exemplifies the ""Load-n-Pray"" principle prevalent in Sector shipping.
+
+Sporting just a single small weapon emplacement, the hull of the ship is no more than a large engine with a tiny crew quarters section and cargo grapplers. A captain taking this ship out without a convoy rarely gets to make the same mistake twice. Incapable of anything resembling a combat maneuver, the lateral thrusters on Buffalo-class ships are designed to merely enable it to dock when (and if) it reaches its destination.
+
+The ship engines are the greatest contributor to hull cost, which, while low, is still within the norms for a medium freighter. The greatest contributing factor to its ubiquity is the fact that the blueprint for this ship is usually hardcoded into every orbital shipyard's blueprint database.",,,
+enforcer,SHIP,"The Enforcer-class ships commonly serve in system or convoy defense roles. The design features good armor and multiple ballistic hardpoints, while shield performance is somewhat underwhelming. 
+
+The blueprints of the ship call for many components similar to the ones found in the design of Onslaught-class battleships, suggesting that the designs were created during a similar epoch of the Domain. The Enforcer-class features similar no-nonsense weapon system design choices, tough bulkheads, and is well regarded by its crews.
+
+Tough to beat in a destroyer to destroyer fight, the Enforcer rarely takes part in larger battles due to the common view that its low speed makes it a liability. Nonetheless, Hegemony order of battle doctrines mandate an attached Enforcer squadron as a screen for Onslaught-class battleships. The logistical ease with which shared components can be used by both ship types is exactly the type of detail that excites Hegemony Logisticarum bureaucrats.",,,
+condor,SHIP,"All Condor-class light carriers started their service lives as Tarsus-class freighters. The conversion process is an involved and complex affair and requires proper space dock facilities.
+
+Some in the sector argue even the Domain, with all their technological know-how, relied on conversions of this type to make more efficient use of a merchant fleet during times of escalated hostilities. Others point out that it is unclear how ubiquitous this approach was - there could have been fleets of Condors roaming Domain space, but there is scarce hard evidence one way or the other. Such details were all lost in the Collapse.
+
+Nowadays the Condor-class sees heavy service in the Sector as the conversion is, for many, the easiest way to procure carrier capability for their organization. Even with limited flight deck space, the Condor gets the job done, relying on its tough armor, excellent bulkhead strength, and a respectable(for a light carrier) weapons package.",,,
+sunder,SHIP,A technologically advanced yet fragile destroyer from the Expansion Epoch designed to provide additional firepower in fleet actions rather than serve on independent patrols. It has powerful shield emitters and energy weapons but is vulnerable to strike craft.,,,
+hammerhead,SHIP,"A Core Epoch midline destroyer, respected for its staying power in battle as well as its ballistic capabilities.",,,
+phaeton,SHIP,"A medium tanker with enough fuel capacity to support a larger fleet. Tanker duty is often considered punitive - there's little opportunity for distinction, and less chance of survival should direct contact with the enemy occur.",,,
+crig,SHIP,"Originally designed to assemble large ships and installations in orbit, the construction rig's repair gantry is often used in the field as a means of performing priority repairs. The rig itself has no cargo or fuel capacity and requires a lot of supplies to maintain.",,,
+prometheus,SHIP,"A tanker of vast capacity used to shift strategic amounts of fuel between worlds. Unlike its smaller cousins, the Prometheus features a reasonable defensive arsenal to protect its valuable and volatile cargo.",,,
+monitor,SHIP,"An oddity among ships, the Monitor is the result of the line of thought that “sometimes the best defense is indeed the best defense”. It features turret mounts angled to provide wide interception arcs and a unique “flux shunt” modification to its integrated power systems specially constructed to relieve flux generated by shields. Indeed, the Monitor makes up for a lack of maneuverability and concentrated firepower with the ability to withstand prolonged bombardment from enemy ordinance unseen in hulls of similar tonnage.
+
+Though its experimental nature is perhaps a sign of the innovation that eras of turmoil seem to inspire, whether the Monitor’s radical defensive focus is a boon or pitfall remains an issue of some contention. Several dramatic failures in convoy protection patrols were explained by Ko Combine public relations representatives to be the fault of improper tactics employed by convoy commanders. Ko Combine maintains  that when positioned correctly in a combat situation and supported by strike-craft - as the anvil and hammer, respectively - simulations demonstrate that the Monitor significantly enhances convoy survivability against the average pirate attack. Prominent critics remain.",,,
+cerberus,SHIP,"The Cerberus is prized for providing a cost-effective balance between cargo capacity and enough combat power for its size to discourage casual piracy with the happy result of lowered insurance rates compared to standard Domain-era civilian grade freighters. The Cerberus is now widely considered to be a wise platform of operation for independent traders in the Sector. 
+
+In times past, before the fall of the gate system when Domain authority reigned, combat-enabled freighters like the Cerberus found only niche use on the edges of the rare warzone or in especially uncivilized hinterlands of the galaxy where Domain Armada patrols were stretched thinly. The crew combat training, weapon maintenance, and mass/thrust ratio loss caused by heavier armour were viewed as causing unnecessary cost overhead. But this is a new age filled with both danger and profitable opportunities; The abilities of the Cerberus have given the hull a new life in the trade lanes.",,,
+heron,SHIP,"The Heron provides the strategic and tactical mobility of a cruiser with potential firepower limited only by available strike-craft. It is the perfect accompaniment to the quick-moving and hard-hitting fleet of an admiral who knows when to take the initiative, hit quickly, and withdraw while enemy forces are still responding to the threat.
+
+Historically the Heron represented a movement in Domain Armada strategy from a heavy capital ship doctrine based on overwhelming firepower toward a focus on strike craft and support cruisers that enable sufficient firepower to be quickly focused on weak points, a strategic shift that would reverse itself as a natural reaction against tradition from each successive generation of Armada officers. This process was occurring once more in the years immediately preceding the fall of the gate system and, in something of a coup for the so-called “Cruiser School”, the forward-thinking Altair Exotech won the Heron design contract over the traditional manufacturer of heavy Armada warships, Orion Shipyards. 
+
+However the doctrinal shift embodied by the Heron was interrupted by the isolation of The Fall, and as such it is not often found in core Hegemony fleets (whose officers still cling to tradition). This hull has however found great popularity among the independent worlds, megacorporations, and mercenary forces of the Sector that tend to field leaner, faster fleets.",,,
+hermes,SHIP,"The Hermes is a small, dependable cargo hauler often converted for transport duty among poor frontier worlds. Its crew and passenger facilities are charitably described as ""robust"" but it manages to get the job done with remarkable consistency despite the primitive maintenance facilities it frequents.
+
+Factory-spec, the Hermes is armed only for ""active collision avoidance"", but its turret system is often upgraded to achieve nearly full albeit light point-defense coverage that can destroy the stray missile while escaping from active combat zones. This firepower is meagre compared to dedicated combat ships so only a mad or truly desperate captain would employ the Hermes in front line combat.",,,
+ox,SHIP,"A staple in larger fleets, the Ox-class tug allows large and normally slow ships to travel at a higher burn level. However, its oversized engines consume a disproportionately large amount of fuel.",,,
+dram,SHIP,A light tanker with enough fuel capacity to more than double the effective range of a small task force or convoy.,,,
+vigilance,SHIP,"An excellent harasser and support frigate, the Vigilance-class has oversized (for its class) energy and missile mounts. While it shines in a fleet setting, it can be easily overwhelmed by large numbers of smaller threats.",,,
+brawler,SHIP,"Typically deployed to beef up system police forces and port authority security, the Brawler-class frigate is a robust design which trades mobility for impressive firepower, armor, and a destroyer-grade power generator.",,,
+tempest,SHIP,"An asymmetric, advanced design from the late Expansion Epoch, the Tempest-class is the quintessential attack frigate - fast, deadly and difficult to destroy.",,,
+omen,SHIP,The Omen is rarely deployed due to the cost associated with maintaining such a technologically advanced ship. Its excellent shields and the EMP Emitter it carries make it a perfect escort for larger ships.,,,
+lasher,SHIP,"A favorite of pirates and private armies due to the ubiquity of the blueprints and its non-demanding support profile, Lasher-class frigates pack a respectable amount of ballistic firepower.
+
+Lasher captains are usually no-nonsense types who let their weapons do the talking, and pick through the debris of enemy ships as opposed to trying more diplomatic or covert means of getting the job done. More often than not, that job involves quickly and effectively striking at (or guarding) small or medium-sized trade convoys. The light fighter and frigate escorts usually found guarding such convoys are hardly a match for the hail of projectiles a Lasher can quickly unleash. If that does not get the job done, the Lasher has another nasty surprise in wait - two missile hardpoints, more often than not fitted with ""finisher"" types of missile, such as the Harpoon MRM.",,,
+mercury,SHIP,"One of the smallest ships in the sector equipped with an on-board hyperdrive actuator, this class is typically used for safely transporting VIPs or couriers between star systems. Cheapest to buy of all star faring ships.
+
+Although small, the Shuttle-class is outfitted for the comfort and security of its potential VIP passengers. It is rare to see one in combat; if a captain is unlucky enough to be in such a spot, one can quickly see why: most power systems on board are reserved for use by the life support, comfort and entertainment modules, installed to make sure that passengers do not get bored on long voyages.",,,
+hyperion,SHIP,"A supremely advanced design, fragile but with a superb power generator and the ability to mount more ordnance than any other mainstream frigate. Extremely expensive for its size.
+
+Due to the perfectly modular design of the hull, power couplings and weapon slots, modifications of this ship class are not taxing on in flux shunts, plasma relays or the power core. In short, hull modifications are extremely easy to complete. It is often the case that a Hyperion-class is finely tuned with a cornucopia of mutually boosting hull modifications that make it even deadlier that a variant that is simply bristling with weapons. Naturally, such special modifications are not for the engineering novice and the uninitiated may just blow their entire fortune on a concept that seems good on paper, but is in fact useless in the battlespace. That is why there are many engineers that shun this modification-heavy approach and opt for a more weapon focused platform.
+
+The end results of either approach usually affirm the apprehensive attitude Sector stellators have toward this ship.",,,
+hound,SHIP,"An old but durable hull class that lacks a shield generator, this frigate is sometimes used to ferry cargo instead of for combat duty. A lucky or gifted officer could make his fortune given the chance to captain one.",,,
+wolf,SHIP,"A technologically advanced frigate with an efficient shield generator and an impressive weapons package that allows it to punch far above its weight. These same characteristics mean its frigate-grade power core struggles to keep up, making careful flux management a priority.",,,
+thunder,SHIP,"An old yet versatile fighter design that can either disable or assault larger enemy ships, and can hold its own versus interceptors due to its high armor and short range missiles.",,,
+warthog,SHIP,"Superb armor protection, a tough hull and a light assault gun make this design the quintessential old-school assault fighter of choice. Durable, but not great versus interceptor threats, due to the lack of a shield generator.",,,
+gladius,SHIP,A midline fighter with excellent weaponry and great armor. The lack of a shield generator prevents it from being considered a top-line craft. Lower costs mean a greater availability throughout the Sector.,,,
+mining_drone,SHIP,"Built to withstand multiple asteroid impacts during mining operations, the weapon AI cores on these small craft have been re-purposed to use the standard Mining Laser versus other ships.",,,
+longbow,SHIP,"The Longbow is equipped with an unusual lateral thruster system which lets pilots linger in orbit of an enemy ship and fire their sabot payloads at the most opportune time, but is not particularly effective outside of the support role.",,,
+trident,SHIP,"The Trident is an advanced, ultra-heavy bomber designed to carry dual Atropos-class torpedoes and is fitted with a top-notch shield generator to allow target acquisition under point defense fire.",,,
+piranha,SHIP,"The Piranha deploys unpowered conventional bombs en masse, relying on momentum to deliver the payloads. The Piranha also features a short range defensive weapon to fend off interceptor wings and as such is a tough and dangerous strike bomber.",,,
+broadsword,SHIP,"The Broadsword is an early epoch design, but is armed to the teeth and upholds a long history of effective engagements versus light fighters. Its dual Light Machine Guns are a credible threat to the shield systems of any ship.",,,
+xyphos,SHIP,"A formidable heavy fighter design equipped with shields and a pulse laser. Often, only elite pilots are trusted to pilot such a technologically advanced, deadly, and expensive craft.",,,
+wasp,SHIP,"Fast and nimble, Wasp wings typically outnumber and easily swarm enemy fighter formations. They handle early epoch technologies well but falter when faced with shielded or more advanced fighters.",,,
+dagger,SHIP,The Dagger is a torpedo bomber which must re-arm after every run and is equipped with an omni shield emitter which permits the pilot to approach on accurate bombing vectors through point-defense fire.,,,
+talon,SHIP,"Low-tech, dirt-cheap, underpowered, and widely used in the Sector. Average Talon pilot battlespace life expectancy is two minutes and twenty seconds.",,,
+doom,SHIP,"Created when phase technology was new and cloak detectors were not a standard part of every sensor package, this cruiser has lost the advantage of surprise - but retains a dangerous and flexible weapons loadout. 
+
+Certain unnerving psychological phenomena have been reported by sensitive crewmembers after enduring many rapid phase-shifts in combat conditions but the Domain Navy reports on the subject were never declassified and are thought to have been lost since the Collapse.",,,
+shade,SHIP,"The smallest phase ship that is currently produced in the Sector, the Shade-class is often used as a scout for larger fleets. In battle, it is valued by fleet admirals for its abililty to disable enemy ships with its EMP emitter.",,,
+afflictor,SHIP,"A dangerous and swift phase frigate, the Afflictor design features the efficient Mark III Phase Cloak actuator. Its weapons loadout is powerful enough to bring down much heavier ships if they are caught off guard.",,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
