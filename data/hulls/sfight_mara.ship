@@ -43,7 +43,7 @@
         -15,
         -3.5
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_FIGHTER",
       "width": 2
     },
     {
@@ -54,7 +54,7 @@
         -15,
         3.5
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_FIGHTER",
       "width": 2
     }
   ],

@@ -37,6 +37,14 @@
     -162.5,
     1
   ],
+  "builtInWeapons": {
+    "WS0004": "fs_terran_aaabeam",
+    "WS0005": "fs_terran_aaabeam",
+    "WS0006": "fs_terran_aaabeam",
+    "WS0007": "fs_terran_aaabeam",
+    "WS0008": "fs_vasudan_mediumbeam",
+    "WS0009": "fs_vasudan_mediumbeam"
+  },
   "center": [
     73.5,
     163
@@ -51,7 +59,7 @@
         -81,
         -20.5
       ],
-      "style": "FS_VASUDAN",
+      "style": "FS_VASUDAN_CRUISER",
       "width": 10
     },
     {
@@ -62,7 +70,7 @@
         -81,
         20.5
       ],
-      "style": "FS_VASUDAN",
+      "style": "FS_VASUDAN_CRUISER",
       "width": 10
     },
     {
@@ -73,7 +81,7 @@
         40,
         -24.5
       ],
-      "style": "FS_VASUDAN",
+      "style": "FS_VASUDAN_CRUISER",
       "width": 3
     },
     {
@@ -84,7 +92,7 @@
         40,
         24.5
       ],
-      "style": "FS_VASUDAN",
+      "style": "FS_VASUDAN_CRUISER",
       "width": 3
     }
   ],

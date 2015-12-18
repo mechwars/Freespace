@@ -38,10 +38,10 @@
     -14.5
   ],
   "builtInWeapons": {
-    "WS0003": "fs_terran_lightbeam",
-    "WS0004": "fs_terran_lightbeam",
-    "WS0009": "fs_terran_lightbeam",
-    "WS0010": "fs_terran_lightbeam",
+    "WS0003": "fs_terran_mediumbeam",
+    "WS0004": "fs_terran_mediumbeam",
+    "WS0009": "fs_terran_mediumbeam",
+    "WS0010": "fs_terran_mediumbeam",
     "WS0017": "fs_terran_aaabeam",
     "WS0018": "fs_terran_aaabeam"
   },
@@ -59,7 +59,7 @@
         -176.5,
         -0
       ],
-      "style": "FS_TERRAN",
+      "style": "FS_TERRAN_CRUISER",
       "width": 24
     }
   ],

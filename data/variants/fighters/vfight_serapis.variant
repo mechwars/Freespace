@@ -1,8 +1,8 @@
 {
 	"quality":0.75,
-	"displayName":"Heavy Fighter",
-	"hullId":"tfight_herc2",
-	"variantId":"tfight_herc2",
+	"displayName":"Advanced Interceptor",
+	"hullId":"vfight_serapis",
+	"variantId":"vfight_serapis",
 	"fluxVents":0,
 	"fluxCapacitors":0,
 	"mods":[], # array of strings
@@ -12,16 +12,16 @@
 	"weaponGroups":[
 		{"mode":"LINKED",
 		 "weapons":{
-		 			"WS0001":"fs_subach",
-		 			"WS0002":"fs_subach",
-					"WS0003":"fs_prometheus_s",
-					"WS0004":"fs_prometheus_s",
+		 			"WS0001":"fs_mekhu",
+		 			"WS0002":"fs_mekhu",
+					"WS0003":"fs_mekhu",
+					"WS0004":"fs_mekhu",
 		 		   },
 		},
 		{"mode":"LINKED",
 		 "weapons":{
-		 			"WS0005":"fs_hornet",
-					"WS0006":"fs_hornet",
+		 			"WS0005":"annihilator",
+					"WS0006":"annihilator",
 		 		   },
 		},
 	],

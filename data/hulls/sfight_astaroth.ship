@@ -35,18 +35,7 @@
         -6.5,
         -0
       ],
-      "style": "FS_SHIVAN",
-      "width": 2
-    },
-    {
-      "angle": -180,
-      "contrailSize": 2,
-      "length": 7,
-      "location": [
-        -6.5,
-        0
-      ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_FIGHTER",
       "width": 2
     }
   ],

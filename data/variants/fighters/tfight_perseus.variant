@@ -1,8 +1,8 @@
 {
 	"quality":0.75,
-	"displayName":"Heavy Fighter",
-	"hullId":"tfight_herc2",
-	"variantId":"tfight_herc2",
+	"displayName":"Interceptor",
+	"hullId":"tfight_perseus",
+	"variantId":"tfight_perseus",
 	"fluxVents":0,
 	"fluxCapacitors":0,
 	"mods":[], # array of strings
@@ -20,8 +20,8 @@
 		},
 		{"mode":"LINKED",
 		 "weapons":{
-		 			"WS0005":"fs_hornet",
-					"WS0006":"fs_hornet",
+		 			"WS0005":"swarmer_fighter",
+					"WS0006":"swarmer_fighter",
 		 		   },
 		},
 	],

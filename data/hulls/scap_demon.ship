@@ -65,6 +65,13 @@
     -385.5,
     -0
   ],
+  "builtInWeapons": {
+    "WS0001": "fs_shivan_heavybeam",
+    "WS0002": "fs_shivan_heavybeam",
+    "WS0003": "fs_shivan_beam",
+	"WS0004": "fs_shivan_aaabeam",
+	"WS0005": "fs_shivan_aaabeam"
+  },
   "center": [
     172,
     400
@@ -79,7 +86,7 @@
         -366.5,
         13
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_CAPITAL",
       "width": 15
     },
     {
@@ -90,7 +97,7 @@
         -366.5,
         -13
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_CAPITAL",
       "width": 15
     },
     {
@@ -101,7 +108,7 @@
         -349.5,
         13
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_CAPITAL",
       "width": 15
     },
     {
@@ -112,7 +119,7 @@
         -349.5,
         -13
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_CAPITAL",
       "width": 15
     },
     {
@@ -123,7 +130,7 @@
         -337,
         13
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_CAPITAL",
       "width": 15
     },
     {
@@ -134,7 +141,7 @@
         -337,
         -13
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_CAPITAL",
       "width": 15
     },
     {
@@ -145,7 +152,7 @@
         -313,
         74.5
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_CAPITAL",
       "width": 11
     },
     {
@@ -156,7 +163,7 @@
         -313,
         -74.5
       ],
-      "style": "FS_SHIVAN",
+      "style": "FS_SHIVAN_CAPITAL",
       "width": 11
     }
   ],

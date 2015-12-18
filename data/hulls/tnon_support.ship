@@ -43,7 +43,7 @@
         -6.5,
         5
       ],
-      "style": "FS_TERRAN",
+      "style": "FS_TERRAN_FIGHTER",
       "width": 2
     },
     {
@@ -54,7 +54,7 @@
         -6.5,
         -5
       ],
-      "style": "FS_TERRAN",
+      "style": "FS_TERRAN_FIGHTER",
       "width": 2
     }
   ],

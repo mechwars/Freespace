@@ -1,7 +1,7 @@
 name,id,tier,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,hints,number
 Forge Dove-type Beam Cannon,fs_terran_verylightbeam,2,10000,1000,800,,75,200,10,10,,,,ENERGY,,300,3,1.5,2.2,10,,,,,50000,,,,,,
-Forge Eagle-type Tactical Beam Cannon,fs_terran_lightbeam,2,10000,1000,2000,,100,300,10,10,,,,ENERGY,,800,3,2,2,10,,,,,50000,,,,,,
-Pave Warden-type Beam Cannon,fs_terran_mediumbeam,2,10000,1000,1200,,150,400,10,10,,,,ENERGY,,400,1.5,3,2.5,45,,,,,50000,,,,,,
+Pave Warden-type Beam Cannon,fs_terran_lightbeam,2,10000,1000,1200,,150,400,10,10,,,,ENERGY,,400,1.5,3,2.5,45,,,,,50000,,,,,,
+Forge Eagle-type Tactical Beam Cannon,fs_terran_mediumbeam,2,10000,1000,2000,,100,300,10,10,,,,ENERGY,,800,3,2,2,10,,,,,50000,,,,,,
 Crypt Hammer-type Beam Cannon,fs_terran_heavybeam,2,10000,1000,6600,,200,500,10,10,,,,ENERGY,,2300,3.5,3.5,4,30,,,,,50000,,,,,,
 M/A 121b Beam System,fs_vasudan_lightbeam,2,10000,1000,4100,,100,300,10,10,,,,ENERGY,,1400,3,1.5,2,10,,,,,50000,,,,,,
 M/A 183 Beam System,fs_vasudan_mediumbeam,2,10000,1000,2000,,150,400,10,10,,,,ENERGY,,700,1.5,3,2.5,20,,,,,50000,,,,,,

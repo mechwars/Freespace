@@ -11,10 +11,10 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "fs_terran_lightbeam",
-                "WS0004": "fs_terran_lightbeam",
-				"WS0009": "fs_terran_lightbeam",
-				"WS0010": "fs_terran_lightbeam"
+                "WS0003": "fs_terran_mediumbeam",
+                "WS0004": "fs_terran_mediumbeam",
+				"WS0009": "fs_terran_mediumbeam",
+				"WS0010": "fs_terran_mediumbeam"
             }
         },
 		{

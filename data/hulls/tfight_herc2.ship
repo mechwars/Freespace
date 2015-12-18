@@ -34,45 +34,45 @@
     {
       "angle": 180,
       "contrailSize": 3,
-      "length": 2.5,
+      "length": 6,
       "location": [
         -3,
         5
       ],
-      "style": "FS_TERRAN",
+      "style": "FS_TERRAN_FIGHTER",
       "width": 3
     },
     {
       "angle": -180,
       "contrailSize": 3,
-      "length": 2.5,
+      "length": 6,
       "location": [
         -3,
         -5
       ],
-      "style": "FS_TERRAN",
+      "style": "FS_TERRAN_FIGHTER",
       "width": 3
     },
     {
       "angle": -180,
       "contrailSize": 3,
-      "length": 2.5,
+      "length": 6,
       "location": [
         -18.5,
         -5
       ],
-      "style": "FS_TERRAN",
+      "style": "FS_TERRAN_FIGHTER",
       "width": 3
     },
     {
       "angle": 180,
       "contrailSize": 3,
-      "length": 2.5,
+      "length": 6,
       "location": [
         -18.5,
         5
       ],
-      "style": "FS_TERRAN",
+      "style": "FS_TERRAN_FIGHTER",
       "width": 3
     }
   ],
