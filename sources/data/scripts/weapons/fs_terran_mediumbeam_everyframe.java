@@ -70,7 +70,7 @@ public class fs_terran_mediumbeam_everyframe implements EveryFrameWeaponEffectPl
             if (weapon.getChargeLevel() > 0f && weapon.getCooldownRemaining() <= 0f) {
                 charging = true;
                 // Change this for each beam
-                Global.getSoundPlayer().playSound("bt_up_1.5", 1f, 1f, origin, weapon.getShip().getVelocity());
+                Global.getSoundPlayer().playSound("bt_up_3", 1f, 1f, origin, weapon.getShip().getVelocity());
             }
         }
         // End Beam Weapon Charging Code

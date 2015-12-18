@@ -45,7 +45,7 @@ public class fs_terran_mediumbeam_effect implements BeamEffectPlugin {
                     offset = new Vector2f(5f, 0f);
                     VectorUtils.rotate(offset, beam.getWeapon().getCurrAngle(), offset);
                     Vector2f.add(offset, origin2, origin2);
-                    Global.getSoundPlayer().playSound("bt_dwn_3", 1.0f, 1.0f, origin2, new Vector2f());
+                    Global.getSoundPlayer().playSound("bt_dwn_2", 1.0f, 1.0f, origin2, new Vector2f());
                 }
             }
         } else {
@@ -54,7 +54,7 @@ public class fs_terran_mediumbeam_effect implements BeamEffectPlugin {
                 firing = true;
                 if (Global.getCombatEngine().getTotalElapsedTime(false) - sinceLast > 0.3f) {
                     // Play the beam firing sound
-                    Global.getSoundPlayer().playSound("bt_sgreen", 1f, 1.5f, origin, new Vector2f());
+                    Global.getSoundPlayer().playSound("bt_terslash", 1f, 1.5f, origin, new Vector2f());
                 }
 
                 sinceLast = Global.getCombatEngine().getTotalElapsedTime(false);

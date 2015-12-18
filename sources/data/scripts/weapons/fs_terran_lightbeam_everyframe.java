@@ -13,6 +13,11 @@ import org.lwjgl.util.vector.Vector2f;
 
 public class fs_terran_lightbeam_everyframe implements EveryFrameWeaponEffectPlugin {
 
+    // These are the beam source colors while the beam is firing. Get these from weapons.tbl
+    private static final Color COLOR1 = new Color(0, 255, 0);
+    private static final Color COLOR2 = new Color(160, 160, 0);
+    private static final Color COLOR3 = new Color(255, 255, 255);
+
     // Variables for beam charging and animation
     private static final Vector2f ZERO = new Vector2f();
     private boolean charging = false;
@@ -54,10 +59,9 @@ public class fs_terran_lightbeam_everyframe implements EveryFrameWeaponEffectPlu
             } else if (weapon.getChargeLevel() < 1f && weapon.getCooldownRemaining() <= 0f) {
                 // The weapon is charging, so display the charge glow
                 // Set the RGB color + alpha value of the beam charging glow
-                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 75f + 75f * weapon.getChargeLevel(), weapon.getChargeLevel() *
-                                0.3f, 0.2f,
-                        new Color(MathUtils.getRandomNumberInRange(0, 10), MathUtils.getRandomNumberInRange(160, 255),
-                                MathUtils.getRandomNumberInRange(0, 160), 255));
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 40f + 40f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.2f, COLOR1);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 30f + 30f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.3f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 20f + 20f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.6f, COLOR3);
             } else {
                 firing = true;
             }
@@ -66,7 +70,7 @@ public class fs_terran_lightbeam_everyframe implements EveryFrameWeaponEffectPlu
             if (weapon.getChargeLevel() > 0f && weapon.getCooldownRemaining() <= 0f) {
                 charging = true;
                 // Change this for each beam
-                Global.getSoundPlayer().playSound("bt_up_3", 1f, 1f, origin, weapon.getShip().getVelocity());
+                Global.getSoundPlayer().playSound("bt_up_1.5", 1f, 1f, origin, weapon.getShip().getVelocity());
             }
         }
         // End Beam Weapon Charging Code

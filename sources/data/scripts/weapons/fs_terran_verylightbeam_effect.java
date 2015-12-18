@@ -59,18 +59,25 @@ public class fs_terran_verylightbeam_effect implements BeamEffectPlugin {
 
                 sinceLast = Global.getCombatEngine().getTotalElapsedTime(false);
                 // Make the beam source glow during firing
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 100f, 5f, 0.2f, COLOR1);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 75f, 5f, 0.5f, COLOR2);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 50f, 5f, 0.5f, COLOR3);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 80f, 5f, 0.2f, COLOR1);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 60f, 5f, 0.3f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 40f, 10f, 0.6f, COLOR3);
             }
         }
         level = beam.getBrightness();
 
         interval.advance(amount);
         // Make the beam source area do fun glowy things as long as the beam is firing. Grab these from the main colors.
-        Global.getCombatEngine().addHitParticle(origin, new Vector2f(), (float) Math.random() * 50f + 50f, 0.2f, 0.2f, new Color(
-                MathUtils.getRandomNumberInRange(0, 160), MathUtils.getRandomNumberInRange(160, 255),
-                MathUtils.getRandomNumberInRange(0, 10), 255));
+        // Scale the glow down when the beam is done firing.
+        if (beam.getBrightness() < level) {
+            Global.getCombatEngine().addHitParticle(origin, ZERO, 80f, 5f * level, 0.2f, COLOR1);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, 60f, 5f * level, 0.3f, COLOR2);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, 40f, 10f * level, 0.6f, COLOR3);
+        } else {
+            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 40f + 40f, 5f, 0.2f, COLOR1);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 30f + 30f, 5f, 0.3f, COLOR2);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 20f + 20f, 10f, 0.6f, COLOR3);
+        }
 
         if (interval.intervalElapsed()) {
             // If the beam damaged the target, spawn an explosion where the beam hits
