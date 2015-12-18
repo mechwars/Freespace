@@ -1,0 +1,69 @@
+{
+  "bounds": [
+    4,
+    3.5,
+    -25.5,
+    10.5,
+    -33.5,
+    21,
+    28,
+    7,
+    35,
+    0.5,
+    35,
+    -0.5,
+    28,
+    -7,
+    -33.5,
+    -21,
+    -25.5,
+    -10.5,
+    4,
+    -3.5
+  ],
+  "center": [
+    19,
+    35
+  ],
+  "collisionRadius": 41.764217,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 10,
+      "location": [
+        5.5,
+        -1
+      ],
+      "style": "FS_VASUDAN",
+      "width": 6
+    }
+  ],
+  "height": 70,
+  "hullId": "vnon_support",
+  "hullName": "Nephthys",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 40.804413,
+  "spriteName": "graphics/Freespace/ships/vnon_support.png",
+  "style": "FS_VASUDAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        11,
+        -1
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 39
+}

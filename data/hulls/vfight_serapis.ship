@@ -1,92 +1,62 @@
 {
   "bounds": [
-    -19,
-    -7,
-    -12.5,
-    -9,
-    4.5,
-    -9,
-    9,
-    -3.5,
-    13.5,
-    -3,
-    17.5,
-    -0.5,
-    17.5,
-    0.5,
-    13.5,
-    3,
-    9,
-    3.5,
-    4.5,
-    9,
-    -12.5,
-    9,
-    -19,
-    7
+    -18.5,
+    8.5,
+    -2,
+    20,
+    8.5,
+    20.5,
+    11,
+    0,
+    11,
+    -0,
+    8.5,
+    -20.5,
+    -2,
+    -20,
+    -18.5,
+    -8.5
   ],
   "center": [
-    9,
-    18.5
+    19.5,
+    17
   ],
-  "collisionRadius": 23.113848,
+  "collisionRadius": 22.94014,
   "engineSlots": [
     {
       "angle": 180,
-      "contrailSize": 3,
-      "length": 2.5,
+      "contrailSize": 2,
+      "length": 7,
       "location": [
-        -3,
-        5
+        -7.5,
+        -4
       ],
-      "style": "FS_TERRAN",
-      "width": 3
+      "style": "FS_VASUDAN",
+      "width": 2
     },
     {
       "angle": -180,
-      "contrailSize": 3,
-      "length": 2.5,
+      "contrailSize": 2,
+      "length": 7,
       "location": [
-        -3,
-        -5
+        -7.5,
+        4
       ],
-      "style": "FS_TERRAN",
-      "width": 3
-    },
-    {
-      "angle": -180,
-      "contrailSize": 3,
-      "length": 2.5,
-      "location": [
-        -18.5,
-        -5
-      ],
-      "style": "FS_TERRAN",
-      "width": 3
-    },
-    {
-      "angle": 180,
-      "contrailSize": 3,
-      "length": 2.5,
-      "location": [
-        -18.5,
-        5
-      ],
-      "style": "FS_TERRAN",
-      "width": 3
+      "style": "FS_VASUDAN",
+      "width": 2
     }
   ],
-  "height": 37,
-  "hullId": "tfight_herc2",
-  "hullName": "Hercules II",
+  "height": 28,
+  "hullId": "vfight_serapis",
+  "hullName": "Serapis",
   "hullSize": "FIGHTER",
   "shieldCenter": [
     0,
     -0
   ],
-  "shieldRadius": 20.554804,
-  "spriteName": "graphics/Freespace/ships/tfight_herc2.png",
-  "style": "FS_TERRAN",
+  "shieldRadius": 21.914606,
+  "spriteName": "graphics/Freespace/ships/vfight_serapis.png",
+  "style": "FS_VASUDAN",
   "viewOffset": 0,
   "weaponSlots": [
     {
@@ -94,8 +64,8 @@
       "arc": 0,
       "id": "WS0001",
       "locations": [
-        7,
-        6
+        7.5,
+        -7
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -106,8 +76,8 @@
       "arc": 0,
       "id": "WS0002",
       "locations": [
-        7,
-        -6
+        6,
+        1.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -118,8 +88,8 @@
       "arc": 0,
       "id": "WS0003",
       "locations": [
-        7,
-        3.5
+        6,
+        -1.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -130,20 +100,8 @@
       "arc": 0,
       "id": "WS0004",
       "locations": [
-        7,
-        -3.5
-      ],
-      "mount": "HIDDEN",
-      "size": "SMALL",
-      "type": "HYBRID"
-    },
-    {
-      "angle": 0,
-      "arc": 0,
-      "id": "WS0005",
-      "locations": [
-        3.5,
-        5
+        7.5,
+        7
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -152,15 +110,27 @@
     {
       "angle": -0,
       "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        9.5,
+        11
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
       "id": "WS0006",
       "locations": [
-        3.5,
-        -5
+        9.5,
+        -11
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
       "type": "MISSILE"
     }
   ],
-  "width": 18
+  "width": 39
 }

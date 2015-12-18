@@ -1,91 +1,65 @@
 {
   "bounds": [
-    -19,
-    -7,
-    -12.5,
-    -9,
-    4.5,
-    -9,
-    9,
-    -3.5,
-    13.5,
+    -18,
+    7,
     -3,
-    17.5,
-    -0.5,
-    17.5,
-    0.5,
-    13.5,
+    12.5,
+    8,
     3,
-    9,
-    3.5,
-    4.5,
-    9,
+    14,
+    3,
+    18,
+    1,
+    18,
+    -1,
+    14,
+    -3,
+    8,
+    -3,
+    -3,
     -12.5,
-    9,
-    -19,
-    7
+    -18,
+    -7
   ],
   "center": [
-    9,
-    18.5
+    11.5,
+    18
   ],
-  "collisionRadius": 23.113848,
+  "collisionRadius": 20.808653,
   "engineSlots": [
     {
       "angle": 180,
-      "contrailSize": 3,
-      "length": 2.5,
+      "contrailSize": 2,
+      "length": 6,
       "location": [
-        -3,
-        5
+        -13,
+        3
       ],
       "style": "FS_TERRAN",
-      "width": 3
+      "width": 2
     },
     {
       "angle": -180,
-      "contrailSize": 3,
-      "length": 2.5,
+      "contrailSize": 2,
+      "length": 6,
       "location": [
-        -3,
-        -5
+        -13,
+        -3
       ],
       "style": "FS_TERRAN",
-      "width": 3
-    },
-    {
-      "angle": -180,
-      "contrailSize": 3,
-      "length": 2.5,
-      "location": [
-        -18.5,
-        -5
-      ],
-      "style": "FS_TERRAN",
-      "width": 3
-    },
-    {
-      "angle": 180,
-      "contrailSize": 3,
-      "length": 2.5,
-      "location": [
-        -18.5,
-        5
-      ],
-      "style": "FS_TERRAN",
-      "width": 3
+      "width": 2
     }
   ],
-  "height": 37,
-  "hullId": "tfight_herc2",
-  "hullName": "Hercules II",
+  "height": 36,
+  "hullId": "tfight_perseus",
+  "hullName": "Perseus",
   "hullSize": "FIGHTER",
   "shieldCenter": [
     0,
     -0
   ],
-  "shieldRadius": 20.554804,
-  "spriteName": "graphics/Freespace/ships/tfight_herc2.png",
+  "shieldRadius": 20.155643,
+  "spriteName": "graphics/Freespace/ships/tfight_perseus.png",
   "style": "FS_TERRAN",
   "viewOffset": 0,
   "weaponSlots": [
@@ -94,8 +68,8 @@
       "arc": 0,
       "id": "WS0001",
       "locations": [
-        7,
-        6
+        6,
+        -5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -106,8 +80,8 @@
       "arc": 0,
       "id": "WS0002",
       "locations": [
-        7,
-        -6
+        6,
+        5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -118,8 +92,8 @@
       "arc": 0,
       "id": "WS0003",
       "locations": [
-        7,
-        3.5
+        6,
+        -4
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -130,8 +104,8 @@
       "arc": 0,
       "id": "WS0004",
       "locations": [
-        7,
-        -3.5
+        6,
+        4
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -143,7 +117,7 @@
       "id": "WS0005",
       "locations": [
         3.5,
-        5
+        -4.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -155,12 +129,12 @@
       "id": "WS0006",
       "locations": [
         3.5,
-        -5
+        4.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
       "type": "MISSILE"
     }
   ],
-  "width": 18
+  "width": 23
 }

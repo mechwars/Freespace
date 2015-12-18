@@ -1,92 +1,74 @@
 {
   "bounds": [
-    -19,
-    -7,
-    -12.5,
-    -9,
-    4.5,
-    -9,
+    -18.5,
+    8.5,
+    -2,
+    10,
+    -1.5,
+    17.5,
     9,
-    -3.5,
-    13.5,
-    -3,
-    17.5,
-    -0.5,
-    17.5,
-    0.5,
-    13.5,
+    9.5,
+    9.5,
     3,
+    15.5,
+    3,
+    18,
+    0,
+    18,
+    -0,
+    15.5,
+    -3,
+    9.5,
+    -3,
     9,
-    3.5,
-    4.5,
-    9,
-    -12.5,
-    9,
-    -19,
-    7
+    -9.5,
+    -1.5,
+    -17.5,
+    -2,
+    -10,
+    -18.5,
+    -8.5
   ],
   "center": [
-    9,
-    18.5
+    17.5,
+    18
   ],
-  "collisionRadius": 23.113848,
+  "collisionRadius": 21.708294,
   "engineSlots": [
     {
       "angle": 180,
-      "contrailSize": 3,
-      "length": 2.5,
+      "contrailSize": 2,
+      "length": 6,
       "location": [
-        -3,
-        5
+        -15,
+        -3.5
       ],
-      "style": "FS_TERRAN",
-      "width": 3
+      "style": "FS_SHIVAN",
+      "width": 2
     },
     {
       "angle": -180,
-      "contrailSize": 3,
-      "length": 2.5,
+      "contrailSize": 2,
+      "length": 6,
       "location": [
-        -3,
-        -5
+        -15,
+        3.5
       ],
-      "style": "FS_TERRAN",
-      "width": 3
-    },
-    {
-      "angle": -180,
-      "contrailSize": 3,
-      "length": 2.5,
-      "location": [
-        -18.5,
-        -5
-      ],
-      "style": "FS_TERRAN",
-      "width": 3
-    },
-    {
-      "angle": 180,
-      "contrailSize": 3,
-      "length": 2.5,
-      "location": [
-        -18.5,
-        5
-      ],
-      "style": "FS_TERRAN",
-      "width": 3
+      "style": "FS_SHIVAN",
+      "width": 2
     }
   ],
-  "height": 37,
-  "hullId": "tfight_herc2",
-  "hullName": "Hercules II",
+  "height": 36,
+  "hullId": "sfight_mara",
+  "hullName": "Mara",
   "hullSize": "FIGHTER",
   "shieldCenter": [
     0,
     -0
   ],
-  "shieldRadius": 20.554804,
-  "spriteName": "graphics/Freespace/ships/tfight_herc2.png",
-  "style": "FS_TERRAN",
+  "shieldRadius": 20.155643,
+  "spriteName": "graphics/Freespace/ships/sfight_mara.png",
+  "style": "FS_SHIVAN",
   "viewOffset": 0,
   "weaponSlots": [
     {
@@ -94,8 +76,8 @@
       "arc": 0,
       "id": "WS0001",
       "locations": [
-        7,
-        6
+        8.5,
+        3
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -106,8 +88,8 @@
       "arc": 0,
       "id": "WS0002",
       "locations": [
-        7,
-        -6
+        8.5,
+        -3
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -119,7 +101,7 @@
       "id": "WS0003",
       "locations": [
         7,
-        3.5
+        3
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -131,7 +113,7 @@
       "id": "WS0004",
       "locations": [
         7,
-        -3.5
+        -3
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -142,8 +124,8 @@
       "arc": 0,
       "id": "WS0005",
       "locations": [
-        3.5,
-        5
+        8.5,
+        4.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -154,13 +136,13 @@
       "arc": 0,
       "id": "WS0006",
       "locations": [
-        3.5,
-        -5
+        8.5,
+        -4.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
       "type": "MISSILE"
     }
   ],
-  "width": 18
+  "width": 35
 }

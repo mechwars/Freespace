@@ -1,125 +1,87 @@
 {
   "bounds": [
-    -19,
-    -7,
-    -12.5,
-    -9,
+    -21.5,
     4.5,
-    -9,
-    9,
-    -3.5,
+    -14.5,
+    13,
+    -2,
     13.5,
-    -3,
-    17.5,
-    -0.5,
-    17.5,
-    0.5,
-    13.5,
-    3,
-    9,
-    3.5,
-    4.5,
-    9,
-    -12.5,
-    9,
-    -19,
-    7
+    12,
+    16,
+    16,
+    0,
+    16,
+    -0,
+    12,
+    -16,
+    -2,
+    -13.5,
+    -14.5,
+    -13,
+    -21.5,
+    -4.5
   ],
   "center": [
-    9,
-    18.5
+    14.5,
+    20.5
   ],
-  "collisionRadius": 23.113848,
+  "collisionRadius": 22.209232,
   "engineSlots": [
     {
       "angle": 180,
       "contrailSize": 3,
-      "length": 2.5,
+      "length": 7,
       "location": [
-        -3,
-        5
+        -13,
+        -10.5
       ],
-      "style": "FS_TERRAN",
+      "style": "FS_VASUDAN",
       "width": 3
     },
     {
       "angle": -180,
       "contrailSize": 3,
-      "length": 2.5,
+      "length": 7,
       "location": [
-        -3,
-        -5
+        -13,
+        10.5
       ],
-      "style": "FS_TERRAN",
-      "width": 3
-    },
-    {
-      "angle": -180,
-      "contrailSize": 3,
-      "length": 2.5,
-      "location": [
-        -18.5,
-        -5
-      ],
-      "style": "FS_TERRAN",
-      "width": 3
-    },
-    {
-      "angle": 180,
-      "contrailSize": 3,
-      "length": 2.5,
-      "location": [
-        -18.5,
-        5
-      ],
-      "style": "FS_TERRAN",
+      "style": "FS_VASUDAN",
       "width": 3
     }
   ],
-  "height": 37,
-  "hullId": "tfight_herc2",
-  "hullName": "Hercules II",
+  "height": 36,
+  "hullId": "vfight_tauret",
+  "hullName": "Tauret",
   "hullSize": "FIGHTER",
   "shieldCenter": [
     0,
     -0
   ],
-  "shieldRadius": 20.554804,
-  "spriteName": "graphics/Freespace/ships/tfight_herc2.png",
-  "style": "FS_TERRAN",
+  "shieldRadius": 21.36001,
+  "spriteName": "graphics/Freespace/ships/vfight_tauret.png",
+  "style": "FS_VASUDAN",
   "viewOffset": 0,
   "weaponSlots": [
     {
-      "angle": 0,
+      "angle": -0,
       "arc": 0,
       "id": "WS0001",
       "locations": [
-        7,
-        6
+        8,
+        7.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
       "type": "HYBRID"
     },
     {
-      "angle": -0,
+      "angle": 0,
       "arc": 0,
       "id": "WS0002",
       "locations": [
-        7,
-        -6
-      ],
-      "mount": "HIDDEN",
-      "size": "SMALL",
-      "type": "HYBRID"
-    },
-    {
-      "angle": 0,
-      "arc": 0,
-      "id": "WS0003",
-      "locations": [
-        7,
-        3.5
+        8,
+        -7.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -128,10 +90,10 @@
     {
       "angle": -0,
       "arc": 0,
-      "id": "WS0004",
+      "id": "WS0003",
       "locations": [
-        7,
-        -3.5
+        10,
+        8.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -140,27 +102,63 @@
     {
       "angle": 0,
       "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        10,
+        -8.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
       "id": "WS0005",
       "locations": [
-        3.5,
-        5
+        10,
+        6.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        10,
+        -6.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        12.5,
+        11.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
       "type": "MISSILE"
     },
     {
-      "angle": -0,
+      "angle": 0,
       "arc": 0,
-      "id": "WS0006",
+      "id": "WS0008",
       "locations": [
-        3.5,
-        -5
+        12.5,
+        -11.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
       "type": "MISSILE"
     }
   ],
-  "width": 18
+  "width": 29
 }
