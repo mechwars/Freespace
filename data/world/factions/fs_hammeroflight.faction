@@ -1,32 +1,27 @@
 {
-	"id":"luddic_path",
+	"id":"fs_hammeroflight",
 	"color":[180,255,95,255],
 	
 	"baseUIColor":[150,200,0,255],
 	"darkUIColor":[52,85,0,175],
 	"gridUIColor":[180,255,0,75],
 	
-	"displayName":"Luddic Path",
-	"displayNameWithArticle":"the Luddic Path",
+	"displayName":"Hammer of Light",
+	"displayNameWithArticle":"the Hammer of Light",
+	"displayNameIsOrAre":"is",
+	"shipNamePrefix":"HoL",
 	"showInIntelTab":true,
 	"logo":"graphics/factions/luddic_path.png",
 	"crest":"graphics/factions/crest_luddic_path.png",
-	"shipNamePrefix":"",
 	"shipNameSources":{
-		"LUDDIC_PATH":1,
-		"ABRAHAMIC":1,
+		"EGYPTIAN":1,
 	},
 	"names":{
-		"fringe":1,
-		"modern":1,
-		"world":1,
-		"future":1,
-		"luddic":2,
+		"myth":1,
 	},
 	"illegalCommodities":[
 		"drugs",
 		"organs",
-		"luxury_goods",
 	],
 	"portraits":{
 		"standard_male":[
@@ -36,7 +31,6 @@
 			"graphics/portraits/portrait15.png",
 			"graphics/portraits/portrait17.png",
 			"graphics/portraits/portrait18.png",
-			"graphics/portraits/portrait_luddic00.png",
 		],
 		"standard_female":[
 			"graphics/portraits/portrait_mercenary02.png",
@@ -47,54 +41,49 @@
 	},
 	"ranks":{
 		"ranks":{
-			"spaceCommander":{"name":"Deacon-Captain"},
+			"spaceCommander":{"name":"Commander"},
 		},
 		"posts":{
-			"patrolCommander":{"name":"Supplicant"},
-			"fleetCommander":{"name":"Hammer"},
-			"baseCommander":{"name":"Shepherd"},
+			"patrolCommander":{"name":"Patrol Commander"},
+			"fleetCommander":{"name":"Fleet Commander"},
+			"baseCommander":{"name":"Base Commander"},
 		},
-	},
-	"fleetTypeNames":{
-		"patrolSmall":"Raiders",
 	},
 	"custom":{
 		"engageWhenEvenStrength":true,
 		"allowsTransponderOffTrade":true,
+		"offersCommissions":true,
+		"engagesInHostilities":true,
 	},
 	"shipRoles":{
 		"interceptor":{
-			"talon_wing":10,
+			"vfight_serapis_wing":10,
 			"fallback":{"fighter":1},
 		},
 		"fighter":{
-			"broadsword_wing":10,
+			"vfight_tauret_wing":10,
 			"fallback":{"interceptor":1},
 		},
 		"bomber":{
-			"piranha_wing":10,
+			"fallback":{"fighter":2},
 		},	
 		"fastAttack":{
-			"fallback":{"combatSmall":1},
+			"fallback":{"combatLarge":1},
 		},
 		"escortSmall":{
-			"fallback":{"combatSmall":1},
+			"fallback":{"combatLarge":1},
 		},
 		"escortMedium":{
-			"fallback":{"combatMedium":1},
+			"fallback":{"combatLarge":1},
 		},
 		"combatSmall":{
-			"cerberus_luddic_path_Attack":10,
-			"hound_luddic_path_Attack":10,
-			"kite_luddic_path_Strike":5,
-			"kite_luddic_path_Raider":5,
-			#"lasher_luddic_path_Raider":5,
-			"fallback":{"escortSmall":1},
+			"fallback":{"combatLarge":1},
 		},
 		"combatMedium":{
-			"fallback":{"combatSmall":2},
+			"fallback":{"combatLarge":1},
 		},
 		"combatLarge":{
+			"vcap_sobek_standard":10,
 			"fallback":{"combatMedium":2},
 		},
 		"combatCapital":{
@@ -103,46 +92,37 @@
 		
 		# hybrid ships with good combat and cargo capacity
 		"combatFreighterSmall":{
-			"cerberus_luddic_path_Attack":10,
-			"hound_luddic_path_Attack":10,
 			"fallback":{"freighterSmall":1},
 		},
 		"combatFreighterMedium":{
+			"mule_d_pirates_Standard":10, # Token ship, so things don't break
 			"fallback":{"combatFreighterSmall":2},
 		},
 		"combatFreighterLarge":{
 			"fallback":{"combatFreighterMedium":2},
 		},
 		"civilianRandom":{
-			"hermes_d_Standard":10,
-			"mercury_d_Standard":10,
 			"fallback":{"freighterSmall":1},
 		},
 	
 		# carriers
 		"carrierSmall":{
-			"condor_FS":5,
-			"condor_Support":5,
+			"vnon_support_standard":10,
 			"fallback":{"carrierMedium":0.5},
 		},
 		"carrierMedium":{
 			"fallback":{"carrierSmall":2},
 		},
 		"carrierLarge":{
-			"fallback":{"carrierMedium":2},
+			"fallback":{"carrierSmall":4},
 		},
 	
 		# freighters and such
 		"freighterSmall":{
-			"hermes_d_Standard":10,
-			"hermes_Standard":10,
+			"hermes_d_Standard":10, # Token ship, so things don't break
 			"fallback":{"freighterMedium":0.5},
 		},
 		"freighterMedium":{
-			"tarsus_d_Standard":5,
-			"buffalo_d_Standard":10,
-			"tarsus_Standard":5,
-			"buffalo_pirates_Standard":10,
 			"fallback":{"freighterSmall":2},
 		},
 		"freighterLarge":{
@@ -150,11 +130,10 @@
 		},
 		
 		"tankerSmall":{
-			"dram_Light":10,
+			"dram_Light":10, # Token ship, so things don't break
 			"fallback":{"tankerMedium":0.5},
 		},
 		"tankerMedium":{
-			"phaeton_Standard":10,
 			"fallback":{"tankerSmall":2},
 		},
 		"tankerLarge":{
@@ -162,8 +141,7 @@
 		},
 		
 		"personnelSmall":{
-			"mercury_d_Standard":10,
-			"mercury_Standard":10,
+			"mercury_d_Standard":10, # Token ship, so things don't break
 			"fallback":{"personnelMedium":0.5},
 		},
 		"personnelMedium":{
@@ -178,45 +156,40 @@
 			
 		},
 		"captain":{
-			"timid":0,
-			"cautious":0,
-			"steady":5,
-			"aggressive":15,
+			"timid":1,
+			"cautious":5,
+			"steady":10,
+			"aggressive":6,
 		},
 	},
 	"doctrine":{
 		# ship distribution
-		## smaller & faster; bomber-heavy for raiding.
-		"interceptors":2,
-		"fighters":4,
-		"bombers":10,
-		"small":10,
-		"fast":8,
-		"medium":8,
-		"large":4,
-		"capital":1,
+		"interceptors":10,
+		"fighters":10,
+		"bombers":0,
+		"small":6,
+		"fast":0,
+		"medium":0,
+		"large":6,
+		"capital":0,
 		
 		# as fraction of combat ships of same size
-		## not much bothered with escorts.
-		"escortSmallFraction":0.5,
-		"escortMediumFraction":0.5,
+		"escortSmallFraction":0,
+		"escortMediumFraction":0,
 		
-		## highly militant
-		"combatFreighterProbability":0.85,
+		"combatFreighterProbability":0,
 		
-		## poor access to large ships.
-		"minPointsForCombatCapital":35,
+		"minPointsForCombatCapital":10,
 		"minPointsForLargeCarrier":30,
 		
-		"smallCarrierProbability":0.25,
-		"mediumCarrierProbability":0.25,
-		"largeCarrierProbability":0.25,
+		"smallCarrierProbability":1,
+		"mediumCarrierProbability":0,
+		"largeCarrierProbability":0,
 		
 		# officers
-		## poorly trained, fanatical, high variance.
-		"officersPerPoint":0.25,
-		"officerLevelPerPoint":0.15,
-		"officerLevelBase":1,
-		"officerLevelVariance":0.5,
+		"officersPerPoint":0.35,
+		"officerLevelPerPoint":0.3,
+		"officerLevelBase":5,
+		"officerLevelVariance":0.25,
 	},
 },

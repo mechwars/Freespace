@@ -223,4 +223,12 @@
     [
         {"file":"sounds/Freespace/sfx_wpn_energy/L_alien3.ogg","pitch":1.00,"volume":1.0},
     ],
+	"clusterfire":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_missiles/m_cluster.ogg","pitch":1.00,"volume":1.0},
+    ],
+	"clusterboom":
+    [
+        {"file":"sounds/Freespace/sfx_wpn_missiles/clusterboom.ogg","pitch":1.00,"volume":1.0},
+    ]
 }

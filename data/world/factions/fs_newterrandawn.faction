@@ -1,34 +1,31 @@
 {
-	"id":"pirates",
-	"color":[255,0,0,255],
+	"id":"fs_newterrandawn",
+    "color":[0,255,255,255],
 	
-	"baseUIColor":[200,0,0,255],
-	"darkUIColor":[85,0,0,175],
-	"gridUIColor":[255,0,0,75],
-	
-	"entityNamePrefix":"pirate",
-	"displayName":"pirates",
-	"displayNameWithArticle":"the pirates",
-	"displayNameIsOrAre":"are",
+	"baseUIColor":[0,195,195,255],
+    "darkUIColor":[95,15,10,175],
+    "gridUIColor":[15,75,140,75],
+
+	"displayName":"New Terran Dawn",
+	"displayNameWithArticle":"the New Terran Dawn",
+	"displayNameIsOrAre":"is",
+	"entityNamePrefix":"NTD",
 	"logo":"graphics/factions/pirates.png",
 	"crest":"graphics/factions/crest_pirates.png",
 	"shipNamePrefix":"", 
 	"shipNameSources":{
-		"PIRATES":1,
-		"AZTEC":1,
-		"BEASTS":1,
 		"NORSE":1,
 		"CELTIC":1,
 		"SPACE":1,
 	},
 	"names":{
-		"fringe":1,
 		"modern":1,
 		"world":1,
-		"future":1,
-		"myth":1,
+        "old english":1,
 	},
 	"illegalCommodities":[
+		"drugs",
+		"organs",
 	],
 	"music":{
 		"theme":"music_pirates_market_neutral",
@@ -62,67 +59,49 @@
 	},
 	"ranks":{
 		"ranks":{
-			"spaceCommander":{"name":"Captain"},
+			"spaceCommander":{"name":"Commander"},
 		},
 		"posts":{
-			"patrolCommander":{"name":"Captain"},
-			"fleetCommander":{"name":"Warlord"},
-			"baseCommander":{"name":"Captain"},
+			"patrolCommander":{"name":"Patrol Commander"},
+			"fleetCommander":{"name":"Fleet Commander"},
+			"baseCommander":{"name":"Base Commander"},
 		},
 	},
 	"custom":{
 		"engageWhenEvenStrength":true,
-		"exemptFromFoodShortages":true,
-		"willTradeWhenHostile":true,
-		"noPatrols":true,
-		"ignoreTradeWithEnemiesForReputation":true,
-		"postsNoBounties":true,
-		"offerMissionsWhenHostile":true,
 		"allowsTransponderOffTrade":true,
+		"offersCommissions":true,
+		"engagesInHostilities":true,
 	},
 	"shipRoles":{
 		"interceptor":{
-			"talon_wing":10,
-			"thunder_wing":10,
+			"tfight_perseus_wing":10,
 			"fallback":{"fighter":1},
 		},
 		"fighter":{
-			"broadsword_wing":10,
-			"gladius_wing":10,
+			"tfight_herc2_wing":10,
 			"fallback":{"interceptor":1},
 		},
 		"bomber":{
-			"piranha_wing":10,
-			"dagger_wing":10,
+			"fallback":{"fighter":2},
 		},	
 		"fastAttack":{
-			"fallback":{"combatSmall":1},
+			"fallback":{"combatLarge":1},
 		},
 		"escortSmall":{
-			"fallback":{"combatSmall":1},
+			"fallback":{"combatLarge":1},
 		},
 		"escortMedium":{
-			"fallback":{"combatMedium":1},
+			"fallback":{"combatLarge":1},
 		},
 		"combatSmall":{
-			"lasher_d_CS":10,
-			"cerberus_d_pirates_Standard":10,
-			"hound_d_pirates_Standard":10,
-			"wolf_d_pirates_Attack":10,
-			"kite_Raider":5,
-			"fallback":{"escortSmall":1},
+			"fallback":{"combatLarge":1},
 		},
 		"combatMedium":{
-			"enforcer_d_pirates_Strike":10,
-			"hammerhead_d_CS":10,
-			"sunder_d_Assault":10,
-			"buffalo2_FS":10,
-			"fallback":{"combatSmall":2},
+			"fallback":{"combatLarge":1},
 		},
 		"combatLarge":{
-			"falcon_d_CS":20,
-			"eagle_d_Assault":10,
-			"dominator_d_Assault":10,
+			"tcap_deimos_standard":10,
 			"fallback":{"combatMedium":2},
 		},
 		"combatCapital":{
@@ -131,53 +110,37 @@
 		
 		# hybrid ships with good combat and cargo capacity
 		"combatFreighterSmall":{
-			"cerberus_d_pirates_Standard":10,
-			"hound_d_pirates_Standard":10,
 			"fallback":{"freighterSmall":1},
 		},
 		"combatFreighterMedium":{
-			"mule_d_pirates_Standard":10,
+			"mule_d_pirates_Standard":10, # Token ship, so things don't break
 			"fallback":{"combatFreighterSmall":2},
 		},
 		"combatFreighterLarge":{
 			"fallback":{"combatFreighterMedium":2},
 		},
 		"civilianRandom":{
-			"hermes_d_Standard":10,
-			"mercury_d_Standard":10,
-			"mercury_Standard":8,
-			"mercury_FS":3,
-			"hermes_Standard":8,
-			"hermes_FS":4,
 			"fallback":{"freighterSmall":1},
 		},
 	
-	
 		# carriers
 		"carrierSmall":{
-			"condor_FS":5,
-			"condor_Support":5,
+			"tnon_support_standard":10,
 			"fallback":{"carrierMedium":0.5},
 		},
 		"carrierMedium":{
 			"fallback":{"carrierSmall":2},
 		},
 		"carrierLarge":{
-			"fallback":{"carrierMedium":2},
+			"fallback":{"carrierSmall":4},
 		},
 	
 		# freighters and such
 		"freighterSmall":{
-			"hermes_d_Standard":10,
-			"hermes_Standard":8,
-			"hermes_FS":4,
+			"hermes_d_Standard":10, # Token ship, so things don't break
 			"fallback":{"freighterMedium":0.5},
 		},
 		"freighterMedium":{
-			"tarsus_d_Standard":5,
-			"buffalo_d_Standard":10,
-			"tarsus_Standard":5,
-			"buffalo_pirates_Standard":10,
 			"fallback":{"freighterSmall":2},
 		},
 		"freighterLarge":{
@@ -185,11 +148,10 @@
 		},
 		
 		"tankerSmall":{
-			"dram_Light":10,
+			"dram_Light":10, # Token ship, so things don't break
 			"fallback":{"tankerMedium":0.5},
 		},
 		"tankerMedium":{
-			"phaeton_Standard":10,
 			"fallback":{"tankerSmall":2},
 		},
 		"tankerLarge":{
@@ -197,9 +159,7 @@
 		},
 		
 		"personnelSmall":{
-			"mercury_d_Standard":10,
-			"mercury_Standard":10,
-			"mudskipper_Standard":5,
+			"mercury_d_Standard":10, # Token ship, so things don't break
 			"fallback":{"personnelMedium":0.5},
 		},
 		"personnelMedium":{
@@ -209,15 +169,6 @@
 			"fallback":{"personnelMedium":2},
 		},
 	},
-	"fleetTypeNames":{
-		"trade":"Convoy",
-		"tradeLiner":"Convoy",
-		"mercScout":"Scout",
-		"mercBountyHunter":"Raiders",
-		"mercPrivateer":"Raiders",
-		"mercPatrol":"Attack Fleet",
-		"mercArmada":"Armada",
-	},
 	"traits":{
 		"admiral":{
 			
@@ -226,41 +177,38 @@
 			"timid":1,
 			"cautious":5,
 			"steady":10,
-			"aggressive":20,
+			"aggressive":6,
 		},
 	},
 	"doctrine":{
 		# ship distribution
-		"interceptors":4,
-		"fighters":6,
-		"bombers":8,
-		"small":10,
-		"fast":6,
-		"medium":8,
-		"large":4,
-		"capital":1,
+		"interceptors":10,
+		"fighters":10,
+		"bombers":0,
+		"small":6,
+		"fast":0,
+		"medium":0,
+		"large":6,
+		"capital":0,
 		
 		# as fraction of combat ships of same size
-		## less bothered with escorts.
-		"escortSmallFraction":0.8,
-		"escortMediumFraction":0.8,
+		"escortSmallFraction":0,
+		"escortMediumFraction":0,
 		
-		# everyone must fight!
-		"combatFreighterProbability":0.75,
+		"combatFreighterProbability":0,
 		
-		"minPointsForCombatCapital":24,
+		"minPointsForCombatCapital":10,
 		"minPointsForLargeCarrier":30,
 		
-		"smallCarrierProbability":0.30,
-		"mediumCarrierProbability":0.30,
-		"largeCarrierProbability":0.30,
+		"smallCarrierProbability":1,
+		"mediumCarrierProbability":0,
+		"largeCarrierProbability":0,
 		
 		# officers
-		## tend to be poor, but plentiful + but high variance because very independent.
 		"officersPerPoint":0.35,
-		"officerLevelPerPoint":0.15,
-		"officerLevelBase":3,
-		"officerLevelVariance":0.5,
+		"officerLevelPerPoint":0.3,
+		"officerLevelBase":5,
+		"officerLevelVariance":0.25,
 	},
-}
+},
 
