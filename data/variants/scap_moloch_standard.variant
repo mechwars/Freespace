@@ -33,7 +33,7 @@
                 "WS0002": "fs_shivan_turretlaser",
 				"WS0004": "fs_shivan_turretlaser"
             }
-        }
+        },
 		{
             "autofire": false,
             "mode": "LINKED",

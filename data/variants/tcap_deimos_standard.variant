@@ -31,7 +31,11 @@
             "weapons": {
                 "WS0001": "fs_heavypulsecannon",
                 "WS0002": "fs_heavypulsecannon",
-				"WS0019": "fs_heavypulsecannon"
+				"WS0019": "fs_heavypulsecannon",
+				"WS0013": "fs_pulsecannon",
+                "WS0014": "fs_pulsecannon",
+				"WS0015": "fs_pulsecannon",
+				"WS0016": "fs_pulsecannon"
             }
         },
 		{
@@ -44,16 +48,6 @@
 				"WS0008": "fs_flak"
             }
         },
-		{
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0013": "fs_pulsecannon",
-                "WS0014": "fs_pulsecannon",
-				"WS0015": "fs_pulsecannon",
-				"WS0016": "fs_pulsecannon"
-            }
-        }
 		{
             "autofire": false,
            "mode": "LINKED",
