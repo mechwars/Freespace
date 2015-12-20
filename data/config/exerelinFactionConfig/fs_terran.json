@@ -1,0 +1,26 @@
+{
+    "uniqueModClassName":"data.scripts.FreespaceModPlugin",
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "isPirateNeutral":false, # Boolean
+    "crewExpereinceLevelIncreaseChance":0.0, # Double, 0 - 1.0
+    "baseFleetCostMultiplier":1.0, # Double
+
+    "customRebelFaction":"", # String
+    "customRebelFleetId":"", # String
+    "rebelFleetSuffix":"Deserters", # String
+
+    "positiveDiplomacyExtra":0, # Integer
+    "negativeDiplomacyExtra":0, # Integer
+    "factionsLiked":[], # String array
+    "factionsDisliked":["fs_newterrandawn"], # String array
+    
+    "alignments":{
+		"corporate":0,
+		"technocratic":0.5,
+		"militarist":1,
+		"diplomatic":0.5,
+		"ideological":0,
+    },
+}

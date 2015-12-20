@@ -20,10 +20,11 @@ public class fs_gen implements SectorGeneratorPlugin {
 
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("fs_terran");
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("fs_vasudan");
+        SharedData.getData().getPersonBountyEventData().addParticipatingFaction("fs_shivan");
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("fs_hammeroflight");
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("fs_newterrandawn");
 
-        new Cocytus().generate(sector);
+        //new Cocytus().generate(sector);
         new EpsilonPegasi().generate(sector);
         new Aldebaran().generate(sector);
     }
