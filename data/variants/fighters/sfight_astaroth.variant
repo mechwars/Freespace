@@ -1,0 +1,26 @@
+{
+	"quality":0.75,
+	"displayName":"Interceptor",
+	"hullId":"sfight_astaroth",
+	"variantId":"sfight_astaroth",
+	"fluxVents":0,
+	"fluxCapacitors":0,
+	"mods":[], # array of strings
+	
+	# mode is either LINKED or ALTERNATING
+	# slot ids (WS ***) must match what's in the .ship file
+	"weaponGroups":[
+		{"mode":"LINKED",
+		 "weapons":{
+		 			"WS0001":"fs_shivan_megalaser",
+		 			"WS0002":"fs_shivan_megalaser",
+		 		   },
+		},
+		{"mode":"LINKED",
+		 "weapons":{
+					"WS0003":"swarmer_fighter",
+					"WS0004":"swarmer_fighter",
+		 		   },
+		},
+	],
+}

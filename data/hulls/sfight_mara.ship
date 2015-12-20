@@ -1,0 +1,148 @@
+{
+  "bounds": [
+    -18.5,
+    8.5,
+    -2,
+    10,
+    -1.5,
+    17.5,
+    9,
+    9.5,
+    9.5,
+    3,
+    15.5,
+    3,
+    18,
+    0,
+    18,
+    -0,
+    15.5,
+    -3,
+    9.5,
+    -3,
+    9,
+    -9.5,
+    -1.5,
+    -17.5,
+    -2,
+    -10,
+    -18.5,
+    -8.5
+  ],
+  "center": [
+    17.5,
+    18
+  ],
+  "collisionRadius": 21.708294,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 2,
+      "length": 6,
+      "location": [
+        -15,
+        -3.5
+      ],
+      "style": "FS_SHIVAN_FIGHTER",
+      "width": 2
+    },
+    {
+      "angle": -180,
+      "contrailSize": 2,
+      "length": 6,
+      "location": [
+        -15,
+        3.5
+      ],
+      "style": "FS_SHIVAN_FIGHTER",
+      "width": 2
+    }
+  ],
+  "height": 36,
+  "hullId": "sfight_mara",
+  "hullName": "Mara",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 20.155643,
+  "spriteName": "graphics/Freespace/ships/sfight_mara.png",
+  "style": "FS_SHIVAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        8.5,
+        3
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        8.5,
+        -3
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        7,
+        3
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        7,
+        -3
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        8.5,
+        4.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        8.5,
+        -4.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 35
+}

@@ -1,0 +1,136 @@
+{
+  "bounds": [
+    -18.5,
+    8.5,
+    -2,
+    20,
+    8.5,
+    20.5,
+    11,
+    0,
+    11,
+    -0,
+    8.5,
+    -20.5,
+    -2,
+    -20,
+    -18.5,
+    -8.5
+  ],
+  "center": [
+    19.5,
+    17
+  ],
+  "collisionRadius": 22.94014,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 2,
+      "length": 7,
+      "location": [
+        -7.5,
+        -4
+      ],
+      "style": "FS_VASUDAN_FIGHTER",
+      "width": 2
+    },
+    {
+      "angle": -180,
+      "contrailSize": 2,
+      "length": 7,
+      "location": [
+        -7.5,
+        4
+      ],
+      "style": "FS_VASUDAN_FIGHTER",
+      "width": 2
+    }
+  ],
+  "height": 28,
+  "hullId": "vfight_serapis",
+  "hullName": "Serapis",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 21.914606,
+  "spriteName": "graphics/Freespace/ships/vfight_serapis.png",
+  "style": "FS_VASUDAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        7.5,
+        -7
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        6,
+        1.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        6,
+        -1.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        7.5,
+        7
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        9.5,
+        11
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        9.5,
+        -11
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 39
+}

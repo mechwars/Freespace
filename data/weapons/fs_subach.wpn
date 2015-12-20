@@ -24,6 +24,6 @@
 					   "particleColor":[100,100,255,255]},	
 	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
 	"requiresFullCharge":false,  # for pulse weapons - whether the weapon will fire at a lower strength partial charge
-	"projectileSpecId":"subach_shot",  # projectile that will be fired
+	"projectileSpecId":"fs_subach",  # projectile that will be fired
 	"fireSoundTwo":"l_subach",
 }

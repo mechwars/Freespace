@@ -38,23 +38,23 @@
     {
       "angle": -180,
       "contrailSize": 2,
-      "length": 9,
+      "length": 10,
       "location": [
         -6.5,
         5
       ],
-      "style": "HIGH_TECH",
+      "style": "FS_TERRAN_FIGHTER",
       "width": 2
     },
     {
       "angle": 180,
       "contrailSize": 2,
-      "length": 9,
+      "length": 10,
       "location": [
         -6.5,
         -5
       ],
-      "style": "HIGH_TECH",
+      "style": "FS_TERRAN_FIGHTER",
       "width": 2
     }
   ],
@@ -68,7 +68,7 @@
   ],
   "shieldRadius": 38.668461,
   "spriteName": "graphics/Freespace/ships/tnon_support.png",
-  "style": "HIGH_TECH",
+  "style": "FS_TERRAN",
   "viewOffset": 0,
   "weaponSlots": [
     {

@@ -8,12 +8,38 @@
     "variantId": "scap_moloch_standard",
     "weaponGroups": [
         {
-            "autofire": true,
+            "autofire": false,
             "mode": "LINKED",
             "weapons": {
                 "WS0003": "fs_shivan_beam",
                 "WS0007": "fs_shivan_beam",
 				"WS0009": "fs_shivan_beam"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "fs_flak",
+                "WS0006": "fs_flak",
+				"WS0008": "fs_heavyflak"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "fs_shivan_turretlaser",
+                "WS0002": "fs_shivan_turretlaser",
+				"WS0004": "fs_shivan_turretlaser"
+            }
+        },
+		{
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "fs_piranha",
+                "WS0011": "fs_piranha"
             }
         }
     ]

@@ -1,0 +1,28 @@
+{
+	"quality":0.75,
+	"displayName":"Interceptor",
+	"hullId":"tfight_perseus",
+	"variantId":"tfight_perseus",
+	"fluxVents":0,
+	"fluxCapacitors":0,
+	"mods":[], # array of strings
+	
+	# mode is either LINKED or ALTERNATING
+	# slot ids (WS ***) must match what's in the .ship file
+	"weaponGroups":[
+		{"mode":"LINKED",
+		 "weapons":{
+		 			"WS0001":"fs_subach",
+		 			"WS0002":"fs_subach",
+					"WS0003":"fs_prometheus_s",
+					"WS0004":"fs_prometheus_s",
+		 		   },
+		},
+		{"mode":"LINKED",
+		 "weapons":{
+		 			"WS0005":"swarmer_fighter",
+					"WS0006":"swarmer_fighter",
+		 		   },
+		},
+	],
+}

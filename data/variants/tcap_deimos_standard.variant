@@ -8,23 +8,52 @@
     "variantId": "tcap_deimos_standard",
     "weaponGroups": [
         {
-            "autofire": true,
+            "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "fs_terran_lightbeam",
-                "WS0004": "fs_terran_lightbeam",
-				"WS0009": "fs_terran_lightbeam",
-				"WS0010": "fs_terran_lightbeam"
+                "WS0003": "fs_terran_mediumbeam",
+                "WS0004": "fs_terran_mediumbeam",
+				"WS0009": "fs_terran_mediumbeam",
+				"WS0010": "fs_terran_mediumbeam"
             }
         },
 		{
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "phasebeam",
-                "WS0006": "phasebeam",
-				"WS0017": "phasebeam",
-				"WS0018": "phasebeam"
+				"WS0017": "fs_terran_aaabeam",
+				"WS0018": "fs_terran_aaabeam"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "fs_heavypulsecannon",
+                "WS0002": "fs_heavypulsecannon",
+				"WS0019": "fs_heavypulsecannon",
+				"WS0013": "fs_pulsecannon",
+                "WS0014": "fs_pulsecannon",
+				"WS0015": "fs_pulsecannon",
+				"WS0016": "fs_pulsecannon"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "fs_flak",
+                "WS0006": "fs_flak",
+				"WS0007": "fs_flak",
+				"WS0008": "fs_flak"
+            }
+        },
+		{
+            "autofire": false,
+           "mode": "LINKED",
+            "weapons": {
+                "WS0011": "fs_piranha",
+                "WS0012": "fs_piranha"
             }
         }
     ]

@@ -1,0 +1,50 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 20,
+    "fluxVents": 100,
+    "hullId": "vcap_sobek",
+    "hullMods": [],
+    "quality": 1,
+    "variantId": "vcap_sobek_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+				"WS0008": "fs_vasudan_mediumbeam",
+				"WS0009": "fs_vasudan_mediumbeam"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+				"WS0004": "fs_terran_aaabeam",
+				"WS0005": "fs_terran_aaabeam",
+				"WS0006": "fs_terran_aaabeam",
+				"WS0007": "fs_terran_aaabeam"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "fs_heavypulsecannon2",
+				"WS0010": "fs_pulsecannon2",
+				"WS0011": "fs_pulsecannon2",
+				"WS0012": "fs_pulsecannon2",
+				"WS0013": "fs_pulsecannon2",
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "fs_flak",
+                "WS0002": "fs_flak",
+				"WS0014": "fs_flak",
+				"WS0015": "fs_flak"
+            }
+        }
+    ]
+}

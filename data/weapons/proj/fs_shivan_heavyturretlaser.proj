@@ -1,14 +1,14 @@
 {
-	"id":"prometheus_shot",
+	"id":"fs_shivan_heavyturretlaser",
 	"specClass":"projectile",
 	#"spawnType":"BEAM",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",
-	"length":40.0,
-	"width":20.0,
+	"length":80.0,
+	"width":60.0,
 	"fadeTime":0.25,
-	"fringeColor":[0,200,0,255],
+	"fringeColor":[255,0,0,255],
 	"coreColor":[255,255,255,200],
 	#"coreColor":[175,175,175,255],
 	"textureType":"SMOOTH",  # only needed for BEAM spawnType

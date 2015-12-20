@@ -14,8 +14,8 @@ import java.awt.*;
 public class fs_shivan_aaabeam_effect implements BeamEffectPlugin {
 
     // These are the beam source colors while the beam is firing. Get these from weapons.tbl
-    private static final Color COLOR1 = new Color(0, 0, 255);
-    private static final Color COLOR2 = new Color(0, 50, 200);
+    private static final Color COLOR1 = new Color(255, 0, 0);
+    private static final Color COLOR2 = new Color(200, 0, 0);
     private static final Color COLOR3 = new Color(255, 255, 255);
 
     private static final Vector2f ZERO = new Vector2f();
@@ -60,17 +60,24 @@ public class fs_shivan_aaabeam_effect implements BeamEffectPlugin {
                 sinceLast = Global.getCombatEngine().getTotalElapsedTime(false);
                 // Make the beam source glow during firing
                 Global.getCombatEngine().addHitParticle(origin, ZERO, 40f, 5f, 0.2f, COLOR1);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 30f, 5f, 0.5f, COLOR2);
-                Global.getCombatEngine().addHitParticle(origin, ZERO, 20f, 5f, 0.5f, COLOR3);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 30f, 5f, 0.3f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, 20f, 10f, 0.6f, COLOR3);
             }
         }
         level = beam.getBrightness();
 
         interval.advance(amount);
         // Make the beam source area do fun glowy things as long as the beam is firing. Grab these from the main colors.
-        Global.getCombatEngine().addHitParticle(origin, new Vector2f(), (float) Math.random() * 20f + 20f, 0.2f, 0.2f, new Color(
-                MathUtils.getRandomNumberInRange(0, 10), MathUtils.getRandomNumberInRange(0, 50),
-                MathUtils.getRandomNumberInRange(245, 255), 255));
+        // Scale the glow down when the beam is done firing.
+        if (beam.getBrightness() < level) {
+            Global.getCombatEngine().addHitParticle(origin, ZERO, 40f, 5f * level, 0.2f, COLOR1);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, 30f, 5f * level, 0.3f, COLOR2);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, 20f, 10f * level, 0.6f, COLOR3);
+        } else {
+            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 20f + 20f, 5f, 0.2f, COLOR1);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 15f + 15f, 5f, 0.3f, COLOR2);
+            Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 10f + 10f, 10f, 0.6f, COLOR3);
+        }
 
         if (interval.intervalElapsed()) {
             // If the beam damaged the target, spawn an explosion where the beam hits

@@ -1,7 +1,19 @@
 variant id
 tcap_deimos_standard
-scap_moloch_standard
-tfight_herc2
-tfight_herc2
-tfight_herc2
+tfight_herc2_wing
+tfight_herc2_wing
+tfight_perseus_wing
+tfight_perseus_wing
 tnon_support_standard
+vcap_sobek_standard
+vfight_tauret_wing
+vfight_tauret_wing
+vfight_serapis_wing
+vfight_serapis_wing
+vnon_support_standard
+scap_demon_standard
+scap_moloch_standard
+sfight_mara_wing
+sfight_mara_wing
+sfight_astaroth_wing
+sfight_astaroth_wing

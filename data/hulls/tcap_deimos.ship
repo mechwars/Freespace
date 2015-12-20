@@ -38,12 +38,10 @@
     -14.5
   ],
   "builtInWeapons": {
-    "WS0003": "fs_terran_lightbeam",
-    "WS0004": "fs_terran_lightbeam",
-    "WS0005": "fs_terran_aaabeam",
-    "WS0006": "fs_terran_aaabeam",
-    "WS0009": "fs_terran_lightbeam",
-    "WS0010": "fs_terran_lightbeam",
+    "WS0003": "fs_terran_mediumbeam",
+    "WS0004": "fs_terran_mediumbeam",
+    "WS0009": "fs_terran_mediumbeam",
+    "WS0010": "fs_terran_mediumbeam",
     "WS0017": "fs_terran_aaabeam",
     "WS0018": "fs_terran_aaabeam"
   },
@@ -61,7 +59,7 @@
         -176.5,
         -0
       ],
-      "style": "HIGH_TECH",
+      "style": "FS_TERRAN_CRUISER",
       "width": 24
     }
   ],
@@ -75,7 +73,7 @@
   ],
   "shieldRadius": 177.837708,
   "spriteName": "graphics/Freespace/ships/tcap_deimos.png",
-  "style": "HIGH_TECH",
+  "style": "FS_TERRAN",
   "viewOffset": 0,
   "weaponSlots": [
     {
@@ -87,8 +85,8 @@
         1.5
       ],
       "mount": "TURRET",
-      "size": "LARGE",
-      "type": "ENERGY"
+      "size": "MEDIUM",
+      "type": "HYBRID"
     },
     {
       "angle": 0,
@@ -99,8 +97,8 @@
         0.5
       ],
       "mount": "TURRET",
-      "size": "LARGE",
-      "type": "ENERGY"
+      "size": "MEDIUM",
+      "type": "HYBRID"
     },
     {
       "angle": 0,
@@ -111,7 +109,7 @@
         -17
       ],
       "mount": "HIDDEN",
-      "size": "LARGE",
+      "size": "MEDIUM",
       "type": "BUILT_IN"
     },
     {
@@ -123,7 +121,7 @@
         17
       ],
       "mount": "HIDDEN",
-      "size": "LARGE",
+      "size": "MEDIUM",
       "type": "BUILT_IN"
     },
     {
@@ -135,8 +133,8 @@
         -18
       ],
       "mount": "HIDDEN",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
+      "size": "SMALL",
+      "type": "HYBRID"
     },
     {
       "angle": 180,
@@ -147,31 +145,31 @@
         18
       ],
       "mount": "HIDDEN",
-      "size": "MEDIUM",
-      "type": "BUILT_IN"
+      "size": "SMALL",
+      "type": "HYBRID"
     },
     {
       "angle": -90,
-      "arc": 180,
+      "arc": 145,
       "id": "WS0017",
       "locations": [
-        120,
-        -30
+        147.5,
+        -27.5
       ],
       "mount": "HIDDEN",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BUILT_IN"
     },
     {
       "angle": 90,
-      "arc": 180,
+      "arc": 145,
       "id": "WS0018",
       "locations": [
-        120,
-        30.5
+        147.5,
+        28.5
       ],
       "mount": "HIDDEN",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BUILT_IN"
     },
     {
@@ -183,15 +181,15 @@
         0.5
       ],
       "mount": "TURRET",
-      "size": "LARGE",
-      "type": "ENERGY"
+      "size": "MEDIUM",
+      "type": "HYBRID"
     },
     {
       "angle": 90,
       "arc": 145,
       "id": "WS0015",
       "locations": [
-        62,
+        102,
         31
       ],
       "mount": "HIDDEN",
@@ -203,8 +201,8 @@
       "arc": 145,
       "id": "WS0016",
       "locations": [
-        62,
-        -30
+        102,
+        -30.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
@@ -215,7 +213,7 @@
       "arc": 145,
       "id": "WS0013",
       "locations": [
-        1.5,
+        59,
         -30.5
       ],
       "mount": "HIDDEN",
@@ -227,7 +225,7 @@
       "arc": 145,
       "id": "WS0014",
       "locations": [
-        1.5,
+        59,
         31.5
       ],
       "mount": "HIDDEN",
@@ -244,7 +242,7 @@
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "MISSILE"
     },
     {
       "angle": -90,
@@ -256,7 +254,7 @@
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "MISSILE"
     },
     {
       "angle": 100,
@@ -267,7 +265,7 @@
         47.5
       ],
       "mount": "HIDDEN",
-      "size": "LARGE",
+      "size": "MEDIUM",
       "type": "BUILT_IN"
     },
     {
@@ -279,32 +277,32 @@
         -47
       ],
       "mount": "HIDDEN",
-      "size": "LARGE",
+      "size": "MEDIUM",
       "type": "BUILT_IN"
     },
     {
-      "angle": -135,
+      "angle": 90,
       "arc": 145,
       "id": "WS0007",
       "locations": [
-        -167,
-        -36.5
+        22.5,
+        32
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "HYBRID"
     },
     {
-      "angle": 135,
+      "angle": -90,
       "arc": 145,
       "id": "WS0008",
       "locations": [
-        -167,
-        36.5
+        22.5,
+        -31.5
       ],
       "mount": "HIDDEN",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "HYBRID"
     }
   ],
   "width": 106

@@ -1,0 +1,140 @@
+{
+  "bounds": [
+    -18,
+    7,
+    -3,
+    12.5,
+    8,
+    3,
+    14,
+    3,
+    18,
+    1,
+    18,
+    -1,
+    14,
+    -3,
+    8,
+    -3,
+    -3,
+    -12.5,
+    -18,
+    -7
+  ],
+  "center": [
+    11.5,
+    18
+  ],
+  "collisionRadius": 20.808653,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 2,
+      "length": 6,
+      "location": [
+        -13,
+        3
+      ],
+      "style": "FS_TERRAN_FIGHTER",
+      "width": 2
+    },
+    {
+      "angle": -180,
+      "contrailSize": 2,
+      "length": 6,
+      "location": [
+        -13,
+        -3
+      ],
+      "style": "FS_TERRAN_FIGHTER",
+      "width": 2
+    }
+  ],
+  "height": 36,
+  "hullId": "tfight_perseus",
+  "hullName": "Perseus",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 20.155643,
+  "spriteName": "graphics/Freespace/ships/tfight_perseus.png",
+  "style": "FS_TERRAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        6,
+        -5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        6,
+        5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        6,
+        -4
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        6,
+        4
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        3.5,
+        -4.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        3.5,
+        4.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 23
+}

@@ -13,6 +13,11 @@ import org.lwjgl.util.vector.Vector2f;
 
 public class fs_terran_lightbeam_everyframe implements EveryFrameWeaponEffectPlugin {
 
+    // These are the beam source colors while the beam is firing. Get these from weapons.tbl
+    private static final Color COLOR1 = new Color(0, 255, 0);
+    private static final Color COLOR2 = new Color(160, 160, 0);
+    private static final Color COLOR3 = new Color(255, 255, 255);
+
     // Variables for beam charging and animation
     private static final Vector2f ZERO = new Vector2f();
     private boolean charging = false;
@@ -54,10 +59,9 @@ public class fs_terran_lightbeam_everyframe implements EveryFrameWeaponEffectPlu
             } else if (weapon.getChargeLevel() < 1f && weapon.getCooldownRemaining() <= 0f) {
                 // The weapon is charging, so display the charge glow
                 // Set the RGB color + alpha value of the beam charging glow
-                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 75f + 75f * weapon.getChargeLevel(), weapon.getChargeLevel() *
-                                0.3f, 0.2f,
-                        new Color(MathUtils.getRandomNumberInRange(0, 10), MathUtils.getRandomNumberInRange(160, 255),
-                                MathUtils.getRandomNumberInRange(0, 160), 255));
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 40f + 40f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.2f, COLOR1);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 30f + 30f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.3f, COLOR2);
+                Global.getCombatEngine().addHitParticle(origin, ZERO, (float) Math.random() * 20f + 20f * weapon.getChargeLevel(), weapon.getChargeLevel(), 0.6f, COLOR3);
             } else {
                 firing = true;
             }
@@ -66,99 +70,10 @@ public class fs_terran_lightbeam_everyframe implements EveryFrameWeaponEffectPlu
             if (weapon.getChargeLevel() > 0f && weapon.getCooldownRemaining() <= 0f) {
                 charging = true;
                 // Change this for each beam
-                Global.getSoundPlayer().playSound("bt_up_3", 1f, 1f, origin, weapon.getShip().getVelocity());
+                Global.getSoundPlayer().playSound("bt_up_1.5", 1f, 1f, origin, weapon.getShip().getVelocity());
             }
         }
         // End Beam Weapon Charging Code
 
-        // Begin Slicing Beam Code
-        if (!this.runOnce)
-        {
-            this.TURN_SPEED = weapon.getTurnRate();
-            this.SHIP = weapon.getShip();
-            this.ARC = weapon.getArc();
-            this.ARC_FACING = weapon.getArcFacing();
-            if (weapon.getArc() <= this.SLASH_WIDTH.intValue()) {
-                this.turretMode = false;
-            }
-            this.runOnce = true;
-        }
-        if (!this.turretMode)
-        {
-            if (weapon.isFiring())
-            {
-                if (!this.isFiring)
-                {
-                    this.isFiring = true;
-
-                    float angleInArc = MathUtils.getShortestRotation(this.ARC_FACING + this.SHIP.getFacing(), weapon.getCurrAngle());
-                    float positionInArc = Math.min(1.0F, Math.max(-1.0F, 2.0F * angleInArc / this.ARC));
-                    this.timeOffset = ((float)-Math.asin(positionInArc));
-                }
-                this.timeOffset += amount * (this.TURN_SPEED / 6.2831855F);
-                float slashing = -(float)Math.sin(this.timeOffset) * this.ARC / 2.0F;
-
-                weapon.setCurrAngle(this.SHIP.getFacing() + this.ARC_FACING + slashing);
-            }
-            else
-            {
-                this.isFiring = false;
-            }
-        }
-        else if (weapon.isFiring())
-        {
-            if (!this.isFiring)
-            {
-                this.isFiring = true;
-                this.target_facing = weapon.getCurrAngle();
-                this.followShip = false;
-                float aiming = MathUtils.getShortestRotation(this.ARC_FACING + this.SHIP.getFacing(), weapon.getCurrAngle());
-                if ((this.ARC != 360.0F) && (aiming > this.ARC / 2.0F - this.SLASH_WIDTH.intValue() / 2))
-                {
-                    this.target_facing = MathUtils.clampAngle(this.ARC_FACING + this.SHIP.getFacing() + this.ARC / 2.0F - this.SLASH_WIDTH.intValue() / 2 - 1.0F);
-                    float angleInArc = MathUtils.getShortestRotation(this.target_facing, weapon.getCurrAngle());
-                    float positionInArc = Math.min(1.0F, Math.max(-1.0F, 2.0F * angleInArc / this.SLASH_WIDTH.intValue()));
-                    this.timeOffset = ((float)-Math.asin(positionInArc));
-                }
-                else if ((this.ARC != 360.0F) && (aiming < -this.ARC / 2.0F + this.SLASH_WIDTH.intValue() / 2))
-                {
-                    this.target_facing = MathUtils.clampAngle(this.ARC_FACING + this.SHIP.getFacing() - this.ARC / 2.0F + this.SLASH_WIDTH.intValue() / 2 + 1.0F);
-                    float angleInArc = MathUtils.getShortestRotation(this.target_facing, weapon.getCurrAngle());
-                    float positionInArc = Math.min(1.0F, Math.max(-1.0F, 2.0F * angleInArc / this.SLASH_WIDTH.intValue()));
-                    this.timeOffset = ((float)-Math.asin(positionInArc));
-                }
-                else
-                {
-                    this.timeOffset = 0.0F;
-                }
-            }
-            this.timeOffset += amount * (this.TURN_SPEED / 6.2831855F);
-            float slashing = -(float)Math.sin(this.timeOffset) * this.SLASH_WIDTH.intValue() / 2.0F;
-            float newAngle = this.target_facing + slashing;
-            if ((!this.followShip) && (this.ARC != 360.0F) && (MathUtils.getShortestRotation(this.ARC_FACING + this.SHIP.getFacing(), newAngle) > this.ARC / 2.0F))
-            {
-                this.timeOffset = -1.5707964F;
-                slashing = -(float)Math.sin(this.timeOffset) * this.SLASH_WIDTH.intValue() / 2.0F;
-                this.followShip = true;
-                this.target_facing = MathUtils.clampAngle(this.ARC_FACING + this.ARC / 2.0F - this.SLASH_WIDTH.intValue() / 2);
-            }
-            else if ((!this.followShip) && (this.ARC != 360.0F) && (MathUtils.getShortestRotation(this.ARC_FACING + this.SHIP.getFacing(), newAngle) < -this.ARC / 2.0F))
-            {
-                this.timeOffset = 1.5707964F;
-                slashing = -(float)Math.sin(this.timeOffset) * this.SLASH_WIDTH.intValue() / 2.0F;
-                this.followShip = true;
-                this.target_facing = MathUtils.clampAngle(this.ARC_FACING - this.ARC / 2.0F + this.SLASH_WIDTH.intValue() / 2);
-            }
-            if (this.followShip) {
-                weapon.setCurrAngle(MathUtils.clampAngle(this.SHIP.getFacing() + this.target_facing + slashing));
-            } else {
-                weapon.setCurrAngle(MathUtils.clampAngle(newAngle));
-            }
-        }
-        else
-        {
-            this.isFiring = false;
-        }
-        // End Slicing Beam Code
     }
 }

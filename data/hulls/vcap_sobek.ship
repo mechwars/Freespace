@@ -1,0 +1,294 @@
+{
+  "bounds": [
+    -162.5,
+    -1,
+    -87.5,
+    -24,
+    -93,
+    -74.5,
+    -61,
+    -39,
+    -27.5,
+    -17.5,
+    22,
+    -18.5,
+    58,
+    -33,
+    142,
+    -14.5,
+    135,
+    0.5,
+    135,
+    -0.5,
+    142,
+    14.5,
+    58,
+    33,
+    22,
+    18.5,
+    -27.5,
+    17.5,
+    -61,
+    39,
+    -93,
+    74.5,
+    -87.5,
+    24,
+    -162.5,
+    1
+  ],
+  "builtInWeapons": {
+    "WS0004": "fs_terran_aaabeam",
+    "WS0005": "fs_terran_aaabeam",
+    "WS0006": "fs_terran_aaabeam",
+    "WS0007": "fs_terran_aaabeam",
+    "WS0008": "fs_vasudan_mediumbeam",
+    "WS0009": "fs_vasudan_mediumbeam"
+  },
+  "center": [
+    73.5,
+    163
+  ],
+  "collisionRadius": 162.699875,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 10.5,
+      "location": [
+        -81,
+        -20.5
+      ],
+      "style": "FS_VASUDAN_CRUISER",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 10.5,
+      "location": [
+        -81,
+        20.5
+      ],
+      "style": "FS_VASUDAN_CRUISER",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 3,
+      "length": 7.5,
+      "location": [
+        40,
+        -24.5
+      ],
+      "style": "FS_VASUDAN_CRUISER",
+      "width": 3
+    },
+    {
+      "angle": -180,
+      "contrailSize": 3,
+      "length": 7.5,
+      "location": [
+        40,
+        24.5
+      ],
+      "style": "FS_VASUDAN_CRUISER",
+      "width": 3
+    }
+  ],
+  "height": 304,
+  "hullId": "vcap_sobek",
+  "hullName": "Sobek",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    -0.5,
+    -1
+  ],
+  "shieldRadius": 158.222946,
+  "spriteName": "graphics/Freespace/ships/vcap_sobek.png",
+  "style": "FS_VASUDAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -45,
+      "arc": 270,
+      "id": "WS0001",
+      "locations": [
+        54,
+        -19
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 45,
+      "arc": 270,
+      "id": "WS0002",
+      "locations": [
+        54,
+        19
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0003",
+      "locations": [
+        41,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -173,
+      "arc": 90,
+      "id": "WS0004",
+      "locations": [
+        -86,
+        -48
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 173,
+      "arc": 90,
+      "id": "WS0005",
+      "locations": [
+        -86,
+        48
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -45,
+      "arc": 270,
+      "id": "WS0006",
+      "locations": [
+        95,
+        -18.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 45,
+      "arc": 270,
+      "id": "WS0007",
+      "locations": [
+        95,
+        18.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -45,
+      "arc": 270,
+      "id": "WS0008",
+      "locations": [
+        126.5,
+        -11
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 45,
+      "arc": 270,
+      "id": "WS0009",
+      "locations": [
+        126.5,
+        11
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 145,
+      "id": "WS0010",
+      "locations": [
+        15.5,
+        -11
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 145,
+      "id": "WS0011",
+      "locations": [
+        15.5,
+        11
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 145,
+      "id": "WS0012",
+      "locations": [
+        -7.5,
+        -10.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 145,
+      "id": "WS0013",
+      "locations": [
+        -7.5,
+        10.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 145,
+      "id": "WS0014",
+      "locations": [
+        -59.5,
+        16
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 145,
+      "id": "WS0015",
+      "locations": [
+        -59.5,
+        -16
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    }
+  ],
+  "width": 147
+}

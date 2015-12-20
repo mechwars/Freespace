@@ -1,0 +1,28 @@
+{
+	"quality":0.75,
+	"displayName":"Advanced Interceptor",
+	"hullId":"vfight_serapis",
+	"variantId":"vfight_serapis",
+	"fluxVents":0,
+	"fluxCapacitors":0,
+	"mods":[], # array of strings
+	
+	# mode is either LINKED or ALTERNATING
+	# slot ids (WS ***) must match what's in the .ship file
+	"weaponGroups":[
+		{"mode":"LINKED",
+		 "weapons":{
+		 			"WS0001":"fs_mekhu",
+		 			"WS0002":"fs_mekhu",
+					"WS0003":"fs_mekhu",
+					"WS0004":"fs_mekhu",
+		 		   },
+		},
+		{"mode":"LINKED",
+		 "weapons":{
+		 			"WS0005":"annihilator",
+					"WS0006":"annihilator",
+		 		   },
+		},
+	],
+}

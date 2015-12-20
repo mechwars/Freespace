@@ -1,7 +1,7 @@
 {
   "bounds": [
-    -215,
-    -9.5,
+    -204.5,
+    -9,
     -85,
     -47,
     -61,
@@ -34,8 +34,8 @@
     42,
     -85,
     47,
-    -215,
-    9.5
+    -204.5,
+    9
   ],
   "builtInWeapons": {
     "WS0003": "fs_shivan_beam",
@@ -43,10 +43,10 @@
     "WS0009": "fs_shivan_beam"
   },
   "center": [
-    49.5,
-    214.5
+    48.5,
+    221.5
   ],
-  "collisionRadius": 216.468246,
+  "collisionRadius": 208.514984,
   "engineSlots": [
     {
       "angle": 180,
@@ -56,7 +56,7 @@
         -126.5,
         -36.5
       ],
-      "style": "LOW_TECH",
+      "style": "FS_SHIVAN_CRUISER",
       "width": 7
     },
     {
@@ -67,7 +67,7 @@
         -126.5,
         36.5
       ],
-      "style": "LOW_TECH",
+      "style": "FS_SHIVAN_CRUISER",
       "width": 7
     },
     {
@@ -78,7 +78,7 @@
         23,
         -27
       ],
-      "style": "LOW_TECH",
+      "style": "FS_SHIVAN_CRUISER",
       "width": 7
     },
     {
@@ -89,21 +89,21 @@
         23,
         27
       ],
-      "style": "LOW_TECH",
+      "style": "FS_SHIVAN_CRUISER",
       "width": 7
     }
   ],
   "height": 362,
   "hullId": "scap_moloch",
-  "hullName": "SCv Moloch",
+  "hullName": "Moloch",
   "hullSize": "CRUISER",
   "shieldCenter": [
     0,
-    -0.5
+    -0
   ],
-  "shieldRadius": 210.434082,
+  "shieldRadius": 203.986526,
   "spriteName": "graphics/Freespace/ships/scap_moloch.png",
-  "style": "HIGH_TECH",
+  "style": "FS_SHIVAN",
   "viewOffset": 0,
   "weaponSlots": [
     {
@@ -195,12 +195,12 @@
       "arc": 300,
       "id": "WS0008",
       "locations": [
-        -200.5,
-        1
+        -196,
+        1.5
       ],
       "mount": "HIDDEN",
-      "size": "SMALL",
-      "type": "ENERGY"
+      "size": "MEDIUM",
+      "type": "HYBRID"
     },
     {
       "angle": 90,
@@ -213,7 +213,43 @@
       "mount": "HIDDEN",
       "size": "LARGE",
       "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 130,
+      "id": "WS0010",
+      "locations": [
+        -99,
+        -36.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 90,
+      "arc": 130,
+      "id": "WS0011",
+      "locations": [
+        -99,
+        40.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -99,
+        0.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
     }
   ],
-  "width": 97
+  "width": 94
 }

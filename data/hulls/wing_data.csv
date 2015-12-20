@@ -1,12 +1,12 @@
 id,variant,fleet pts,quality,hyperdrive,formation,num,role,refit,base value,,,,,,,,,,,,,number
-tfight_herc2_wing,tfight_herc2,6,0.75,,V,3,ASSAULT,10,16000,,,,,,,,,,,,,1
-,,,,,,,,,,,,,,,,,,,,,,2
+tfight_herc2_wing,tfight_herc2,6,0.75,1,V,3,ASSAULT,10,16000,,,,,,,,,,,,,1
+tfight_perseus_wing,tfight_perseus,5,0.75,1,V,3,INTERCEPTOR,10,14000,,,,,,,,,,,,,2
 ,,,,,,,,,,,,,,,,,,,,,,3
-,,,,,,,,,,,,,,,,,,,,,,4
-,,,,,,,,,,,,,,,,,,,,,,5
+vfight_tauret_wing,vfight_tauret,6,0.75,1,V,3,ASSAULT,10,16000,,,,,,,,,,,,,5
+vfight_serapis_wing,vfight_serapis,6,0.75,1,V,3,INTERCEPTOR,10,14000,,,,,,,,,,,,,4
 ,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,6
-,,,,,,,,,,,,,,,,,,,,,,7
+sfight_mara_wing,sfight_mara,6,0.75,1,V,4,ASSAULT,10,16000,,,,,,,,,,,,,6
+sfight_astaroth_wing,sfight_astaroth,6,0.75,1,V,4,INTERCEPTOR,10,14000,,,,,,,,,,,,,7
 ,,,,,,,,,,,,,,,,,,,,,,8
 ,,,,,,,,,,,,,,,,,,,,,,9
 ,,,,,,,,,,,,,,,,,,,,,,10

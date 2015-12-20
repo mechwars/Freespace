@@ -1,0 +1,164 @@
+{
+  "bounds": [
+    -21.5,
+    4.5,
+    -14.5,
+    13,
+    -2,
+    13.5,
+    12,
+    16,
+    16,
+    0,
+    16,
+    -0,
+    12,
+    -16,
+    -2,
+    -13.5,
+    -14.5,
+    -13,
+    -21.5,
+    -4.5
+  ],
+  "center": [
+    14.5,
+    20.5
+  ],
+  "collisionRadius": 22.209232,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 3,
+      "length": 7,
+      "location": [
+        -13,
+        -10.5
+      ],
+      "style": "FS_VASUDAN_FIGHTER",
+      "width": 3
+    },
+    {
+      "angle": -180,
+      "contrailSize": 3,
+      "length": 7,
+      "location": [
+        -13,
+        10.5
+      ],
+      "style": "FS_VASUDAN_FIGHTER",
+      "width": 3
+    }
+  ],
+  "height": 36,
+  "hullId": "vfight_tauret",
+  "hullName": "Tauret",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 21.36001,
+  "spriteName": "graphics/Freespace/ships/vfight_tauret.png",
+  "style": "FS_VASUDAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        8,
+        7.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        8,
+        -7.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        10,
+        8.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        10,
+        -8.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        10,
+        6.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        10,
+        -6.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        12.5,
+        11.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        12.5,
+        -11.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 29
+}
