@@ -8,7 +8,7 @@
     "variantId": "tcap_deimos_standard",
     "weaponGroups": [
         {
-            "autofire": true,
+            "autofire": false,
             "mode": "LINKED",
             "weapons": {
                 "WS0003": "fs_terran_mediumbeam",
@@ -54,13 +54,13 @@
 				"WS0016": "fs_pulsecannon"
             }
         }
-		#{
-        #    "autofire": true,
-        #    "mode": "LINKED",
-        #    "weapons": {
-        #        "WS0011": "fs_piranha",
-        #        "WS0012": "fs_piranha"
-        #    }
-        #}
+		{
+            "autofire": false,
+           "mode": "LINKED",
+            "weapons": {
+                "WS0011": "fs_piranha",
+                "WS0012": "fs_piranha"
+            }
+        }
     ]
 }

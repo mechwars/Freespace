@@ -1,0 +1,65 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 20,
+    "fluxVents": 100,
+    "hullId": "scap_demon",
+    "hullMods": [],
+    "quality": 1,
+    "variantId": "scap_demon_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+				"WS0001": "fs_shivan_heavybeam",
+				"WS0002": "fs_shivan_heavybeam"
+            }
+        },
+		{
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "fs_shivan_beam"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+				"WS0004": "fs_shivan_aaabeam",
+				"WS0005": "fs_shivan_aaabeam"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+				"WS0007": "fs_flak",
+                "WS0008": "fs_flak",
+				"WS0009": "fs_flak",
+				"WS0010": "fs_flak"
+            }
+        },
+		{
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+				"WS0006": "fs_shivan_heavyturretlaser",
+                "WS0014": "fs_shivan_turretlaser",
+				"WS0015": "fs_shivan_turretlaser",
+				"WS0016": "fs_shivan_turretlaser",
+				"WS0017": "fs_shivan_turretlaser",
+				"WS0018": "fs_shivan_turretlaser"
+            }
+        },
+		{
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+				"WS0011": "fs_piranha",
+                "WS0012": "fs_piranha",
+				"WS0013": "fs_piranha"
+            }
+        }
+    ]
+}

@@ -9,10 +9,10 @@
 	"hardpointSprite":"graphics/Freespace/weapons/vasudanhugeturret_turret_base.png",
 	"hardpointGunSprite":"graphics/Freespace/weapons/vasudanhugeturret_turret_recoil.png",	
 	"visualRecoil":8.0,  # the gun sprites are only used if this is non-0
-	"turretOffsets":[17, -8, 17, 8],
-	"turretAngleOffsets":[0, -4],
-	"hardpointOffsets":[17, -8, 17, 8],
-	"hardpointAngleOffsets":[0, -4],
+	"turretOffsets":[9, -4, 9, 4],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[9, -4, 9, 4],
+	"hardpointAngleOffsets":[0, 0],
 	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
 	"animationType":"GLOW_AND_FLASH",
 	"muzzleFlashSpec":{"length":40.0,   # only used if animationType = MUZZLE_FLASH
