@@ -13,7 +13,7 @@ public class Aldebaran {
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Aldebaran");
-        system.getLocation().set(8400, -10750);
+        system.getLocation().set(5000, -13000);
         system.setBackgroundTextureFilename("graphics/backgrounds/background4.jpg");
 
         PlanetAPI aldebaran = system.initStar("aldebaran", // unique id for this star
@@ -41,7 +41,7 @@ public class Aldebaran {
 
         // New Vasuda Jumppoint
         JumpPointAPI newvasuda_jumppoint = Global.getFactory().createJumpPoint("newvasuda_jump", "New Vasuda Jumppoint");
-        newvasuda_jumppoint.setCircularOrbit(system.getEntityById("newvasuda"), 300+100, 3400, 215);
+        newvasuda_jumppoint.setCircularOrbit(system.getEntityById("newvasuda"), 200, 300, 215);
         newvasuda_jumppoint.setRelatedPlanet(newvasuda);
 
         newvasuda_jumppoint.setStandardWormholeToHyperspaceVisual();
@@ -62,7 +62,7 @@ public class Aldebaran {
 
         // Apep Jumppoint
         JumpPointAPI apep_jumppoint = Global.getFactory().createJumpPoint("apep_jump", "Apep Jumppoint");
-        apep_jumppoint.setCircularOrbit(system.getEntityById("apep"), 200+60, 6000, 400);
+        apep_jumppoint.setCircularOrbit(system.getEntityById("apep"), 200, 400, 400);
         apep_jumppoint.setRelatedPlanet(apep);
 
         apep_jumppoint.setStandardWormholeToHyperspaceVisual();

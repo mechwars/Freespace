@@ -15,19 +15,6 @@ import java.lang.reflect.Method;
 
 public class FreespaceModPlugin extends BaseModPlugin {
 
-    public static final boolean isExerelin;
-
-    static {
-        boolean foundExerelin;
-        try {
-            Global.getSettings().getScriptClassLoader().loadClass("data.scripts.world.ExerelinGen");
-            foundExerelin = true;
-        } catch (ClassNotFoundException ex) {
-            foundExerelin = false;
-        }
-        isExerelin = foundExerelin;
-    }
-
     @Override
     public void onApplicationLoad() {
         ShaderLib.init();
@@ -35,14 +22,33 @@ public class FreespaceModPlugin extends BaseModPlugin {
         TextureData.readTextureDataCSV("data/lights/fs_texture_data.csv");
     }
 
-    @Override
-    public void onNewGame() {
-        initFS();
+    private static void initFS() {
+            new fs_gen().generate(Global.getSector());
     }
 
-    private static void initFS() {
-        if (!isExerelin) {
-            new fs_gen().generate(Global.getSector());
+    @Override
+    public void onNewGame() {
+
+        try {
+            //Got Exerelin, so load Exerelin
+            Class<?> def = Global.getSettings().getScriptClassLoader().loadClass("exerelin.campaign.SectorManager");
+            Method method;
+            try {
+                method = def.getMethod("getCorvusMode");
+                Object result = method.invoke(def);
+                if ((boolean) result)
+                {
+                    // Exerelin running in Corvus mode, go ahead and generate our sector
+                    initFS();
+                }
+            } catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException |
+                    InvocationTargetException ex) {
+                // check failed, do nothing
+            }
+
+        } catch (ClassNotFoundException ex) {
+            // Exerelin not found so continue and run normal generation code
+            initFS();
         }
     }
 }

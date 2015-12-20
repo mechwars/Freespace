@@ -1,27 +1,49 @@
 {
-   id:"fs_terrans",
-   "color":[255,109,69,255],
-   
-    "displayName":"Terrans",
-    "displayNameWithArticle":"the Terrans",
-    "displayNameLong":"Galactic Terran Alliance",
-    "displayNameLongWithArticle":"the Galactic Terran Alliance",  
+    "id":"fs_shivan",
+    "color":[255,0,0,255],
+
+	"baseUIColor":[255,0,0,255],
+	"darkUIColor":[150,0,0,175],
+	"gridUIColor":[200,0,0,75],
+
+	"displayName":"Shivans",
+	"displayNameWithArticle":"the Shivans",
+	"displayNameIsOrAre":"are",
+	"entityNamePrefix":"",
 	"logo":"graphics/factions/hegemony.png",
 	"crest":"graphics/factions/crest_hegemony.png",
-   "shipNamePrefix":"GTA",
-   "shipNameSources":{
-		"GREEK":1,
-		"ROMAN":1,
-	},
-   "names":{
-		"modern":1,
-		"world":1,
-		"future":1,
-   },
-	"illegalCommodities":[
-		"organs",
-		"hand_weapons",	
-	],
+    "shipNameSources":{
+        "BEASTS":1,
+        "ABRAHAMIC":1,
+        "PERSIAN":1
+    },
+    "illegalCommodities":[
+    ],
+    "names":{
+        "fringe":1,
+    },
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Commander"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Patrol Commander"},
+			"fleetCommander":{"name":"Fleet Commander"},
+			"baseCommander":{"name":"Base Commander"},
+		},
+    },
+    "custom":{
+        "exemptFromFoodShortages":true,
+        "noPatrols":true,
+        "ignoreTradeWithEnemiesForReputation":true,
+        "postsNoBounties":true,
+        "allowsTransponderOffTrade":false,
+        "engageWhenEvenStrength":true,
+        "worthInvestigatingPlayerForGoodRepWith":true,
+        "offerMissionsWhenHostile":false,
+		"offersCommissions":false,
+		"engagesInHostilities":true,
+    },
 	"portraits":{
 		"standard_male":[
 			"graphics/portraits/portrait_mercenary01.png",
@@ -38,27 +60,13 @@
 			"graphics/portraits/portrait22.png",
 		],
 	},
-	"ranks":{
-		"ranks":{
-			"spaceCommander":{"name":"Commander"},
-		},
-		"posts":{
-			"patrolCommander":{"name":"Patrol Commander"},
-			"fleetCommander":{"name":"Fleet Commander"},
-			"baseCommander":{"name":"Base Commander"},
-		},
-	},   
-	"custom":{
-		"offersCommissions":true,
-		"engagesInHostilities":true,
-	},   
 	"shipRoles":{
 		"interceptor":{
-			"tfight_perseus_wing":10,
+			"sfight_astaroth_wing":10,
 			"fallback":{"fighter":1},
 		},
 		"fighter":{
-			"tfight_herc2_wing":10,
+			"sfight_mara_wing":10,
 			"fallback":{"interceptor":1},
 		},
 		"bomber":{
@@ -80,10 +88,11 @@
 			"fallback":{"combatLarge":1},
 		},
 		"combatLarge":{
-			"tcap_deimos_standard":10,
+			"scap_moloch_standard":10,
 			"fallback":{"combatMedium":2},
 		},
 		"combatCapital":{
+			"scap_demon_standard":10,
 			"fallback":{"combatLarge":2},
 		},
 		
@@ -104,14 +113,13 @@
 	
 		# carriers
 		"carrierSmall":{
-			"tnon_support_standard":10,
 			"fallback":{"carrierMedium":0.5},
 		},
 		"carrierMedium":{
-			"fallback":{"carrierSmall":2},
+			"fallback":{"combatLarge":1},
 		},
 		"carrierLarge":{
-			"fallback":{"carrierSmall":4},
+			"fallback":{"combatCapital":1},
 		},
 	
 		# freighters and such
@@ -153,10 +161,10 @@
 			
 		},
 		"captain":{
-			"timid":1,
-			"cautious":5,
+			"timid":0,
+			"cautious":0,
 			"steady":10,
-			"aggressive":6,
+			"aggressive":10,
 		},
 	},
 	"doctrine":{
@@ -164,11 +172,11 @@
 		"interceptors":10,
 		"fighters":10,
 		"bombers":0,
-		"small":6,
+		"small":0,
 		"fast":0,
 		"medium":0,
 		"large":6,
-		"capital":0,
+		"capital":3,
 		
 		# as fraction of combat ships of same size
 		"escortSmallFraction":0,
@@ -179,7 +187,7 @@
 		"minPointsForCombatCapital":10,
 		"minPointsForLargeCarrier":30,
 		
-		"smallCarrierProbability":1,
+		"smallCarrierProbability":0,
 		"mediumCarrierProbability":0,
 		"largeCarrierProbability":0,
 		

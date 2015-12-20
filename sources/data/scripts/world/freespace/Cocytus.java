@@ -26,7 +26,7 @@ public class Cocytus {
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Cocytus");
-        system.getLocation().set(8400, -10750);
+        system.getLocation().set(9000, 19000);
         system.setBackgroundTextureFilename("graphics/backgrounds/hyperspace1.jpg");
 
         PlanetAPI cocytus = system.initStar("cocytus", // unique id for this star
@@ -39,7 +39,7 @@ public class Cocytus {
 
         system.setLightColor(new Color(255, 0, 0)); // light color in entire system, affects all entities
 
-        system.addAsteroidBelt(cocytus, 50, 500, 2000, 200, 200);
+        system.addAsteroidBelt(cocytus, 500, 2000, 200, 200, 200);
 		/*
 		 * addAsteroidBelt() parameters:
 		 * 1. What the belt orbits
@@ -53,13 +53,24 @@ public class Cocytus {
         shivanhome.getSpec().setGlowColor(new Color(255, 200, 150, 255));
         shivanhome.getSpec().setUseReverseLightForGlow(true);
         shivanhome.applySpecChanges();
-        shivanhome.setCustomDescriptionId("fs_shivans_homeworld");
+        shivanhome.setCustomDescriptionId("fs_shivan_homeworld");
 
-        addMarketplace.addMarketplace("fs_shivans", shivanhome,
-                null,
+        // Shivan Jumppoint
+        JumpPointAPI shivanhome_jumppoint = Global.getFactory().createJumpPoint("shivanhome_jump", "Homeworld Jumppoint");
+        shivanhome_jumppoint.setCircularOrbit(system.getEntityById("shivanhome"), 100, 300, 215);
+        shivanhome_jumppoint.setRelatedPlanet(shivanhome);
+
+        // Shivan Station
+        SectorEntityToken shivanStation = system.addCustomEntity("fs_shivan_base",
+                "Shivan Origin", "station_jangala_type", "fs_shivan");
+        shivanStation.setCircularOrbitPointingDown(system.getEntityById("shivanhome"), 45 + 180, 300, 50);
+        shivanStation.setCustomDescriptionId("fs_shivan_base");
+
+        addMarketplace.addMarketplace("fs_shivan", shivanhome,
+                new ArrayList<>(Arrays.asList(shivanStation)),
                 "Homeworld",
                 10,
-                new ArrayList<>(Arrays.asList(Conditions.UNINHABITABLE, Conditions.AUTOFAC_HEAVY_INDUSTRY, Conditions.MILITARY_BASE,
+                new ArrayList<>(Arrays.asList(Conditions.AUTOFAC_HEAVY_INDUSTRY, Conditions.MILITARY_BASE,
                         Conditions.POPULATION_10, Conditions.HEADQUARTERS,
                         Conditions.SPACEPORT, Conditions.ORE_COMPLEX,
                         Conditions.ORE_COMPLEX, Conditions.ORE_REFINING_COMPLEX, Conditions.ORE_REFINING_COMPLEX)),

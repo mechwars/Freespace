@@ -1,6 +1,6 @@
 faction
-data/world/factions/fs_terrans.faction
-data/world/factions/fs_shivans.faction
-data/world/factions/fs_vasudans.faction
+data/world/factions/fs_terran.faction
+data/world/factions/fs_shivan.faction
+data/world/factions/fs_vasudan.faction
 data/world/factions/fs_hammeroflight.faction
 data/world/factions/fs_newterrandawn.faction

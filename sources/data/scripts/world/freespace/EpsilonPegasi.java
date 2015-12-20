@@ -13,7 +13,7 @@ public class EpsilonPegasi {
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Epsilon Pegasi");
-        system.getLocation().set(8400, -10750);
+        system.getLocation().set(16000, 0);
         system.setBackgroundTextureFilename("graphics/backgrounds/background4.jpg");
 
         PlanetAPI epsilonpegasi = system.initStar("epsilonpegasi", // unique id for this star
@@ -41,7 +41,7 @@ public class EpsilonPegasi {
 
         // Pegasi-b Jumppoint
         JumpPointAPI epsilonpegasib_jumppoint = Global.getFactory().createJumpPoint("epsilonpegasib_jump", "Epsilon Pegasi b Jumppoint");
-        epsilonpegasib_jumppoint.setCircularOrbit(system.getEntityById("epsilonpegasib"), 300+100, 3400, 215);
+        epsilonpegasib_jumppoint.setCircularOrbit(system.getEntityById("epsilonpegasib"), 300+100, 300, 215);
         epsilonpegasib_jumppoint.setRelatedPlanet(epsilonpegasib);
 
         epsilonpegasib_jumppoint.setStandardWormholeToHyperspaceVisual();
@@ -60,9 +60,9 @@ public class EpsilonPegasi {
         ntdStation.setCustomDescriptionId("fs_kothar_base");
         ntdStation.setInteractionImage("illustrations", "pirate_station");
 
-        // Apep Jumppoint
+        // Kothar Jumppoint
         JumpPointAPI kothar_jumppoint = Global.getFactory().createJumpPoint("kothar_jump", "Kothar Jumppoint");
-        kothar_jumppoint.setCircularOrbit(system.getEntityById("kothar"), 200+60, 6000, 400);
+        kothar_jumppoint.setCircularOrbit(system.getEntityById("kothar"), 200, 600, 400);
         kothar_jumppoint.setRelatedPlanet(kothar);
 
         kothar_jumppoint.setStandardWormholeToHyperspaceVisual();
@@ -72,7 +72,7 @@ public class EpsilonPegasi {
                 new ArrayList<>(Arrays.asList(terranStation)),
                 "Epsilon Pegasi b",
                 7,
-                new ArrayList<>(Arrays.asList(Conditions.ARID, Conditions.AUTOFAC_HEAVY_INDUSTRY, Conditions.MILITARY_BASE,
+                new ArrayList<>(Arrays.asList(Conditions.TERRAN, Conditions.AUTOFAC_HEAVY_INDUSTRY, Conditions.MILITARY_BASE,
                         Conditions.POPULATION_7, Conditions.HEADQUARTERS,
                         Conditions.SPACEPORT, Conditions.ORE_COMPLEX, Conditions.ORE_REFINING_COMPLEX)),
                 new ArrayList<>(Arrays.asList(Submarkets.SUBMARKET_STORAGE, Submarkets.GENERIC_MILITARY,
