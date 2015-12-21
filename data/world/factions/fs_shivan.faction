@@ -18,6 +18,7 @@
         "PERSIAN":1
     },
     "illegalCommodities":[
+		"organs",
     ],
     "names":{
         "fringe":1,
@@ -32,18 +33,10 @@
 			"baseCommander":{"name":"Base Commander"},
 		},
     },
-    "custom":{
-        "exemptFromFoodShortages":true,
-        "noPatrols":true,
-        "ignoreTradeWithEnemiesForReputation":true,
-        "postsNoBounties":true,
-        "allowsTransponderOffTrade":false,
-        "engageWhenEvenStrength":true,
-        "worthInvestigatingPlayerForGoodRepWith":true,
-        "offerMissionsWhenHostile":false,
-		"offersCommissions":false,
+	"custom":{
+		"offersCommissions":true,
 		"engagesInHostilities":true,
-    },
+	}, 
 	"portraits":{
 		"standard_male":[
 			"graphics/portraits/portrait_mercenary01.png",
@@ -73,19 +66,19 @@
 			"fallback":{"fighter":2},
 		},	
 		"fastAttack":{
-			"fallback":{"combatLarge":1},
+			"fallback":{"combatLarge":0.25},
 		},
 		"escortSmall":{
-			"fallback":{"combatLarge":1},
+			"fallback":{"combatLarge":0.25},
 		},
 		"escortMedium":{
-			"fallback":{"combatLarge":1},
+			"fallback":{"combatLarge":0.5},
 		},
 		"combatSmall":{
-			"fallback":{"combatLarge":1},
+			"fallback":{"combatLarge":0.25},
 		},
 		"combatMedium":{
-			"fallback":{"combatLarge":1},
+			"fallback":{"combatLarge":0.5},
 		},
 		"combatLarge":{
 			"scap_moloch_standard":10,
@@ -113,13 +106,13 @@
 	
 		# carriers
 		"carrierSmall":{
-			"fallback":{"carrierMedium":0.5},
+			"fallback":{"combatMedium":0.25},
 		},
 		"carrierMedium":{
-			"fallback":{"combatLarge":1},
+			"fallback":{"combatMedium":0.5},
 		},
 		"carrierLarge":{
-			"fallback":{"combatCapital":1},
+			"fallback":{"combatMedium":1},
 		},
 	
 		# freighters and such
@@ -172,11 +165,11 @@
 		"interceptors":10,
 		"fighters":10,
 		"bombers":0,
-		"small":0,
+		"small":6,
 		"fast":0,
 		"medium":0,
 		"large":6,
-		"capital":3,
+		"capital":0,
 		
 		# as fraction of combat ships of same size
 		"escortSmallFraction":0,
@@ -187,7 +180,7 @@
 		"minPointsForCombatCapital":10,
 		"minPointsForLargeCarrier":30,
 		
-		"smallCarrierProbability":0,
+		"smallCarrierProbability":1,
 		"mediumCarrierProbability":0,
 		"largeCarrierProbability":0,
 		

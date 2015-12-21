@@ -1,0 +1,25 @@
+id,trigger,conditions,script,text,options,notes
+ExerelinNGCListTerrans,ExerelinNGCListFactions4,NGCDoesFactionExist fs_terran,,,,
+ExerelinNGCListShivans,ExerelinNGCListFactions4,NGCDoesFactionExist fs_shivan,,,,
+ExerelinNGCListVasudans,ExerelinNGCListFactions4,NGCDoesFactionExist fs_vasudan,,,,
+,,,,,,
+ExerelinNGCJoinTerrans,NewGameOptionSelected,$option == exerelinNGCJoinTerrans,"NGCSetPlayerFaction ""fs_terran""
+NGCAddShipAndComplement ""tcap_deimos_standard""
+AddText ""Added Deimos-Class Corvette"" textFriendColor
+FireBest ExerelinNGCStep3",,,
+ExerelinNGCJoinShivans,NewGameOptionSelected,$option == exerelinNGCJoinShivans,"NGCSetPlayerFaction ""fs_shivan""
+NGCAddShipAndComplement ""scap_moloch_standard""
+AddText ""Added Moloch-Class Corvette"" textFriendColor
+FireBest ExerelinNGCStep3",,,
+ExerelinNGCJoinVasudans,NewGameOptionSelected,$option == exerelinNGCJoinVasudans,"NGCSetPlayerFaction ""fs_vasudan""
+NGCAddShipAndComplement ""vcap_sobek_standard""
+AddText ""Added Sobek-Class Corvette"" textFriendColor
+FireBest ExerelinNGCStep3",,,
+,,,,,,
+ExerelinFactionDirectoryListTerrans,ExerelinFactionDirectoryList4,IsFactionAlive fs_terran,,,exerelinFactionDirectoryGetValkyrians:Valkyrians,
+ExerelinFactionDirectoryListShivans,ExerelinFactionDirectoryList4,IsFactionAlive fs_shivan,,,exerelinFactionDirectoryGetValkyrians:Valkyrians,
+ExerelinFactionDirectoryListVasudans,ExerelinFactionDirectoryList4,IsFactionAlive fs_vasudan,,,,
+,,,,,,
+ExerelinFactionDirectoryGetTerrans,DialogOptionSelected,$option == exerelinFactionDirectoryGetTerrans,PrintFactionMarkets fs_terran,,,
+ExerelinFactionDirectoryGetShivans,DialogOptionSelected,$option == exerelinFactionDirectoryGetShivans,PrintFactionMarkets fs_shivan,,,
+ExerelinFactionDirectoryGetVasudans,DialogOptionSelected,$option == exerelinFactionDirectoryGetVasudans,PrintFactionMarkets fs_vasudan,,,
