@@ -13,7 +13,7 @@ public class Cocytus {
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Cocytus");
-        system.getLocation().set(9000, 19000);
+        system.getLocation().set(-5000, -11500);
         system.setBackgroundTextureFilename("graphics/backgrounds/hyperspace1.jpg");
 
         PlanetAPI cocytus = system.initStar("cocytus", // unique id for this star
@@ -51,12 +51,11 @@ public class Cocytus {
                 new ArrayList<>(Arrays.asList(shivanStation)),
                 "Shivan Origin",
                 10,
-                new ArrayList<>(Arrays.asList(Conditions.AUTOFAC_HEAVY_INDUSTRY, Conditions.MILITARY_BASE,
+                new ArrayList<>(Arrays.asList(Conditions.UNINHABITABLE, Conditions.AUTOFAC_HEAVY_INDUSTRY, Conditions.MILITARY_BASE,
                         Conditions.POPULATION_10, Conditions.HEADQUARTERS,
                         Conditions.SPACEPORT,
                         Conditions.ORE_COMPLEX, Conditions.ORE_REFINING_COMPLEX)),
-                new ArrayList<>(Arrays.asList(Submarkets.SUBMARKET_STORAGE, Submarkets.GENERIC_MILITARY,
-                        Submarkets.SUBMARKET_OPEN)),
+                new ArrayList<>(Arrays.asList(Submarkets.SUBMARKET_STORAGE, Submarkets.GENERIC_MILITARY)),
                 0f
         );
 
