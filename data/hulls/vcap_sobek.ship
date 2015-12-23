@@ -237,7 +237,7 @@
         15.5,
         11
       ],
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "size": "MEDIUM",
       "type": "HYBRID"
     },
