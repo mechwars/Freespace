@@ -16,8 +16,8 @@
     "positiveDiplomacyExtra":0,
     "negativeDiplomacyExtra":0,
     "factionsLiked":[],
-    "factionsDisliked":["fs_vasudan","fs_shivan"],
-    "factionsNeutral":[],
+    "factionsDisliked":["fs_vasudan","fs_shivan","fs_terran"],
+    "factionsNeutral":["fs_newterrandawn"],
     
     "alignments":{
 		"corporate":0,
