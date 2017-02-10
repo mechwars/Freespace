@@ -3,18 +3,21 @@
     "playableFaction":true,
     "corvusCompatible":true,
     
-    "isPirateNeutral":true, # Boolean
-    "crewExpereinceLevelIncreaseChance":0.0, # Double, 0 - 1.0
-    "baseFleetCostMultiplier":1.0, # Double
+    "pirateFaction":true,
+    "isPirateNeutral":true,
+    "spawnPatrols":true,
+    "crewExpereinceLevelIncreaseChance":0.0,
+    "baseFleetCostMultiplier":1.0,
 
-    "customRebelFaction":"", # String
-    "customRebelFleetId":"", # String
-    "rebelFleetSuffix":"Deserters", # String
+    "customRebelFaction":"",
+    "customRebelFleetId":"",
+    "rebelFleetSuffix":"Deserters",
 
-    "positiveDiplomacyExtra":0, # Integer
-    "negativeDiplomacyExtra":0, # Integer
-    "factionsLiked":[], # String array
-    "factionsDisliked":["fs_newterrandawn"], # String array
+    "positiveDiplomacyExtra":0,
+    "negativeDiplomacyExtra":0,
+    "factionsLiked":[],
+    "factionsDisliked":["fs_terran"],
+    "factionsNeutral":[],
     
     "alignments":{
 		"corporate":0,
