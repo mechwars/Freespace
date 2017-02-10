@@ -11,13 +11,13 @@
 
     "customRebelFaction":"",
     "customRebelFleetId":"",
-    "rebelFleetSuffix":"Deserters",
+    "rebelFleetSuffix":"Deserter",
 
     "positiveDiplomacyExtra":0,
     "negativeDiplomacyExtra":0,
     "factionsLiked":[],
-    "factionsDisliked":["fs_terran","fs_shivan"],
-    "factionsNeutral":[],
+    "factionsDisliked":["fs_terran","fs_shivan","fs_vasudan"],
+    "factionsNeutral":["fs_hammeroflight"],
     
     "alignments":{
 		"corporate":0,
