@@ -16,7 +16,7 @@
     "positiveDiplomacyExtra":0,
     "negativeDiplomacyExtra":0,
     "factionsLiked":[],
-    "factionsDisliked":["fs_vasudan"],
+    "factionsDisliked":["fs_vasudan","fs_shivan"],
     "factionsNeutral":[],
     
     "alignments":{
