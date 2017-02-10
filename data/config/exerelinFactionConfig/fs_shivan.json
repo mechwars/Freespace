@@ -1,22 +1,25 @@
 {
-    "uniqueModClassName":"data.scripts.FreespaceModPlugin", # String
-    "playableFaction":true, # Boolean
+    "uniqueModClassName":"data.scripts.FreespaceModPlugin",
+    "playableFaction":true,
     "corvusCompatible":true,
     "hostileToAll":1,
+    "dropPrisoners":false,
     
-    "isPirateNeutral":false, # Boolean
+    "pirateFaction":true,
+    "isPirateNeutral":false,
+    "spawnPatrols":true,
+    "crewExpereinceLevelIncreaseChance":0.0,
+    "baseFleetCostMultiplier":1.0,
 
-    "crewExpereinceLevelIncreaseChance":0.0, # Double, 0 - 1.0
-    "baseFleetCostMultiplier":1.0, # Double
+    "customRebelFaction":"",
+    "customRebelFleetId":"",
+    "rebelFleetSuffix":"Vishnans",
 
-    "customRebelFaction":"", # String
-    "customRebelFleetId":"", # String
-    "rebelFleetSuffix":"Vishnans", # String
-
-    "positiveDiplomacyExtra":0, # Integer
-    "negativeDiplomacyExtra":0, # Integer
-    "factionsLiked":[], # String array
-    "factionsDisliked":[], # String array
+    "positiveDiplomacyExtra":0,
+    "negativeDiplomacyExtra":0,
+    "factionsLiked":[],
+    "factionsDisliked":[],
+    "factionsNeutral":[],
     
     "alignments":{
         "militarist":1,
@@ -24,11 +27,4 @@
         "ideological":1,
     },
     
-    "invasionStrengthBonusAttack":0.1,
-    "invasionStrengthBonusDefend":0.2,
-    "invasionPointMult":0.5,
-    
-    "patrolSizeMult":0.7,
-	
-	"dropPrisoners":false,
 }
