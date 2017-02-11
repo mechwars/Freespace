@@ -2,7 +2,11 @@ package data.scripts.world.freespace;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.campaign.econ.EconomyAPI;
+import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
+import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.ids.Submarkets;
 
 import java.awt.*;
@@ -10,6 +14,79 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Aldebaran {
+
+    private static void initFactionRelationships(SectorAPI sector) {
+        FactionAPI fs_terran = sector.getFaction("fs_terran");
+        FactionAPI fs_vasudan = sector.getFaction("fs_vasudan");
+        FactionAPI fs_shivan = sector.getFaction("fs_shivan");
+        FactionAPI fs_hammeroflight = sector.getFaction("fs_hammeroflight");
+        FactionAPI fs_newterrandawn = sector.getFaction("fs_newterrandawn");
+
+        for (FactionAPI faction : sector.getAllFactions()) {
+            if (faction != fs_vasudan && !faction.isNeutralFaction()) {
+                fs_vasudan.setRelationship(faction.getId(), RepLevel.SUSPICIOUS);
+            }
+            if (faction != fs_hammeroflight && !faction.isNeutralFaction()) {
+                fs_hammeroflight.setRelationship(faction.getId(), RepLevel.INHOSPITABLE);
+            }
+        }
+
+        fs_vasudan.setRelationship(Factions.TRITACHYON, RepLevel.NEUTRAL);
+        fs_vasudan.setRelationship(Factions.PLAYER, RepLevel.NEUTRAL);
+
+        fs_hammeroflight.setRelationship(Factions.LUDDIC_PATH, RepLevel.WELCOMING);
+        fs_hammeroflight.setRelationship(Factions.PIRATES, RepLevel.SUSPICIOUS);
+        fs_hammeroflight.setRelationship(Factions.PLAYER, RepLevel.SUSPICIOUS);
+
+        fs_vasudan.setRelationship("fs_terran", RepLevel.WELCOMING);
+        fs_vasudan.setRelationship("fs_newterrandawn", RepLevel.INHOSPITABLE);
+        fs_vasudan.setRelationship("fs_hammeroflight", RepLevel.HOSTILE);
+        fs_vasudan.setRelationship("fs_shivan", RepLevel.VENGEFUL);
+        fs_hammeroflight.setRelationship("fs_newterrandawn", RepLevel.HOSTILE);
+        fs_hammeroflight.setRelationship("fs_shivan", RepLevel.SUSPICIOUS);
+    }
+
+    private static MarketAPI addMarketplace(String factionID, SectorEntityToken primaryEntity, ArrayList<SectorEntityToken> connectedEntities, String name,
+                                            int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, float tarrif) {
+        EconomyAPI globalEconomy = Global.getSector().getEconomy();
+        String planetID = primaryEntity.getId();
+        String marketID = planetID/* + "_market"*/;
+
+        MarketAPI newMarket = Global.getFactory().createMarket(marketID, name, size);
+        newMarket.setFactionId(factionID);
+        newMarket.setPrimaryEntity(primaryEntity);
+        newMarket.setBaseSmugglingStabilityValue(0);
+        newMarket.getTariff().modifyFlat("generator", tarrif);
+
+        if (null != submarkets) {
+            for (String market : submarkets) {
+                newMarket.addSubmarket(market);
+            }
+        }
+
+        for (String condition : marketConditions) {
+            newMarket.addCondition(condition);
+        }
+
+        if (null != connectedEntities) {
+            for (SectorEntityToken entity : connectedEntities) {
+                newMarket.getConnectedEntities().add(entity);
+            }
+        }
+
+        globalEconomy.addMarket(newMarket);
+        primaryEntity.setMarket(newMarket);
+        primaryEntity.setFaction(factionID);
+
+        if (null != connectedEntities) {
+            for (SectorEntityToken entity : connectedEntities) {
+                entity.setMarket(newMarket);
+                entity.setFaction(factionID);
+            }
+        }
+
+        return newMarket;
+    }
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Aldebaran");
@@ -68,7 +145,7 @@ public class Aldebaran {
         apep_jumppoint.setStandardWormholeToHyperspaceVisual();
         system.addEntity(apep_jumppoint);
 
-        addMarketplace.addMarketplace("fs_vasudan", newvasuda,
+        MarketAPI cocytusMarket = addMarketplace("fs_vasudan", newvasuda,
                 new ArrayList<>(Arrays.asList(vasudanStation)),
                 "New Vasuda",
                 7,
@@ -80,7 +157,7 @@ public class Aldebaran {
                 0.3f
         );
 
-        addMarketplace.addMarketplace("fs_hammeroflight", apep,
+        MarketAPI holMarket = addMarketplace("fs_hammeroflight", apep,
                 new ArrayList<>(Arrays.asList(holStation)),
                 "New Vasuda",
                 5,
@@ -93,5 +170,7 @@ public class Aldebaran {
         );
 
         system.autogenerateHyperspaceJumpPoints(true, true);
+
+        initFactionRelationships(sector);
     }
 }

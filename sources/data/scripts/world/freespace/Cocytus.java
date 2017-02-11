@@ -2,7 +2,11 @@ package data.scripts.world.freespace;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.campaign.econ.EconomyAPI;
+import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
+import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.ids.Submarkets;
 
 import java.awt.*;
@@ -10,6 +14,58 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Cocytus {
+
+    private static void initFactionRelationships(SectorAPI sector) {
+        FactionAPI fs_shivan = sector.getFaction("fs_shivan");
+
+        for (FactionAPI faction : sector.getAllFactions()) {
+            if (faction != fs_shivan) {
+                fs_shivan.setRelationship(faction.getId(), RepLevel.HOSTILE);
+            }
+        }
+    }
+
+    private static MarketAPI addMarketplace(String factionID, SectorEntityToken primaryEntity, ArrayList<SectorEntityToken> connectedEntities, String name,
+                                            int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, float tarrif) {
+        EconomyAPI globalEconomy = Global.getSector().getEconomy();
+        String planetID = primaryEntity.getId();
+        String marketID = planetID/* + "_market"*/;
+
+        MarketAPI newMarket = Global.getFactory().createMarket(marketID, name, size);
+        newMarket.setFactionId(factionID);
+        newMarket.setPrimaryEntity(primaryEntity);
+        newMarket.setBaseSmugglingStabilityValue(0);
+        newMarket.getTariff().modifyFlat("generator", tarrif);
+
+        if (null != submarkets) {
+            for (String market : submarkets) {
+                newMarket.addSubmarket(market);
+            }
+        }
+
+        for (String condition : marketConditions) {
+            newMarket.addCondition(condition);
+        }
+
+        if (null != connectedEntities) {
+            for (SectorEntityToken entity : connectedEntities) {
+                newMarket.getConnectedEntities().add(entity);
+            }
+        }
+
+        globalEconomy.addMarket(newMarket);
+        primaryEntity.setMarket(newMarket);
+        primaryEntity.setFaction(factionID);
+
+        if (null != connectedEntities) {
+            for (SectorEntityToken entity : connectedEntities) {
+                entity.setMarket(newMarket);
+                entity.setFaction(factionID);
+            }
+        }
+
+        return newMarket;
+    }
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Cocytus");
@@ -47,7 +103,7 @@ public class Cocytus {
         shivanStation.setCircularOrbitPointingDown(system.getEntityById("enkidu"), 45 + 180, 300, 50);
         shivanStation.setCustomDescriptionId("fs_shivan_base");
 
-        addMarketplace.addMarketplace("fs_shivan", enkidu,
+        MarketAPI shivanMarket = addMarketplace("fs_shivan", enkidu,
                 new ArrayList<>(Arrays.asList(shivanStation)),
                 "Shivan Origin",
                 10,
@@ -59,6 +115,10 @@ public class Cocytus {
                 0f
         );
 
+        SharedData.getData().getMarketsWithoutTradeFleetSpawn().add(shivanMarket.getId());
+
         system.autogenerateHyperspaceJumpPoints(true, true);
+
+        initFactionRelationships(sector);
     }
 }

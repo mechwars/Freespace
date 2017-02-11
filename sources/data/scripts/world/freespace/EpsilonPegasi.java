@@ -2,7 +2,11 @@ package data.scripts.world.freespace;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.campaign.econ.EconomyAPI;
+import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
+import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.ids.Submarkets;
 
 import java.awt.*;
@@ -10,6 +14,84 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class EpsilonPegasi {
+
+    private static void initFactionRelationships(SectorAPI sector) {
+        FactionAPI fs_terran = sector.getFaction("fs_terran");
+        FactionAPI fs_vasudan = sector.getFaction("fs_vasudan");
+        FactionAPI fs_shivan = sector.getFaction("fs_shivan");
+        FactionAPI fs_hammeroflight = sector.getFaction("fs_hammeroflight");
+        FactionAPI fs_newterrandawn = sector.getFaction("fs_newterrandawn");
+
+        for (FactionAPI faction : sector.getAllFactions()) {
+            if (faction != fs_terran && !faction.isNeutralFaction()) {
+                fs_terran.setRelationship(faction.getId(), RepLevel.SUSPICIOUS);
+            }
+            if (faction != fs_newterrandawn && !faction.isNeutralFaction()) {
+                fs_newterrandawn.setRelationship(faction.getId(), RepLevel.INHOSPITABLE);
+            }
+        }
+
+        fs_terran.setRelationship(Factions.INDEPENDENT, RepLevel.NEUTRAL);
+        fs_terran.setRelationship(Factions.HEGEMONY, RepLevel.INHOSPITABLE);
+        fs_terran.setRelationship(Factions.DIKTAT, RepLevel.NEUTRAL);
+        fs_terran.setRelationship(Factions.LUDDIC_CHURCH, RepLevel.HOSTILE);
+        fs_terran.setRelationship(Factions.LUDDIC_PATH, RepLevel.VENGEFUL);
+        fs_terran.setRelationship(Factions.PIRATES, RepLevel.HOSTILE);
+        fs_terran.setRelationship(Factions.PLAYER, RepLevel.NEUTRAL);
+
+        fs_newterrandawn.setRelationship(Factions.LUDDIC_PATH, RepLevel.SUSPICIOUS);
+        fs_newterrandawn.setRelationship(Factions.PIRATES, RepLevel.WELCOMING);
+        fs_newterrandawn.setRelationship(Factions.PLAYER, RepLevel.SUSPICIOUS);
+
+        fs_terran.setRelationship("fs_vasudan", RepLevel.WELCOMING);
+        fs_terran.setRelationship("fs_newterrandawn", RepLevel.HOSTILE);
+        fs_terran.setRelationship("fs_hammeroflight", RepLevel.INHOSPITABLE);
+        fs_terran.setRelationship("fs_shivan", RepLevel.VENGEFUL);
+        fs_newterrandawn.setRelationship("fs_hammeroflight", RepLevel.HOSTILE);
+        fs_newterrandawn.setRelationship("fs_shivan", RepLevel.VENGEFUL);
+    }
+
+    private static MarketAPI addMarketplace(String factionID, SectorEntityToken primaryEntity, ArrayList<SectorEntityToken> connectedEntities, String name,
+                                            int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, float tarrif) {
+        EconomyAPI globalEconomy = Global.getSector().getEconomy();
+        String planetID = primaryEntity.getId();
+        String marketID = planetID/* + "_market"*/;
+
+        MarketAPI newMarket = Global.getFactory().createMarket(marketID, name, size);
+        newMarket.setFactionId(factionID);
+        newMarket.setPrimaryEntity(primaryEntity);
+        newMarket.setBaseSmugglingStabilityValue(0);
+        newMarket.getTariff().modifyFlat("generator", tarrif);
+
+        if (null != submarkets) {
+            for (String market : submarkets) {
+                newMarket.addSubmarket(market);
+            }
+        }
+
+        for (String condition : marketConditions) {
+            newMarket.addCondition(condition);
+        }
+
+        if (null != connectedEntities) {
+            for (SectorEntityToken entity : connectedEntities) {
+                newMarket.getConnectedEntities().add(entity);
+            }
+        }
+
+        globalEconomy.addMarket(newMarket);
+        primaryEntity.setMarket(newMarket);
+        primaryEntity.setFaction(factionID);
+
+        if (null != connectedEntities) {
+            for (SectorEntityToken entity : connectedEntities) {
+                entity.setMarket(newMarket);
+                entity.setFaction(factionID);
+            }
+        }
+
+        return newMarket;
+    }
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Epsilon Pegasi");
@@ -68,7 +150,7 @@ public class EpsilonPegasi {
         kothar_jumppoint.setStandardWormholeToHyperspaceVisual();
         system.addEntity(kothar_jumppoint);
 
-        addMarketplace.addMarketplace("fs_terran", epsilonpegasib,
+        MarketAPI terranMarket = addMarketplace("fs_terran", epsilonpegasib,
                 new ArrayList<>(Arrays.asList(terranStation)),
                 "Epsilon Pegasi b",
                 7,
@@ -80,7 +162,7 @@ public class EpsilonPegasi {
                 0.3f
         );
 
-        addMarketplace.addMarketplace("fs_newterrandawn", kothar,
+        MarketAPI ntdMarket = addMarketplace("fs_newterrandawn", kothar,
                 new ArrayList<>(Arrays.asList(ntdStation)),
                 "Kothar",
                 5,
@@ -92,6 +174,10 @@ public class EpsilonPegasi {
                 0.3f
         );
 
+        SharedData.getData().getMarketsWithoutTradeFleetSpawn().add(ntdMarket.getId());
+
         system.autogenerateHyperspaceJumpPoints(true, true);
+
+        initFactionRelationships(sector);
     }
 }

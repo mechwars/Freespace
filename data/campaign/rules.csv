@@ -1,0 +1,25 @@
+id,trigger,conditions,script,text,options,notes
+ExerelinNGCListTerrans,ExerelinNGCListFactions4,NGCDoesFactionExist fs_terran,,,exerelinNGCJoinTerrans:Galactic Terran Alliance,
+ExerelinNGCListVasudans,ExerelinNGCListFactions4,NGCDoesFactionExist fs_vasudan,,,exerelinNGCJoinVasudans:Vasudan Empire,
+ExerelinNGCListShivans,ExerelinNGCListFactions4,NGCDoesFactionExist fs_shivan,,,exerelinNGCJoinShivans:Shivans,
+,,,,,,
+ExerelinNGCJoinTerrans,NewGameOptionSelected,$option == exerelinNGCJoinTerrans,"NGCSetPlayerFaction ""fs_terran""
+NGCAddShipAndComplement ""tcap_deimos_standard""
+AddText ""Added Deimos-Class Corvette"" textFriendColor
+FireBest ExerelinNGCStep4",,,
+ExerelinNGCJoinVasudans,NewGameOptionSelected,$option == exerelinNGCJoinVasudans,"NGCSetPlayerFaction ""fs_vasudan""
+NGCAddShipAndComplement ""vcap_sobek_standard""
+AddText ""Added Sobek-Class Corvette"" textFriendColor
+FireBest ExerelinNGCStep4",,,
+ExerelinNGCJoinShivans,NewGameOptionSelected,$option == exerelinNGCJoinShivans,"NGCSetPlayerFaction ""fs_shivan""
+NGCAddShipAndComplement ""scap_moloch_standard""
+AddText ""Added Moloch-Class Corvette"" textFriendColor
+FireBest ExerelinNGCStep4",,,
+,,,,,,
+ExerelinFactionDirectoryListTerrans,ExerelinFactionDirectoryList4,IsFactionAlive fs_terran,,,exerelinFactionDirectoryGetTerrans:Galactic Terran Alliance,
+ExerelinFactionDirectoryListVasudans,ExerelinFactionDirectoryList4,IsFactionAlive fs_vasudan,,,exerelinFactionDirectoryGetVasudans:Vasudan Empire,
+ExerelinFactionDirectoryListShivans,ExerelinFactionDirectoryList4,IsFactionAlive fs_shivan,,,exerelinFactionDirectoryGetShivans:Shivans,
+,,,,,,
+ExerelinFactionDirectoryGetTerrans,DialogOptionSelected,$option == exerelinFactionDirectoryGetTerrans,PrintFactionMarkets fs_terran,,,
+ExerelinFactionDirectoryGetVasudans,DialogOptionSelected,$option == exerelinFactionDirectoryGetVasudans,PrintFactionMarkets fs_vasudan,,,
+ExerelinFactionDirectoryGetShivans,DialogOptionSelected,$option == exerelinFactionDirectoryGetShivans,PrintFactionMarkets fs_shivan,,,

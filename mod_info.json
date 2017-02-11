@@ -2,9 +2,9 @@
   "id":"Freespace",
 	"name":"Freespace",
 	"author":"Stalker",	
-	"version":"0.1",
+	"version":"0.2",
 	"description":"Requires LazyLib and ShaderLib. Contains the Freespace mod",
-	"gameVersion":"0.7.1a",
+	"gameVersion":"0.7.2a",
 	"jars":["jars/Freespace.jar"],
 	"modPlugin":"data.scripts.FreespaceModPlugin"
 }

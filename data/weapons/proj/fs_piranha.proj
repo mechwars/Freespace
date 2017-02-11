@@ -2,7 +2,7 @@
 	"id":"fs_piranha",
 	"specClass":"missile",	
 	"missileType":"MIRV",
-	"sprite":"graphics/Freespace/missiles/Piranha.png",
+	"sprite":"graphics/Freespace/missiles/fs_piranha.png",
 	"size":[10,30],	
 	"center":[5,19],
 	"collisionRadius":16,
